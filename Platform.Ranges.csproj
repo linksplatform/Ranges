@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>LinksPlatform's Platform.Ranges Class Library</Description>
+    <Copyright>Konstantin Diachenko</Copyright>
+    <AssemblyTitle>Platform.Ranges</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Konstantin Diachenko</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Platform.Ranges</AssemblyName>
+    <PackageId>Platform.Ranges</PackageId>
+    <PackageTags>LinksPlatform;Ranges;Range</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/d65e8dd6e1b647405bc3d33687172e79b70e3435/doc/Avatar-rainbow.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/linksplatform/Ranges</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/linksplatform/Ranges/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/linksplatform/Ranges</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+</Project>
