@@ -25,3 +25,9 @@ https://www.nuget.org/packages/Range/
 `Range` *class* with `Minumum` and `Maximum` *properties*.
 
 https://www.nuget.org/packages/Range.Net/
+
+### [sdcb/Sdcb.System.Range](https://github.com/sdcb/Sdcb.System.Range)
+
+`Range` *struct* with `Start` and `End` *properties*.
+
+https://www.nuget.org/packages/Sdcb.System.Range/
