@@ -12,7 +12,7 @@ Forked from: https://github.com/Konard/LinksPlatform/tree/0c85f236b75e6e31107900
 
 NuGet package: https://www.nuget.org/packages/Platform.Ranges
 
-## Other packages
+## Similar packages
 
 ### [alansav/range](https://github.com/alansav/range)
 
