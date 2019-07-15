@@ -18,16 +18,10 @@ NuGet package: https://www.nuget.org/packages/Platform.Ranges
 
 `Range` *class* with `Floor` and `Ceiling` *fields*.
 
-https://www.nuget.org/packages/Range/
-
 ###  [mnelsonwhite/Range.NET](https://github.com/mnelsonwhite/Range.NET)
 
 `Range` *class* with `Minumum` and `Maximum` *properties*.
 
-https://www.nuget.org/packages/Range.Net/
-
 ### [sdcb/Sdcb.System.Range](https://github.com/sdcb/Sdcb.System.Range)
 
 `Range` *struct* with `Start` and `End` *properties*.
-
-https://www.nuget.org/packages/Sdcb.System.Range/
