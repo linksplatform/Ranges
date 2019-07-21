@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Platform.Ranges
 {
@@ -26,13 +27,15 @@ namespace Platform.Ranges
         public readonly T Maximum;
 
         public Range(T minimumAndMaximum)
+            : this(minimumAndMaximum, minimumAndMaximum)
         {
-            Minimum = minimumAndMaximum;
-            Maximum = minimumAndMaximum;
         }
 
         public Range(T minimum, T maximum)
         {
+            if (_comparer.Compare(maximum, minimum) < 0)
+                throw new ArgumentException("Maximum should be greater or equal to minimum.", nameof(maximum));
+
             Minimum = minimum;
             Maximum = maximum;
         }
@@ -43,12 +46,6 @@ namespace Platform.Ranges
         /// </summary>
         /// <returns>String representation of the Range. Строковое представление диапазона.</returns>
         public override string ToString() => $"[{Minimum}, {Maximum}]";
-
-        /// <summary>
-        /// Determines if the range is valid. Определяет, является ли диапазон корректным.
-        /// </summary>
-        /// <returns>True if range is valid, else false. True, если диапазон корректный, иначе false.</returns>
-        public bool IsValid() => _comparer.Compare(Minimum, Maximum) <= 0;
 
         /// <summary>
         /// Determines if the provided value is inside the range.
@@ -72,6 +69,6 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range">The child range to test. Дочерний диапазон для проверки.</param>
         /// <returns>True if range is inside, else false. True, если диапазон находится внутри, иначе false.</returns>
-        public bool ContainsRange(Range<T> range) => IsValid() && range.IsValid() && ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
+        public bool ContainsRange(Range<T> range) => ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
     }
 }
