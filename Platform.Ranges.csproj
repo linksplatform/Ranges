@@ -4,15 +4,15 @@
     <Description>LinksPlatform's Platform.Ranges Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
-    <VersionPrefix>0.0.2</VersionPrefix>
+    <VersionPrefix>0.0.3</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Ranges</AssemblyName>
     <PackageId>Platform.Ranges</PackageId>
-    <PackageTags>LinksPlatform;Ranges;Range</PackageTags>
-    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/0a9177c11892ebb2fe467dc3ea9eaf5a5588f610/doc/Avatar-rainbow.png</PackageIconUrl>
+    <PackageTags>LinksPlatform;Ranges;Range;EnsureExtensions</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/linksplatform/Ranges</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/linksplatform/Ranges/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/linksplatform/Ranges</RepositoryUrl>
@@ -21,6 +21,15 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Added Ensure extensions for range-related exceptions.
+Added implementation of IEquatable&lt;Range&lt;T&gt;&gt; to Range struct.
+Exception check from the constructor of Range struct moved to Ensure extensions so its logic can be reused now.
+Added more comments to Range struct.
+Two issues closed.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Platform.Exceptions" Version="0.1.0" />
+  </ItemGroup>
 
 </Project>

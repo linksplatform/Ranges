@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Platform.Exceptions;
 
 namespace Platform.Ranges
 {
@@ -10,9 +11,10 @@ namespace Platform.Ranges
     /// <remarks>
     /// Based on http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range
     /// </remarks>
-    public struct Range<T>
+    public struct Range<T> : IEquatable<Range<T>>
     {
         private static readonly Comparer<T> _comparer = Comparer<T>.Default;
+        private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
         /// Returns minimum value of the range.
@@ -26,15 +28,27 @@ namespace Platform.Ranges
         /// </summary>
         public readonly T Maximum;
 
+        /// <summary>
+        /// Initializes a new instance of the Range class.
+        /// Инициализирует новый экземпляр класса Range.
+        /// </summary>
+        /// <param name="minimumAndMaximum">Single value for both Minimum and Maximum fields. Одно значение для полей Minimum и Maximum.</param>
         public Range(T minimumAndMaximum)
-            : this(minimumAndMaximum, minimumAndMaximum)
         {
+            Minimum = minimumAndMaximum;
+            Maximum = minimumAndMaximum;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the Range class.
+        /// Инициализирует новый экземпляр класса Range.
+        /// </summary>
+        /// <param name="minimum">The minimum value of the range. Минимальное значение диапазона.</param>
+        /// <param name="maximum">The maximum value of the range. Максимальное значение диапазона.</param>
+        /// <exception cref="ArgumentException">Thrown when maximum is less than minimum.</exception>
         public Range(T minimum, T maximum)
         {
-            if (_comparer.Compare(maximum, minimum) < 0)
-                throw new ArgumentException("Maximum should be greater or equal to minimum.", nameof(maximum));
+            Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, nameof(maximum));
 
             Minimum = minimum;
             Maximum = maximum;
@@ -70,5 +84,13 @@ namespace Platform.Ranges
         /// <param name="range">The child range to test. Дочерний диапазон для проверки.</param>
         /// <returns>True if range is inside, else false. True, если диапазон находится внутри, иначе false.</returns>
         public bool ContainsRange(Range<T> range) => ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
+
+        /// <summary>
+        /// Indicates whether the current range is equal to another range.
+        /// Определяет, равен ли текущий диапазон другому диапазону.
+        /// </summary>
+        /// <param name="other">A range to compare with this range. Диапазон для сравнения с этим диапазоном.</param>
+        /// <returns>True if the current range is equal to the other range; otherwise, false. True, если текущий диапазон равен другому диапазону; иначе false.</returns>
+        public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
     }
 }

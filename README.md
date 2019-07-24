@@ -18,7 +18,7 @@ NuGet package: https://www.nuget.org/packages/Platform.Ranges
 
 `Range` *class* with `Floor` and `Ceiling` *fields*.
 
-###  [mnelsonwhite/Range.NET](https://github.com/mnelsonwhite/Range.NET)
+### [mnelsonwhite/Range.NET](https://github.com/mnelsonwhite/Range.NET)
 
 `Range` *class* with `Minumum` and `Maximum` *properties*.
 
