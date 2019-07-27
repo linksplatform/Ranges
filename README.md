@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/32e016893f0f4fd286714a6612e47f04)](https://app.codacy.com/app/drakonard/Ranges?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Ranges&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/ranges/badge)](https://www.codefactor.io/repository/github/linksplatform/ranges)
 
 # Ranges
