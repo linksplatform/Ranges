@@ -5,7 +5,7 @@
 
 LinksPlatform's Platform.Ranges Class Library
 
-This library contains `Range` *struct* with `Minumum` and `Maximum` *fields*.
+This library contains `Range` *struct* with `Minumum` and `Maximum` *fields*. It is possible to create only a valid `Range`, overwise exception is thrown.
 
 Namespace: Platform.Ranges
 
