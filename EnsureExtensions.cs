@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
+using Platform.Exceptions.ExtensionRoots;
 
 #pragma warning disable IDE0060 // Remove unused parameter
 
