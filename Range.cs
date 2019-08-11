@@ -49,7 +49,6 @@ namespace Platform.Ranges
         public Range(T minimum, T maximum)
         {
             Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, nameof(maximum));
-
             Minimum = minimum;
             Maximum = maximum;
         }
