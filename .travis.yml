@@ -4,7 +4,7 @@ dist: xenial
 dotnet: 2.2
 before_install:
   - sudo apt-get install -y texlive texlive-lang-cyrillic texlive-latex-extra texlive-fonts-extra python-pygments ghostscript
-  - export TRAVIS_REPO_NAME=$(echo "${TRAVIS_REPO_SLUG#*/}" | sed 's/.*/\u&/')
+  - export TRAVIS_REPO_NAME=${${TRAVIS_REPO_SLUG#*/}^}
 script:
   - dotnet build
 after_success:
