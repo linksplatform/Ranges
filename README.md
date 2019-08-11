@@ -9,9 +9,9 @@ This library contains `Range` *struct* with `Minumum` and `Maximum` *fields*.
 
 Namespace: Platform.Ranges
 
-Forked from: https://github.com/Konard/LinksPlatform/tree/0c85f236b75e6e3110790008b1a379c03c954501/Platform/Platform.Helpers
+Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers](https://github.com/Konard/LinksPlatform/tree/0c85f236b75e6e3110790008b1a379c03c954501/Platform/Platform.Helpers)
 
-NuGet package: https://www.nuget.org/packages/Platform.Ranges
+NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 
 ## Similar packages
 
