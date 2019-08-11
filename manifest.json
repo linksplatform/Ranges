@@ -13,15 +13,12 @@
       "is_incremental": false
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "n1XuoevJg0T96531gE/mIw=="
+          "hash": "Jv+NAw/FMFSivpqsdyL7QA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.EnsureExtensions.html",
-          "hash": "jdqGqr9cT7ty3ZTBLMdShg=="
+          "hash": "1d0UNrZpXZkOZsIqnuvAZg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.Range-1.html",
-          "hash": "CmNfPdqy/f9+5Ano0uYtVg=="
+          "hash": "dU3fBTKtQ8R2MbqDLeMslg=="
         }
       },
       "is_incremental": false,
@@ -102,16 +99,16 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
