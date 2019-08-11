@@ -21,14 +21,14 @@ NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 * [Platform.Exceptions](https://github.com/linksplatform/Exceptions)
 
 ## Mystery files
-* `.travis.yml` - Travis CI build configuration.
-* `docfx.json` and `toc.yml` - DocFX build configuration.
-* `fmt.sh` - script for formating `tex` file for generating PDF from it.
-* `fmt.py` - script for formating single `.cs` file as a part of `tex` file.
-* `Makefile` - PDF build configuration.
-* `generate-pdf.sh` - script that generates PDF with code for e-readers.
-* `publish-docs.sh` - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
-* `push-nuget.bat` - Windows script for publishing current version of NuGet package.
+* [.travis.yml](.travis.yml) - Travis CI build configuration.
+* [docfx.json](docfx.json) and [toc.yml](toc.yml) - DocFX build configuration.
+* [fmt.sh](fmt.sh) - script for formating `tex` file for generating PDF from it.
+* [fmt.py](fmt.py) - script for formating single `.cs` file as a part of `tex` file.
+* [Makefile](Makefile) - PDF build configuration.
+* [generate-pdf.sh](generate-pdf.sh) - script that generates PDF with code for e-readers.
+* [publish-docs.sh](publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
+* [push-nuget.bat](push-nuget.bat) - Windows script for publishing current version of NuGet package.
 
 ## Similar packages
 ### [alansav/range](https://github.com/alansav/range)
