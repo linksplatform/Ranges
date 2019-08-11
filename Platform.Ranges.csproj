@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Ranges Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
-    <VersionPrefix>0.0.3</VersionPrefix>
+    <VersionPrefix>0.0.4</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Ranges</AssemblyName>
@@ -21,11 +21,9 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Added Ensure extensions for range-related exceptions.
-Added implementation of IEquatable&lt;Range&lt;T&gt;&gt; to Range struct.
-Exception check from the constructor of Range struct moved to Ensure extensions so its logic can be reused now.
-Added more comments to Range struct.
-Two issues closed.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Exceptions dependency updated from 0.1.0 to 0.1.1.
+Added overloads with messages and messageBuilders for EnsureExtensions.
+Refactoring, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
