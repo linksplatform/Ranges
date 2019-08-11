@@ -1,0 +1,347 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.Ranges
+  name: Platform.Ranges
+  href: api/Platform.Ranges.html
+  commentId: N:Platform.Ranges
+  fullName: Platform.Ranges
+  nameWithType: Platform.Ranges
+- uid: Platform.Ranges.EnsureExtensions
+  name: EnsureExtensions
+  href: api/Platform.Ranges.EnsureExtensions.html
+  commentId: T:Platform.Ranges.EnsureExtensions
+  fullName: Platform.Ranges.EnsureExtensions
+  nameWithType: EnsureExtensions
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange*
+  name: ArgumentInRange
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange_
+  commentId: Overload:Platform.Ranges.EnsureExtensions.ArgumentInRange
+  isSpec: "True"
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange
+  nameWithType: EnsureExtensions.ArgumentInRange
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0)
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, T, T)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0)
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, T, T)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, T)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, T)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, T, T)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, T, T)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0,System.String)
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, T, T, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0,System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, T, T, String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, T, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, T, System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, T, T, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, T, T, String)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0})
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0})
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T))
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range(Of T))
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T))
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range<T>, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range(Of T), System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String, Func<String>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String, Func(Of String))
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range<T>, System.String, System.Func<System.String>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range(Of T), System.String, System.Func(Of System.String))
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String, Func<String>)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String, Func(Of String))
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)
+  name: ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String, String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range<T>, System.String, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, Platform.Ranges.Range(Of T), System.String, System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureAlwaysExtensionRoot, T, Range<T>, String, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureAlwaysExtensionRoot, T, Range(Of T), String, String)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0)
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, T, T)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0)
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, T, T)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, T)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, T)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, T, T)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, T, T)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0,System.String)
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, T, T, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0,System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, T, T, String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, T, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, T, System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, T, T, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, T, T, String)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0})
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0})
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T))
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range(Of T))
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T))
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range<T>, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range(Of T), System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String)
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String, Func<String>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String, Func(Of String))
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range<T>, System.String, System.Func<System.String>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range(Of T), System.String, System.Func(Of System.String))
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String, Func<String>)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String, Func(Of String))
+- uid: Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)
+  name: ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)
+  name.vb: ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String, String)
+  fullName: Platform.Ranges.EnsureExtensions.ArgumentInRange<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range<T>, System.String, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.ArgumentInRange(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, Platform.Ranges.Range(Of T), System.String, System.String)
+  nameWithType: EnsureExtensions.ArgumentInRange<T>(EnsureOnDebugExtensionRoot, T, Range<T>, String, String)
+  nameWithType.vb: EnsureExtensions.ArgumentInRange(Of T)(EnsureOnDebugExtensionRoot, T, Range(Of T), String, String)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*
+  name: MaximumArgumentIsGreaterOrEqualToMinimum
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_
+  commentId: Overload:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum
+  isSpec: "True"
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.Func{System.String})
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String, Func<String>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_Func_System_String__
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.Func{System.String})
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String, Func(Of String))
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String, System.Func<System.String>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String, System.Func(Of System.String))
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String, Func<String>)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String, Func(Of String))
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.String)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.String)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String, String)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot, T, T, System.String, System.String)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureAlwaysExtensionRoot, T, T, String, String)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureAlwaysExtensionRoot, T, T, String, String)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String)
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.Func{System.String})
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String, Func<String>)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_Func_System_String__
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.Func{System.String})
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String, Func(Of String))
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String, System.Func<System.String>)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String, System.Func(Of System.String))
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String, Func<String>)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String, Func(Of String))
+- uid: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.String)
+  name: MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String, String)
+  href: api/Platform.Ranges.EnsureExtensions.html#Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_String_
+  commentId: M:Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.String)
+  name.vb: MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String, String)
+  fullName: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String, System.String)
+  fullName.vb: Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot, T, T, System.String, System.String)
+  nameWithType: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum<T>(EnsureOnDebugExtensionRoot, T, T, String, String)
+  nameWithType.vb: EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum(Of T)(EnsureOnDebugExtensionRoot, T, T, String, String)
+- uid: Platform.Ranges.Range`1
+  name: Range<T>
+  href: api/Platform.Ranges.Range-1.html
+  commentId: T:Platform.Ranges.Range`1
+  name.vb: Range(Of T)
+  fullName: Platform.Ranges.Range<T>
+  fullName.vb: Platform.Ranges.Range(Of T)
+  nameWithType: Range<T>
+  nameWithType.vb: Range(Of T)
+- uid: Platform.Ranges.Range`1.#ctor(`0)
+  name: Range(T)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1__ctor__0_
+  commentId: M:Platform.Ranges.Range`1.#ctor(`0)
+  fullName: Platform.Ranges.Range<T>.Range(T)
+  fullName.vb: Platform.Ranges.Range(Of T).Range(T)
+  nameWithType: Range<T>.Range(T)
+  nameWithType.vb: Range(Of T).Range(T)
+- uid: Platform.Ranges.Range`1.#ctor(`0,`0)
+  name: Range(T, T)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1__ctor__0__0_
+  commentId: M:Platform.Ranges.Range`1.#ctor(`0,`0)
+  fullName: Platform.Ranges.Range<T>.Range(T, T)
+  fullName.vb: Platform.Ranges.Range(Of T).Range(T, T)
+  nameWithType: Range<T>.Range(T, T)
+  nameWithType.vb: Range(Of T).Range(T, T)
+- uid: Platform.Ranges.Range`1.#ctor*
+  name: Range
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1__ctor_
+  commentId: Overload:Platform.Ranges.Range`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.Range
+  fullName.vb: Platform.Ranges.Range(Of T).Range
+  nameWithType: Range<T>.Range
+  nameWithType.vb: Range(Of T).Range
+- uid: Platform.Ranges.Range`1.ContainsRange(Platform.Ranges.Range{`0})
+  name: ContainsRange(Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsRange_Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.ContainsRange(Platform.Ranges.Range{`0})
+  name.vb: ContainsRange(Range(Of T))
+  fullName: Platform.Ranges.Range<T>.ContainsRange(Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).ContainsRange(Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.ContainsRange(Range<T>)
+  nameWithType.vb: Range(Of T).ContainsRange(Range(Of T))
+- uid: Platform.Ranges.Range`1.ContainsRange*
+  name: ContainsRange
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsRange_
+  commentId: Overload:Platform.Ranges.Range`1.ContainsRange
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.ContainsRange
+  fullName.vb: Platform.Ranges.Range(Of T).ContainsRange
+  nameWithType: Range<T>.ContainsRange
+  nameWithType.vb: Range(Of T).ContainsRange
+- uid: Platform.Ranges.Range`1.ContainsValue(`0)
+  name: ContainsValue(T)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsValue__0_
+  commentId: M:Platform.Ranges.Range`1.ContainsValue(`0)
+  fullName: Platform.Ranges.Range<T>.ContainsValue(T)
+  fullName.vb: Platform.Ranges.Range(Of T).ContainsValue(T)
+  nameWithType: Range<T>.ContainsValue(T)
+  nameWithType.vb: Range(Of T).ContainsValue(T)
+- uid: Platform.Ranges.Range`1.ContainsValue*
+  name: ContainsValue
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsValue_
+  commentId: Overload:Platform.Ranges.Range`1.ContainsValue
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.ContainsValue
+  fullName.vb: Platform.Ranges.Range(Of T).ContainsValue
+  nameWithType: Range<T>.ContainsValue
+  nameWithType.vb: Range(Of T).ContainsValue
+- uid: Platform.Ranges.Range`1.Equals(Platform.Ranges.Range{`0})
+  name: Equals(Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Equals_Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.Equals(Platform.Ranges.Range{`0})
+  name.vb: Equals(Range(Of T))
+  fullName: Platform.Ranges.Range<T>.Equals(Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).Equals(Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.Equals(Range<T>)
+  nameWithType.vb: Range(Of T).Equals(Range(Of T))
+- uid: Platform.Ranges.Range`1.Equals*
+  name: Equals
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Equals_
+  commentId: Overload:Platform.Ranges.Range`1.Equals
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.Equals
+  fullName.vb: Platform.Ranges.Range(Of T).Equals
+  nameWithType: Range<T>.Equals
+  nameWithType.vb: Range(Of T).Equals
+- uid: Platform.Ranges.Range`1.IsInsideRange(Platform.Ranges.Range{`0})
+  name: IsInsideRange(Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_IsInsideRange_Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.IsInsideRange(Platform.Ranges.Range{`0})
+  name.vb: IsInsideRange(Range(Of T))
+  fullName: Platform.Ranges.Range<T>.IsInsideRange(Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).IsInsideRange(Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.IsInsideRange(Range<T>)
+  nameWithType.vb: Range(Of T).IsInsideRange(Range(Of T))
+- uid: Platform.Ranges.Range`1.IsInsideRange*
+  name: IsInsideRange
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_IsInsideRange_
+  commentId: Overload:Platform.Ranges.Range`1.IsInsideRange
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.IsInsideRange
+  fullName.vb: Platform.Ranges.Range(Of T).IsInsideRange
+  nameWithType: Range<T>.IsInsideRange
+  nameWithType.vb: Range(Of T).IsInsideRange
+- uid: Platform.Ranges.Range`1.Maximum
+  name: Maximum
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Maximum
+  commentId: F:Platform.Ranges.Range`1.Maximum
+  fullName: Platform.Ranges.Range<T>.Maximum
+  fullName.vb: Platform.Ranges.Range(Of T).Maximum
+  nameWithType: Range<T>.Maximum
+  nameWithType.vb: Range(Of T).Maximum
+- uid: Platform.Ranges.Range`1.Minimum
+  name: Minimum
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Minimum
+  commentId: F:Platform.Ranges.Range`1.Minimum
+  fullName: Platform.Ranges.Range<T>.Minimum
+  fullName.vb: Platform.Ranges.Range(Of T).Minimum
+  nameWithType: Range<T>.Minimum
+  nameWithType.vb: Range(Of T).Minimum
+- uid: Platform.Ranges.Range`1.ToString
+  name: ToString()
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ToString
+  commentId: M:Platform.Ranges.Range`1.ToString
+  fullName: Platform.Ranges.Range<T>.ToString()
+  fullName.vb: Platform.Ranges.Range(Of T).ToString()
+  nameWithType: Range<T>.ToString()
+  nameWithType.vb: Range(Of T).ToString()
+- uid: Platform.Ranges.Range`1.ToString*
+  name: ToString
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ToString_
+  commentId: Overload:Platform.Ranges.Range`1.ToString
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.ToString
+  fullName.vb: Platform.Ranges.Range(Of T).ToString
+  nameWithType: Range<T>.ToString
+  nameWithType.vb: Range(Of T).ToString
