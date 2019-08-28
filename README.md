@@ -34,7 +34,7 @@ NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 *   [publish-docs.sh](https://github.com/linksplatform/Ranges/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
 *   [push-nuget.bat](https://github.com/linksplatform/Ranges/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
 
-## Similar packages
+## Similar libraries
 ### [alansav/range](https://github.com/alansav/range)
 `Range` *class* with `Floor` and `Ceiling` *fields*.
 
