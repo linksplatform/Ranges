@@ -6,10 +6,11 @@
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
     <VersionPrefix>0.0.4</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
+    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
     <AssemblyName>Platform.Ranges</AssemblyName>
     <PackageId>Platform.Ranges</PackageId>
-    <PackageTags>LinksPlatform;Ranges;Range;EnsureExtensions</PackageTags>
+    <PackageTags>LinksPlatform;Ranges;Range;RangeExtensions;EnsureExtensions</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Ranges</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
