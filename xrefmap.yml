@@ -345,3 +345,115 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).ToString
   nameWithType: Range<T>.ToString
   nameWithType.vb: Range(Of T).ToString
+- uid: Platform.Ranges.RangeExtensions
+  name: RangeExtensions
+  href: api/Platform.Ranges.RangeExtensions.html
+  commentId: T:Platform.Ranges.RangeExtensions
+  fullName: Platform.Ranges.RangeExtensions
+  nameWithType: RangeExtensions
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Byte})
+  name: Difference(Range<Byte>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Byte__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Byte})
+  name.vb: Difference(Range(Of Byte))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Byte>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Byte))
+  nameWithType: RangeExtensions.Difference(Range<Byte>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Byte))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Decimal})
+  name: Difference(Range<Decimal>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Decimal__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Decimal})
+  name.vb: Difference(Range(Of Decimal))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Decimal>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Decimal))
+  nameWithType: RangeExtensions.Difference(Range<Decimal>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Decimal))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Double})
+  name: Difference(Range<Double>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Double__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Double})
+  name.vb: Difference(Range(Of Double))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Double>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Double))
+  nameWithType: RangeExtensions.Difference(Range<Double>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Double))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int16})
+  name: Difference(Range<Int16>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Int16__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int16})
+  name.vb: Difference(Range(Of Int16))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Int16>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Int16))
+  nameWithType: RangeExtensions.Difference(Range<Int16>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Int16))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int32})
+  name: Difference(Range<Int32>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Int32__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int32})
+  name.vb: Difference(Range(Of Int32))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Int32>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Int32))
+  nameWithType: RangeExtensions.Difference(Range<Int32>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Int32))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int64})
+  name: Difference(Range<Int64>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Int64__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Int64})
+  name.vb: Difference(Range(Of Int64))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Int64>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Int64))
+  nameWithType: RangeExtensions.Difference(Range<Int64>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Int64))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.SByte})
+  name: Difference(Range<SByte>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_SByte__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.SByte})
+  name.vb: Difference(Range(Of SByte))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.SByte>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.SByte))
+  nameWithType: RangeExtensions.Difference(Range<SByte>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of SByte))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Single})
+  name: Difference(Range<Single>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_Single__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.Single})
+  name.vb: Difference(Range(Of Single))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.Single>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.Single))
+  nameWithType: RangeExtensions.Difference(Range<Single>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of Single))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt16})
+  name: Difference(Range<UInt16>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_UInt16__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt16})
+  name.vb: Difference(Range(Of UInt16))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.UInt16>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.UInt16))
+  nameWithType: RangeExtensions.Difference(Range<UInt16>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of UInt16))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt32})
+  name: Difference(Range<UInt32>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_UInt32__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt32})
+  name.vb: Difference(Range(Of UInt32))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.UInt32>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.UInt32))
+  nameWithType: RangeExtensions.Difference(Range<UInt32>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of UInt32))
+- uid: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt64})
+  name: Difference(Range<UInt64>)
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_Platform_Ranges_Range_System_UInt64__
+  commentId: M:Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range{System.UInt64})
+  name.vb: Difference(Range(Of UInt64))
+  fullName: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range<System.UInt64>)
+  fullName.vb: Platform.Ranges.RangeExtensions.Difference(Platform.Ranges.Range(Of System.UInt64))
+  nameWithType: RangeExtensions.Difference(Range<UInt64>)
+  nameWithType.vb: RangeExtensions.Difference(Range(Of UInt64))
+- uid: Platform.Ranges.RangeExtensions.Difference*
+  name: Difference
+  href: api/Platform.Ranges.RangeExtensions.html#Platform_Ranges_RangeExtensions_Difference_
+  commentId: Overload:Platform.Ranges.RangeExtensions.Difference
+  isSpec: "True"
+  fullName: Platform.Ranges.RangeExtensions.Difference
+  nameWithType: RangeExtensions.Difference
