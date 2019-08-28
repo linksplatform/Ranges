@@ -22,7 +22,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
+    <PackageReleaseNotes>Added support for net47 (.NET Framework 4.7).
 Platform.Exceptions dependency updated from 0.1.1 to 0.2.0.
 Added Difference extension method for Range struct (supporting all basic numeric .NET types).
 Added the implicit converter to ValueTuple and back for Range struct. It is now possible to use `(0, 1)` expression instead of `new Range&lt;int&gt;(0, 1)`.
