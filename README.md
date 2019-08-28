@@ -13,23 +13,26 @@ Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers](https://github.com
 
 NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 
-## [Documentation](https://linksplatform.github.io/Ranges/)
-* Class [Range\<T\>](https://linksplatform.github.io/Ranges/api/Platform.Ranges.Range-1.html).
+## [Documentation](https://linksplatform.github.io/Ranges)
+*   Class [Range\<T\>](https://linksplatform.github.io/Ranges/api/Platform.Ranges.Range-1.html).
 
 [PDF file](https://linksplatform.github.io/Ranges/Platform.Ranges.pdf) with code for e-readers.
 
 ## Depend on
-* [Platform.Exceptions](https://github.com/linksplatform/Exceptions)
+*   [Platform.Exceptions](https://github.com/linksplatform/Exceptions)
+
+## Dependent libraries
+*   [Platform.Random](https://github.com/linksplatform/Random)
+*   [Platform.Collections](https://github.com/linksplatform/Collections)
 
 ## Mystery files
-* [.travis.yml](https://github.com/linksplatform/Ranges/blob/master/.travis.yml) - Travis CI build configuration.
-* [docfx.json](https://github.com/linksplatform/Ranges/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Ranges/blob/master/toc.yml) - DocFX build configuration.
-* [fmt.sh](https://github.com/linksplatform/Ranges/blob/master/fmt.sh) - script for formating `tex` file for generating PDF from it.
-* [fmt.py](https://github.com/linksplatform/Ranges/blob/master/fmt.py) - script for formating single `.cs` file as a part of `tex` file.
-* [Makefile](https://github.com/linksplatform/Ranges/blob/master/Makefile) - PDF build configuration.
-* [generate-pdf.sh](https://github.com/linksplatform/Ranges/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
-* [publish-docs.sh](https://github.com/linksplatform/Ranges/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
-* [push-nuget.bat](https://github.com/linksplatform/Ranges/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
+*   [.travis.yml](https://github.com/linksplatform/Ranges/blob/master/.travis.yml) - Travis CI build configuration.
+*   [docfx.json](https://github.com/linksplatform/Ranges/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Ranges/blob/master/toc.yml) - DocFX build configuration.
+*   [format-document.sh](https://github.com/linksplatform/Ranges/blob/master/format-document.sh) - script for formating `tex` file for generating PDF from it.
+*   [format-csharp-files.py](https://github.com/linksplatform/Ranges/blob/master/format-csharp-files.py) - script for formating single `.cs` file as a part of `tex` file.
+*   [generate-pdf.sh](https://github.com/linksplatform/Ranges/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
+*   [publish-docs.sh](https://github.com/linksplatform/Ranges/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
+*   [push-nuget.bat](https://github.com/linksplatform/Ranges/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
 
 ## Similar packages
 ### [alansav/range](https://github.com/alansav/range)
