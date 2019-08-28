@@ -91,5 +91,19 @@ namespace Platform.Ranges
         /// <param name="other">A range to compare with this range. Диапазон для сравнения с этим диапазоном.</param>
         /// <returns>True if the current range is equal to the other range; otherwise, false. True, если текущий диапазон равен другому диапазону; иначе false.</returns>
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
+
+        /// <summary>
+        /// <para>Creates a new <see cref="ValueTuple{T,T}"/> struct initialized with <see cref="Range{T}.Minimum"/> as <see cref="ValueTuple{T,T}.Item1"/> and <see cref="Range{T}.Maximum"/> as <see cref="ValueTuple{T,T}.Item2"/>.</para>
+        /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с помощью <see cref="Range{T}.Minimum"/> как <see cref="ValueTuple{T,T}.Item1"/> и <see cref="Range{T}.Maximum"/> как <see cref="ValueTuple{T,T}.Item2"/>.</para>
+        /// </summary>
+        /// <param name="range"><para>The range of <typeparamref name="T"/>.</para><para>Диапазон значений <typeparamref name="T"/>.</para></param>
+        public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
+
+        /// <summary>
+        /// <para>Creates a new <see cref="Range{T}"/> struct initialized with <see cref="ValueTuple{T,T}.Item1"/> as <see cref="Range{T}.Minimum"/> and <see cref="ValueTuple{T,T}.Item2"/> as <see cref="Range{T}.Maximum"/>.</para>
+        /// <para>Создает новую структуру <see cref="Range{T}"/>, инициализированную с помощью <see cref="ValueTuple{T,T}.Item1"/> как <see cref="Range{T}.Minimum"/> и <see cref="ValueTuple{T,T}.Item2"/> как <see cref="Range{T}.Maximum"/>.</para>
+        /// </summary>
+        /// <param name="tuple"><para>The tuple.</para><para>Кортеж.</para></param>
+        public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
     }
 }
