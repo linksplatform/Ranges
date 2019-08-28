@@ -5,11 +5,12 @@ using Platform.Exceptions;
 namespace Platform.Ranges
 {
     /// <summary>
-    /// Represents a range between minumum and maximum values.
-    /// Представляет диапазон между минимальным и максимальным значениями.
+    /// <para>Represents a range between minumum and maximum values.</para>
+    /// <para>Представляет диапазон между минимальным и максимальным значениями.</para>
     /// </summary>
     /// <remarks>
-    /// Based on http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range
+    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOveflow</a>.</para>
+    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOveflow</a>.</para>
     /// </remarks>
     public struct Range<T> : IEquatable<Range<T>>
     {
@@ -17,22 +18,22 @@ namespace Platform.Ranges
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
-        /// Returns minimum value of the range.
-        /// Возвращает минимальное значение диапазона.
+        /// <para>Returns minimum value of the range.</para>
+        /// <para>Возвращает минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
-        /// Returns maximum value of the range.
-        /// Возвращает максимальное значение диапазона.
+        /// <para>Returns maximum value of the range.</para>
+        /// <para>Возвращает максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
 
         /// <summary>
-        /// Initializes a new instance of the Range class.
-        /// Инициализирует новый экземпляр класса Range.
+        /// <para>Initializes a new instance of the Range class.</para>
+        /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
-        /// <param name="minimumAndMaximum">Single value for both Minimum and Maximum fields. Одно значение для полей Minimum и Maximum.</param>
+        /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
         public Range(T minimumAndMaximum)
         {
             Minimum = minimumAndMaximum;
@@ -40,12 +41,12 @@ namespace Platform.Ranges
         }
 
         /// <summary>
-        /// Initializes a new instance of the Range class.
-        /// Инициализирует новый экземпляр класса Range.
+        /// <para>Initializes a new instance of the Range class.</para>
+        /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
-        /// <param name="minimum">The minimum value of the range. Минимальное значение диапазона.</param>
-        /// <param name="maximum">The maximum value of the range. Максимальное значение диапазона.</param>
-        /// <exception cref="ArgumentException">Thrown when maximum is less than minimum.</exception>
+        /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
+        /// <param name="maximum"><para>The maximum value of the range.</para><para>Максимальное значение диапазона.</para></param>
+        /// <exception cref="ArgumentException"><para>Thrown when the maximum is less than the minimum.</para><para>Выбрасывается, когда максимум меньше минимума.</para></exception>
         public Range(T minimum, T maximum)
         {
             Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, nameof(maximum));
@@ -54,42 +55,42 @@ namespace Platform.Ranges
         }
 
         /// <summary>
-        /// Presents the Range in readable format.
-        /// Представляет диапазон в удобном для чтения формате.
+        /// <para>Presents the Range in readable format.</para>
+        /// <para>Представляет диапазон в удобном для чтения формате.</para>
         /// </summary>
-        /// <returns>String representation of the Range. Строковое представление диапазона.</returns>
+        /// <returns><para>String representation of the Range.</para><para>Строковое представление диапазона.</para></returns>
         public override string ToString() => $"[{Minimum}, {Maximum}]";
 
         /// <summary>
-        /// Determines if the provided value is inside the range.
-        /// Определяет, находится ли указанное значение внутри диапазона.
+        /// <para>Determines if the provided value is inside the range.</para>
+        /// <para>Определяет, находится ли указанное значение внутри диапазона.</para>
         /// </summary>
-        /// <param name="value">The value to test. Значение для проверки.</param>
-        /// <returns>True if the value is inside Range, else false. True, если значение находится внутри диапазона, иначе false.</returns>
+        /// <param name="value"><para>The value to test.</para><para>Значение для проверки.</para></param>
+        /// <returns><para>True if the value is inside Range, else false.</para><para>True, если значение находится внутри диапазона, иначе false.</para></returns>
         public bool ContainsValue(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
-        /// Determines if this Range is inside the bounds of another range.
-        /// Определяет, находится ли этот диапазон в пределах другого диапазона.
+        /// <para>Determines if this Range is inside the bounds of another range.</para>
+        /// <para>Определяет, находится ли этот диапазон в пределах другого диапазона.</para>
         /// </summary>
-        /// <param name="range">The parent range to test on. Родительский диапазон для проверки.</param>
-        /// <returns>True if range is inclusive, else false. True, если диапазон включен, иначе false.</returns>
+        /// <param name="range"><para>The parent range to test on.</para><para>Родительский диапазон для проверки.</para></param>
+        /// <returns><para>True if range is inclusive, else false.</para><para>True, если диапазон включен, иначе false.</para></returns>
         public bool IsInsideRange(Range<T> range) => range.ContainsRange(this);
 
         /// <summary>
-        /// Determines if another range is inside the bounds of this range.
-        /// Определяет, находится ли другой диапазон внутри границ этого диапазона.
+        /// <para>Determines if another range is inside the bounds of this range.</para>
+        /// <para>Определяет, находится ли другой диапазон внутри границ этого диапазона.</para>
         /// </summary>
-        /// <param name="range">The child range to test. Дочерний диапазон для проверки.</param>
-        /// <returns>True if range is inside, else false. True, если диапазон находится внутри, иначе false.</returns>
+        /// <param name="range"><para>The child range to test.</para><para>Дочерний диапазон для проверки.</para></param>
+        /// <returns><para>True if range is inside, else false.</para><para>True, если диапазон находится внутри, иначе false.</para></returns>
         public bool ContainsRange(Range<T> range) => ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
 
         /// <summary>
-        /// Indicates whether the current range is equal to another range.
-        /// Определяет, равен ли текущий диапазон другому диапазону.
+        /// <para>Indicates whether the current range is equal to another range.</para>
+        /// <para>Определяет, равен ли текущий диапазон другому диапазону.</para>
         /// </summary>
-        /// <param name="other">A range to compare with this range. Диапазон для сравнения с этим диапазоном.</param>
-        /// <returns>True if the current range is equal to the other range; otherwise, false. True, если текущий диапазон равен другому диапазону; иначе false.</returns>
+        /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
+        /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
 
         /// <summary>
