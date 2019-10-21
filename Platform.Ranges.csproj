@@ -32,7 +32,7 @@ Refactoring, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Exceptions" Version="0.2.0" />
+    <PackageReference Include="Platform.Exceptions" Version="0.2.1" />
   </ItemGroup>
 
 </Project>
