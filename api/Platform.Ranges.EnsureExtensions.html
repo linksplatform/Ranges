@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EnsureExtensions
    | LinksPlatform's Platform.Ranges Library ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.46.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,7 +83,9 @@
   
   <h1 id="Platform_Ranges_EnsureExtensions" data-uid="Platform.Ranges.EnsureExtensions" class="text-break">Class EnsureExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a set of extension methods for <span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span> and <span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span> objects.</p>
+<p>Предоставляет набор методов расширения для объектов <span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span> и <span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -124,18 +126,20 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L40">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L155">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0)">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0)">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument, TArgument)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, T minimum, T maximum)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,22 +154,26 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><p>The minimum possible argument&apos;s value.</p><p>Минимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><p>The maximum possible argument&apos;s value.</p><p>Максимально возможное значение аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,25 +187,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L43">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L143">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0,System.String)">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T, T, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,``0,System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument, TArgument, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, T minimum, T maximum, string argumentName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,27 +223,32 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><p>The minimum possible argument&apos;s value.</p><p>Минимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><p>The maximum possible argument&apos;s value.</p><p>Максимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -246,25 +262,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L46">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L166">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0})">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, Range&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0})">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, Range&lt;TArgument&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, Range&lt;T&gt; range)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range&lt;TArgument&gt; range)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,17 +298,20 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,25 +325,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L49">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L126">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, Range&lt;T&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, Range&lt;TArgument&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, Range&lt;T&gt; range, string argumentName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range&lt;TArgument&gt; range, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -336,22 +361,26 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -365,25 +394,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L63">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L91">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, Range&lt;T&gt;, String, Func&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, Range&lt;TArgument&gt;, String, Func&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, Range&lt;T&gt; range, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range&lt;TArgument&gt; range, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -398,27 +430,32 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">messageBuilder</span></td>
-        <td></td>
+        <td><p>The thrown exception&apos;s message building <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p><p>Собирающая сообщение для выбрасываемого исключения <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -432,25 +469,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L56">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L110">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)">ArgumentInRange&lt;T&gt;(EnsureAlwaysExtensionRoot, T, Range&lt;T&gt;, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, Range&lt;TArgument&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T argumentValue, Range&lt;T&gt; range, string argumentName, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ArgumentInRange&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range&lt;TArgument&gt; range, string argumentName, string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -465,27 +505,32 @@
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message of the thrown exception.</p><p>Сообщение выбрасываемого исключения.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -499,26 +544,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L88">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L269">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0)">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0)">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument, TArgument)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argumentValue, T minimum, T maximum)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,22 +581,26 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><p>The minimum possible argument&apos;s value.</p><p>Минимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><p>The maximum possible argument&apos;s value.</p><p>Максимально возможное значение аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -562,26 +614,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L91">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L282">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0,System.String)">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T, T, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,``0,System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument, TArgument, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argumentValue, T minimum, T maximum, string argumentName)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -596,27 +651,32 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argumentValue</span></td>
-        <td></td>
+        <td><p>The argument&apos;s value.</p><p>Значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><p>The minimum possible argument&apos;s value.</p><p>Минимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><p>The maximum possible argument&apos;s value.</p><p>Максимально возможное значение аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -630,26 +690,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L94">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L293">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0})">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, Range&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0})">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, Range&lt;TArgument&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argument, Range&lt;T&gt; range)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argument, Range&lt;TArgument&gt; range)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -664,17 +727,19 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argument</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -688,26 +753,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L97">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L257">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, Range&lt;T&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, Range&lt;TArgument&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argument, Range&lt;T&gt; range, string argumentName)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argument, Range&lt;TArgument&gt; range, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -722,22 +790,25 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argument</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -751,26 +822,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L103">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L232">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, Range&lt;T&gt;, String, Func&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.Func{System.String})">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, Range&lt;TArgument&gt;, String, Func&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argument, Range&lt;T&gt; range, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argument, Range&lt;TArgument&gt; range, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -785,27 +859,31 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argument</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">messageBuilder</span></td>
-        <td></td>
+        <td><p>The thrown exception&apos;s message building <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p><p>Собирающая сообщение для выбрасываемого исключения <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -819,26 +897,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.ArgumentInRange%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2CPlatform.Ranges.Range%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L100">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L245">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_ArgumentInRange_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)">ArgumentInRange&lt;T&gt;(EnsureOnDebugExtensionRoot, T, Range&lt;T&gt;, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_ArgumentInRange__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0_Platform_Ranges_Range___0__System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.ArgumentInRange``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,Platform.Ranges.Range{``0},System.String,System.String)">ArgumentInRange&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, Range&lt;TArgument&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument value is in the specified range. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что значение аргумента находится в указанном диапазоне. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T argument, Range&lt;T&gt; range, string argumentName, string message)</code></pre>
+public static void ArgumentInRange&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument argument, Range&lt;TArgument&gt; range, string argumentName, string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -853,27 +934,31 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TArgument</span></td>
         <td><span class="parametername">argument</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;T&gt;</td>
+        <td><a class="xref" href="Platform.Ranges.Range-1.html">Range</a>&lt;TArgument&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td></td>
+        <td><p>The range restriction.</p><p>Ограничение в виде диапазона.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message of the thrown exception.</p><p>Сообщение выбрасываемого исключения.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -887,25 +972,28 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L18">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L78">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T minimum, T maximum)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -920,17 +1008,20 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -944,25 +1035,28 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L21">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L67">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T minimum, T maximum, string argumentName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string maximumArgumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -977,22 +1071,26 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><span class="parametername">maximumArgumentName</span></td>
+        <td><p>The name of argument with the maximum value.</p><p>Имя аргумента c максимальным значением.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1006,25 +1104,28 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L31">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L32">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.Func{System.String})">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T, String, Func&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.Func{System.String})">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument, String, Func&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T minimum, T maximum, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string maximumArgumentName, Func&lt;string&gt; messageBuilder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1039,27 +1140,32 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><span class="parametername">maximumArgumentName</span></td>
+        <td><p>The name of argument with the maximum value.</p><p>Имя аргумента c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">messageBuilder</span></td>
-        <td></td>
+        <td><p>The thrown exception&apos;s message building <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p><p>Собирающая сообщение для выбрасываемого исключения <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1073,25 +1179,28 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L24">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L51">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureAlwaysExtensionRoot, T, T, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureAlwaysExtensionRoot___0___0_System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot,``0,``0,System.String,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureAlwaysExtensionRoot, TArgument, TArgument, String, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed regardless of the build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется внезависимости от конфигурации сборки.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureAlwaysExtensionRoot root, T minimum, T maximum, string argumentName, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string maximumArgumentName, string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1106,27 +1215,32 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureAlwaysExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><span class="parametername">maximumArgumentName</span></td>
+        <td><p>The name of argument with the maximum value.</p><p>Имя аргумента c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message of the thrown exception.</p><p>Сообщение выбрасываемого исключения.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1140,26 +1254,29 @@ public static void ArgumentInRange&lt;T&gt;(this EnsureOnDebugExtensionRoot root
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L76">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L219">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T minimum, T maximum)</code></pre>
+public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1174,17 +1291,20 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1198,26 +1318,29 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L79">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L208">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T minimum, T maximum, string argumentName)</code></pre>
+public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1232,22 +1355,26 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><p>The argument&apos;s name.</p><p>Имя аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1261,26 +1388,29 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L85">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L183">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.Func{System.String})">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T, String, Func&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_Func_System_String__" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.Func{System.String})">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument, String, Func&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T minimum, T maximum, string argumentName, Func&lt;string&gt; messageBuilder)</code></pre>
+public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string maximumArgumentName, Func&lt;string&gt; messageBuilder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1295,27 +1425,32 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><span class="parametername">maximumArgumentName</span></td>
+        <td><p>The name of argument with the maximum value.</p><p>Имя аргумента c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">messageBuilder</span></td>
-        <td></td>
+        <td><p>The thrown exception&apos;s message building <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p><p>Собирающая сообщение для выбрасываемого исключения <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1329,26 +1464,29 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_String_.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum%60%601(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot%2C%60%600%2C%60%600%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L82">View Source</a>
+    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L196">View Source</a>
   </span>
   <a id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum*"></a>
-  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(EnsureOnDebugExtensionRoot, T, T, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Platform_Ranges_EnsureExtensions_MaximumArgumentIsGreaterOrEqualToMinimum__1_Platform_Exceptions_ExtensionRoots_EnsureOnDebugExtensionRoot___0___0_System_String_System_String_" data-uid="Platform.Ranges.EnsureExtensions.MaximumArgumentIsGreaterOrEqualToMinimum``1(Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot,``0,``0,System.String,System.String)">MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(EnsureOnDebugExtensionRoot, TArgument, TArgument, String, String)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the argument with the maximum value is greater than or equal to the minimum value. This check is performed only for DEBUG build configuration.</p>
+<p>Гарантирует, что аргумент с максимальным значением больше или равен минимальному значению. Эта проверка выполняется только для конфигурации сборки DEBUG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this EnsureOnDebugExtensionRoot root, T minimum, T maximum, string argumentName, string message)</code></pre>
+public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;TArgument&gt;(this EnsureOnDebugExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, string maximumArgumentName, string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1363,27 +1501,32 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
       <tr>
         <td><span class="xref">Platform.Exceptions.ExtensionRoots.EnsureOnDebugExtensionRoot</span></td>
         <td><span class="parametername">root</span></td>
-        <td></td>
+        <td><p>The extension root to which this method is bound.</p><p>Корень-расширения, к которому привязан этот метод.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">minimum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">minimumArgument</span></td>
+        <td><p>The argument with the minimum value.</p><p>Аргумент с минимальным значением.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">maximum</span></td>
-        <td></td>
+        <td><span class="xref">TArgument</span></td>
+        <td><span class="parametername">maximumArgument</span></td>
+        <td><p>The argument with the maximum value.</p><p>Аргумент c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">argumentName</span></td>
-        <td></td>
+        <td><span class="parametername">maximumArgumentName</span></td>
+        <td><p>The name of argument with the maximum value.</p><p>Имя аргумента c максимальным значением.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message of the thrown exception.</p><p>Сообщение выбрасываемого исключения.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1397,8 +1540,9 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><span class="parametername">TArgument</span></td>
+        <td><p>Type of argument.</p><p>Тип аргумента.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1410,10 +1554,10 @@ public static void MaximumArgumentIsGreaterOrEqualToMinimum&lt;T&gt;(this Ensure
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/linksplatform/Ranges/new/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/apiSpec/new?filename=Platform_Ranges_EnsureExtensions.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/linksplatform/Ranges/new/master/apiSpec/new?filename=Platform_Ranges_EnsureExtensions.md&amp;value=---%0Auid%3A%20Platform.Ranges.EnsureExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/linksplatform/Ranges/blob/4dd368e5f5251ca6f796c8de35ed7f7cacd2fec0/EnsureExtensions.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/linksplatform/Ranges/blob/1eea9668554be78f03d3b6fe13437cade1172f9f/EnsureExtensions.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
