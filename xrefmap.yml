@@ -241,41 +241,32 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Range
   nameWithType: Range<T>.Range
   nameWithType.vb: Range(Of T).Range
-- uid: Platform.Ranges.Range`1.ContainsRange(Platform.Ranges.Range{`0})
-  name: ContainsRange(Range<T>)
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsRange_Platform_Ranges_Range__0__
-  commentId: M:Platform.Ranges.Range`1.ContainsRange(Platform.Ranges.Range{`0})
-  name.vb: ContainsRange(Range(Of T))
-  fullName: Platform.Ranges.Range<T>.ContainsRange(Platform.Ranges.Range<T>)
-  fullName.vb: Platform.Ranges.Range(Of T).ContainsRange(Platform.Ranges.Range(Of T))
-  nameWithType: Range<T>.ContainsRange(Range<T>)
-  nameWithType.vb: Range(Of T).ContainsRange(Range(Of T))
-- uid: Platform.Ranges.Range`1.ContainsRange*
-  name: ContainsRange
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsRange_
-  commentId: Overload:Platform.Ranges.Range`1.ContainsRange
+- uid: Platform.Ranges.Range`1.Contains(`0)
+  name: Contains(T)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Contains__0_
+  commentId: M:Platform.Ranges.Range`1.Contains(`0)
+  fullName: Platform.Ranges.Range<T>.Contains(T)
+  fullName.vb: Platform.Ranges.Range(Of T).Contains(T)
+  nameWithType: Range<T>.Contains(T)
+  nameWithType.vb: Range(Of T).Contains(T)
+- uid: Platform.Ranges.Range`1.Contains(Platform.Ranges.Range{`0})
+  name: Contains(Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Contains_Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.Contains(Platform.Ranges.Range{`0})
+  name.vb: Contains(Range(Of T))
+  fullName: Platform.Ranges.Range<T>.Contains(Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).Contains(Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.Contains(Range<T>)
+  nameWithType.vb: Range(Of T).Contains(Range(Of T))
+- uid: Platform.Ranges.Range`1.Contains*
+  name: Contains
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Contains_
+  commentId: Overload:Platform.Ranges.Range`1.Contains
   isSpec: "True"
-  fullName: Platform.Ranges.Range<T>.ContainsRange
-  fullName.vb: Platform.Ranges.Range(Of T).ContainsRange
-  nameWithType: Range<T>.ContainsRange
-  nameWithType.vb: Range(Of T).ContainsRange
-- uid: Platform.Ranges.Range`1.ContainsValue(`0)
-  name: ContainsValue(T)
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsValue__0_
-  commentId: M:Platform.Ranges.Range`1.ContainsValue(`0)
-  fullName: Platform.Ranges.Range<T>.ContainsValue(T)
-  fullName.vb: Platform.Ranges.Range(Of T).ContainsValue(T)
-  nameWithType: Range<T>.ContainsValue(T)
-  nameWithType.vb: Range(Of T).ContainsValue(T)
-- uid: Platform.Ranges.Range`1.ContainsValue*
-  name: ContainsValue
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ContainsValue_
-  commentId: Overload:Platform.Ranges.Range`1.ContainsValue
-  isSpec: "True"
-  fullName: Platform.Ranges.Range<T>.ContainsValue
-  fullName.vb: Platform.Ranges.Range(Of T).ContainsValue
-  nameWithType: Range<T>.ContainsValue
-  nameWithType.vb: Range(Of T).ContainsValue
+  fullName: Platform.Ranges.Range<T>.Contains
+  fullName.vb: Platform.Ranges.Range(Of T).Contains
+  nameWithType: Range<T>.Contains
+  nameWithType.vb: Range(Of T).Contains
 - uid: Platform.Ranges.Range`1.Equals(Platform.Ranges.Range{`0})
   name: Equals(Range<T>)
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Equals_Platform_Ranges_Range__0__
