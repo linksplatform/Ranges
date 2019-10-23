@@ -35,7 +35,7 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
         /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
-        
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
         {
             Minimum = minimumAndMaximum;
