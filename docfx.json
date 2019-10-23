@@ -8,7 +8,8 @@
           "src": ""
         }
       ],
-      "dest": "obj/api"
+      "dest": "obj/api",
+      "properties": { "TargetFramework": "netstandard2.0" }
     }
   ],
   "build": {
@@ -23,7 +24,7 @@
       }
     ],
     "globalMetadata": {
-      "_appTitle": "LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
+      "_appTitle": "LinksPlatform's Platform.$REPOSITORY_NAME Library",
       "_enableSearch": true,
       "_gitContribute": {
         "branch": "master"
