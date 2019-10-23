@@ -70,14 +70,6 @@ namespace Platform.Ranges
         public bool ContainsValue(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
-        /// <para>Determines if this Range is inside the bounds of another range.</para>
-        /// <para>Определяет, находится ли этот диапазон в пределах другого диапазона.</para>
-        /// </summary>
-        /// <param name="range"><para>The parent range to test on.</para><para>Родительский диапазон для проверки.</para></param>
-        /// <returns><para>True if range is inclusive, else false.</para><para>True, если диапазон включен, иначе false.</para></returns>
-        public bool IsInsideRange(Range<T> range) => range.ContainsRange(this);
-
-        /// <summary>
         /// <para>Determines if another range is inside the bounds of this range.</para>
         /// <para>Определяет, находится ли другой диапазон внутри границ этого диапазона.</para>
         /// </summary>
