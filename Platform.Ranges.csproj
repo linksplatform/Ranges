@@ -23,6 +23,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>latest</LangVersion>
     <PackageReleaseNotes>Added support for net47 (.NET Framework 4.7).
 Platform.Exceptions dependency updated from 0.1.1 to 0.2.0.
 Added Difference extension method for Range struct (supporting all basic numeric .NET types).
