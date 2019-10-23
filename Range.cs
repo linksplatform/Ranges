@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 
 namespace Platform.Ranges
@@ -34,6 +35,7 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
         /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
         {
             Minimum = minimumAndMaximum;
@@ -47,6 +49,7 @@ namespace Platform.Ranges
         /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
         /// <param name="maximum"><para>The maximum value of the range.</para><para>Максимальное значение диапазона.</para></param>
         /// <exception cref="ArgumentException"><para>Thrown when the maximum is less than the minimum.</para><para>Выбрасывается, когда максимум меньше минимума.</para></exception>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimum, T maximum)
         {
             Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, nameof(maximum));
@@ -59,6 +62,7 @@ namespace Platform.Ranges
         /// <para>Представляет диапазон в удобном для чтения формате.</para>
         /// </summary>
         /// <returns><para>String representation of the Range.</para><para>Строковое представление диапазона.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override string ToString() => $"[{Minimum}, {Maximum}]";
 
         /// <summary>
@@ -67,6 +71,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="value"><para>The value to test.</para><para>Значение для проверки.</para></param>
         /// <returns><para>True if the value is inside Range, else false.</para><para>True, если значение находится внутри диапазона, иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
@@ -75,6 +80,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range"><para>The child range to test.</para><para>Дочерний диапазон для проверки.</para></param>
         /// <returns><para>True if range is inside, else false.</para><para>True, если диапазон находится внутри, иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
@@ -83,6 +89,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
         /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
 
         /// <summary>
@@ -90,6 +97,7 @@ namespace Platform.Ranges
         /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с помощью <see cref="Range{T}.Minimum"/> как <see cref="ValueTuple{T,T}.Item1"/> и <see cref="Range{T}.Maximum"/> как <see cref="ValueTuple{T,T}.Item2"/>.</para>
         /// </summary>
         /// <param name="range"><para>The range of <typeparamref name="T"/>.</para><para>Диапазон значений <typeparamref name="T"/>.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
 
         /// <summary>
@@ -97,6 +105,7 @@ namespace Platform.Ranges
         /// <para>Создает новую структуру <see cref="Range{T}"/>, инициализированную с помощью <see cref="ValueTuple{T,T}.Item1"/> как <see cref="Range{T}.Minimum"/> и <see cref="ValueTuple{T,T}.Item2"/> как <see cref="Range{T}.Maximum"/>.</para>
         /// </summary>
         /// <param name="tuple"><para>The tuple.</para><para>Кортеж.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
 
         /// <summary>
@@ -105,12 +114,14 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="obj"><para>An object to compare with this range.</para><para>Объект для сравнения с этим диапазоном.</para></param>
         /// <returns><para>True if the current range is equal to the other object; otherwise, false.</para><para>True, если текущий диапазон равен другому объекту; иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
 
         /// <summary>
         /// Calculates the hash code for the current <see cref="Range{T}"/> instance.
         /// </summary>
         /// <returns>The hash code for the current <see cref="Range{T}"/> instance.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
 
         /// <summary>
@@ -120,6 +131,7 @@ namespace Platform.Ranges
         /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
         /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
         /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
 
         /// <summary>
@@ -129,6 +141,7 @@ namespace Platform.Ranges
         /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
         /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
         /// <returns><para>True if the current range is not equal to the other range; otherwise, false.</para><para>True, если текущий диапазон не равен другому диапазону; иначе false.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(Range<T> left, Range<T> right) => !(left == right);
     }
 }
