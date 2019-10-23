@@ -40,7 +40,7 @@
         /// <para>Gets the whole <see cref="ushort"/> values range.</para>
         /// <para>Возвращает весь диапазон значений <see cref="ushort"/>.</para>
         /// </summary>
-        public static readonly Range<short> UInt16 = new Range<short>(short.MinValue, short.MaxValue);
+        public static readonly Range<ushort> UInt16 = new Range<ushort>(ushort.MinValue, ushort.MaxValue);
 
         /// <summary>
         /// <para>Gets the whole <see cref="uint"/> values range.</para>
