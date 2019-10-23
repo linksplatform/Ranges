@@ -1,147 +1,75 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Platform.Exceptions;
-
-namespace Platform.Ranges
+﻿namespace Platform.Ranges
 {
     /// <summary>
-    /// <para>Represents a range between minumum and maximum values.</para>
-    /// <para>Представляет диапазон между минимальным и максимальным значениями.</para>
+    /// <para>Contains static fields with <see cref="Range{T}"/> constants.</para>
+    /// <para>Содержит статические поля с константами типа <see cref="Range{T}"/>.</para>
     /// </summary>
-    /// <remarks>
-    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOveflow</a>.</para>
-    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOveflow</a>.</para>
-    /// </remarks>
-    public struct Range<T> : IEquatable<Range<T>>
+    public static class Range
     {
-        private static readonly Comparer<T> _comparer = Comparer<T>.Default;
-        private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
+        /// <summary>
+        /// <para>Gets the whole <see cref="sbyte"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="sbyte"/>.</para>
+        /// </summary>
+        public static readonly Range<sbyte> SByte = new Range<sbyte>(sbyte.MinValue, sbyte.MaxValue);
 
         /// <summary>
-        /// <para>Returns minimum value of the range.</para>
-        /// <para>Возвращает минимальное значение диапазона.</para>
+        /// <para>Gets the whole <see cref="short"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="short"/>.</para>
         /// </summary>
-        public readonly T Minimum;
+        public static readonly Range<short> Int16 = new Range<short>(short.MinValue, short.MaxValue);
 
         /// <summary>
-        /// <para>Returns maximum value of the range.</para>
-        /// <para>Возвращает максимальное значение диапазона.</para>
+        /// <para>Gets the whole <see cref="int"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="int"/>.</para>
         /// </summary>
-        public readonly T Maximum;
+        public static readonly Range<int> Int32 = new Range<int>(int.MinValue, int.MaxValue);
 
         /// <summary>
-        /// <para>Initializes a new instance of the Range class.</para>
-        /// <para>Инициализирует новый экземпляр класса Range.</para>
+        /// <para>Gets the whole <see cref="long"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="long"/>.</para>
         /// </summary>
-        /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Range(T minimumAndMaximum)
-        {
-            Minimum = minimumAndMaximum;
-            Maximum = minimumAndMaximum;
-        }
+        public static readonly Range<long> Int64 = new Range<long>(long.MinValue, long.MaxValue);
 
         /// <summary>
-        /// <para>Initializes a new instance of the Range class.</para>
-        /// <para>Инициализирует новый экземпляр класса Range.</para>
+        /// <para>Gets the whole <see cref="byte"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="byte"/>.</para>
         /// </summary>
-        /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
-        /// <param name="maximum"><para>The maximum value of the range.</para><para>Максимальное значение диапазона.</para></param>
-        /// <exception cref="ArgumentException"><para>Thrown when the maximum is less than the minimum.</para><para>Выбрасывается, когда максимум меньше минимума.</para></exception>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public Range(T minimum, T maximum)
-        {
-            Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, nameof(maximum));
-            Minimum = minimum;
-            Maximum = maximum;
-        }
+        public static readonly Range<byte> Byte = new Range<byte>(byte.MinValue, byte.MaxValue);
 
         /// <summary>
-        /// <para>Presents the Range in readable format.</para>
-        /// <para>Представляет диапазон в удобном для чтения формате.</para>
+        /// <para>Gets the whole <see cref="ushort"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="ushort"/>.</para>
         /// </summary>
-        /// <returns><para>String representation of the Range.</para><para>Строковое представление диапазона.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public override string ToString() => $"[{Minimum}, {Maximum}]";
+        public static readonly Range<short> UInt16 = new Range<short>(short.MinValue, short.MaxValue);
 
         /// <summary>
-        /// <para>Determines if the provided value is inside the range.</para>
-        /// <para>Определяет, находится ли указанное значение внутри диапазона.</para>
+        /// <para>Gets the whole <see cref="uint"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="uint"/>.</para>
         /// </summary>
-        /// <param name="value"><para>The value to test.</para><para>Значение для проверки.</para></param>
-        /// <returns><para>True if the value is inside Range, else false.</para><para>True, если значение находится внутри диапазона, иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
+        public static readonly Range<uint> UInt32 = new Range<uint>(uint.MinValue, uint.MaxValue);
 
         /// <summary>
-        /// <para>Determines if another range is inside the bounds of this range.</para>
-        /// <para>Определяет, находится ли другой диапазон внутри границ этого диапазона.</para>
+        /// <para>Gets the whole <see cref="ulong"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="ulong"/>.</para>
         /// </summary>
-        /// <param name="range"><para>The child range to test.</para><para>Дочерний диапазон для проверки.</para></param>
-        /// <returns><para>True if range is inside, else false.</para><para>True, если диапазон находится внутри, иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
+        public static readonly Range<ulong> UInt64 = new Range<ulong>(ulong.MinValue, ulong.MaxValue);
 
         /// <summary>
-        /// <para>Determines whether the current range is equal to another range.</para>
-        /// <para>Определяет, равен ли текущий диапазон другому диапазону.</para>
+        /// <para>Gets the whole <see cref="float"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="float"/>.</para>
         /// </summary>
-        /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
+        public static readonly Range<float> Single = new Range<float>(float.MinValue, float.MaxValue);
 
         /// <summary>
-        /// <para>Creates a new <see cref="ValueTuple{T,T}"/> struct initialized with <see cref="Range{T}.Minimum"/> as <see cref="ValueTuple{T,T}.Item1"/> and <see cref="Range{T}.Maximum"/> as <see cref="ValueTuple{T,T}.Item2"/>.</para>
-        /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с помощью <see cref="Range{T}.Minimum"/> как <see cref="ValueTuple{T,T}.Item1"/> и <see cref="Range{T}.Maximum"/> как <see cref="ValueTuple{T,T}.Item2"/>.</para>
+        /// <para>Gets the whole <see cref="double"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="double"/>.</para>
         /// </summary>
-        /// <param name="range"><para>The range of <typeparamref name="T"/>.</para><para>Диапазон значений <typeparamref name="T"/>.</para></param>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
+        public static readonly Range<double> Double = new Range<double>(double.MinValue, double.MaxValue);
 
         /// <summary>
-        /// <para>Creates a new <see cref="Range{T}"/> struct initialized with <see cref="ValueTuple{T,T}.Item1"/> as <see cref="Range{T}.Minimum"/> and <see cref="ValueTuple{T,T}.Item2"/> as <see cref="Range{T}.Maximum"/>.</para>
-        /// <para>Создает новую структуру <see cref="Range{T}"/>, инициализированную с помощью <see cref="ValueTuple{T,T}.Item1"/> как <see cref="Range{T}.Minimum"/> и <see cref="ValueTuple{T,T}.Item2"/> как <see cref="Range{T}.Maximum"/>.</para>
+        /// <para>Gets the whole <see cref="decimal"/> values range.</para>
+        /// <para>Возвращает весь диапазон значений <see cref="decimal"/>.</para>
         /// </summary>
-        /// <param name="tuple"><para>The tuple.</para><para>Кортеж.</para></param>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
-
-        /// <summary>
-        /// <para>Determines whether the current range is equal to another object.</para>
-        /// <para>Определяет, равен ли текущий диапазон другому объекту.</para>
-        /// </summary>
-        /// <param name="obj"><para>An object to compare with this range.</para><para>Объект для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is equal to the other object; otherwise, false.</para><para>True, если текущий диапазон равен другому объекту; иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
-
-        /// <summary>
-        /// Calculates the hash code for the current <see cref="Range{T}"/> instance.
-        /// </summary>
-        /// <returns>The hash code for the current <see cref="Range{T}"/> instance.</returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
-
-        /// <summary>
-        /// <para>Determines if the specified range is equal to the current range.</para>
-        /// <para>Определяет, равен ли указанный диапазон текущему диапазону.</para>
-        /// </summary>
-        /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
-        /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
-
-        /// <summary>
-        /// <para>Determines if the specified range is not equal to the current range.</para>
-        /// <para>Определяет, не равен ли указанный диапазон текущему диапазону.</para>
-        /// </summary>
-        /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
-        /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is not equal to the other range; otherwise, false.</para><para>True, если текущий диапазон не равен другому диапазону; иначе false.</para></returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool operator !=(Range<T> left, Range<T> right) => !(left == right);
+        public static readonly Range<decimal> Decimal = new Range<decimal>(decimal.MinValue, decimal.MaxValue);
     }
 }
