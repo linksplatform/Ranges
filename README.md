@@ -15,7 +15,7 @@ Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers](https://github.com
 NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 
 ## [Documentation](https://linksplatform.github.io/Ranges)
-*   Class [Range\<T\>](https://linksplatform.github.io/Ranges/api/Platform.Ranges.Range-1.html).
+*   Struct [Range\<T\>](https://linksplatform.github.io/Ranges/api/Platform.Ranges.Range-1.html).
 
 [PDF file](https://linksplatform.github.io/Ranges/Platform.Ranges.pdf) with code for e-readers.
 
