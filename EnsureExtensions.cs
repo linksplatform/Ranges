@@ -91,7 +91,7 @@ namespace Platform.Ranges
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void ArgumentInRange<TArgument>(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, string argumentName, Func<string> messageBuilder)
         {
-            if (!range.ContainsValue(argumentValue))
+            if (!range.Contains(argumentValue))
             {
                 throw new ArgumentOutOfRangeException(argumentName, argumentValue, messageBuilder());
             }

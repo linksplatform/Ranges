@@ -67,7 +67,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="value"><para>The value to test.</para><para>Значение для проверки.</para></param>
         /// <returns><para>True if the value is inside Range, else false.</para><para>True, если значение находится внутри диапазона, иначе false.</para></returns>
-        public bool ContainsValue(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
+        public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
         /// <para>Determines if another range is inside the bounds of this range.</para>
@@ -75,7 +75,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range"><para>The child range to test.</para><para>Дочерний диапазон для проверки.</para></param>
         /// <returns><para>True if range is inside, else false.</para><para>True, если диапазон находится внутри, иначе false.</para></returns>
-        public bool ContainsRange(Range<T> range) => ContainsValue(range.Minimum) && ContainsValue(range.Maximum);
+        public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
         /// <para>Indicates whether the current range is equal to another range.</para>
