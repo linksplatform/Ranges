@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Ranges Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
-    <VersionPrefix>0.0.5</VersionPrefix>
+    <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Ranges</AssemblyName>
@@ -24,13 +24,18 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Added support for net47 (.NET Framework 4.7).
-Platform.Exceptions dependency updated from 0.1.1 to 0.2.0.
-Added Difference extension method for Range struct (supporting all basic numeric .NET types).
-Added the implicit converter to ValueTuple and back for Range struct. It is now possible to use `(0, 1)` expression instead of `new Range&lt;int&gt;(0, 1)`.
-XML documentation file generation turned on.
-Travis CI connected.
-Refactoring, issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>The lowest supported version of .NET Framework is now 4.7.1.
+Added support for .NET Standard 2.1 (.NET Core 3.0).
+Platform.Exceptions dependency updated from 0.2.0 to 0.2.1.
+Range&lt;T&gt;.IsInsideRange method removed.
+ContainsValue and ContainsRange methods in Range&lt;T&gt; struct renamed to Contains.
+Added the static class Range with constants fields for numeric ranges.
+Source link enabled.
+Travis CI disabled.
+GitHub Actions enabled.
+Refactoring, performance optimizations, issues fix.
+
+This release is not backward compatible with the previous 0.0.5 release.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -38,7 +43,7 @@ Refactoring, issues fix.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
