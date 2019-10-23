@@ -78,7 +78,7 @@ namespace Platform.Ranges
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
-        /// <para>Indicates whether the current range is equal to another range.</para>
+        /// <para>Determines whether the current range is equal to another range.</para>
         /// <para>Определяет, равен ли текущий диапазон другому диапазону.</para>
         /// </summary>
         /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
@@ -98,5 +98,37 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="tuple"><para>The tuple.</para><para>Кортеж.</para></param>
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
+
+        /// <summary>
+        /// <para>Determines whether the current range is equal to another object.</para>
+        /// <para>Определяет, равен ли текущий диапазон другому объекту.</para>
+        /// </summary>
+        /// <param name="obj"><para>An object to compare with this range.</para><para>Объект для сравнения с этим диапазоном.</para></param>
+        /// <returns><para>True if the current range is equal to the other object; otherwise, false.</para><para>True, если текущий диапазон равен другому объекту; иначе false.</para></returns>
+        public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
+
+        /// <summary>
+        /// Calculates the hash code for the current <see cref="Range{T}"/> instance.
+        /// </summary>
+        /// <returns>The hash code for the current <see cref="Range{T}"/> instance.</returns>
+        public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
+
+        /// <summary>
+        /// <para>Determines if the specified range is equal to the current range.</para>
+        /// <para>Определяет, равен ли указанный диапазон текущему диапазону.</para>
+        /// </summary>
+        /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
+        /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
+        /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
+        public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
+
+        /// <summary>
+        /// <para>Determines if the specified range is not equal to the current range.</para>
+        /// <para>Определяет, не равен ли указанный диапазон текущему диапазону.</para>
+        /// </summary>
+        /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
+        /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
+        /// <returns><para>True if the current range is not equal to the other range; otherwise, false.</para><para>True, если текущий диапазон не равен другому диапазону; иначе false.</para></returns>
+        public static bool operator !=(Range<T> left, Range<T> right) => !(left == right);
     }
 }
