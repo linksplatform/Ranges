@@ -276,6 +276,14 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Equals(Platform.Ranges.Range(Of T))
   nameWithType: Range<T>.Equals(Range<T>)
   nameWithType.vb: Range(Of T).Equals(Range(Of T))
+- uid: Platform.Ranges.Range`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Equals_System_Object_
+  commentId: M:Platform.Ranges.Range`1.Equals(System.Object)
+  fullName: Platform.Ranges.Range<T>.Equals(System.Object)
+  fullName.vb: Platform.Ranges.Range(Of T).Equals(System.Object)
+  nameWithType: Range<T>.Equals(Object)
+  nameWithType.vb: Range(Of T).Equals(Object)
 - uid: Platform.Ranges.Range`1.Equals*
   name: Equals
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Equals_
@@ -285,6 +293,23 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Equals
   nameWithType: Range<T>.Equals
   nameWithType.vb: Range(Of T).Equals
+- uid: Platform.Ranges.Range`1.GetHashCode
+  name: GetHashCode()
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_GetHashCode
+  commentId: M:Platform.Ranges.Range`1.GetHashCode
+  fullName: Platform.Ranges.Range<T>.GetHashCode()
+  fullName.vb: Platform.Ranges.Range(Of T).GetHashCode()
+  nameWithType: Range<T>.GetHashCode()
+  nameWithType.vb: Range(Of T).GetHashCode()
+- uid: Platform.Ranges.Range`1.GetHashCode*
+  name: GetHashCode
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_GetHashCode_
+  commentId: Overload:Platform.Ranges.Range`1.GetHashCode
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.GetHashCode
+  fullName.vb: Platform.Ranges.Range(Of T).GetHashCode
+  nameWithType: Range<T>.GetHashCode
+  nameWithType.vb: Range(Of T).GetHashCode
 - uid: Platform.Ranges.Range`1.Maximum
   name: Maximum
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Maximum
@@ -301,6 +326,24 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Minimum
   nameWithType: Range<T>.Minimum
   nameWithType.vb: Range(Of T).Minimum
+- uid: Platform.Ranges.Range`1.op_Equality(Platform.Ranges.Range{`0},Platform.Ranges.Range{`0})
+  name: Equality(Range<T>, Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_op_Equality_Platform_Ranges_Range__0__Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.op_Equality(Platform.Ranges.Range{`0},Platform.Ranges.Range{`0})
+  name.vb: Equality(Range(Of T), Range(Of T))
+  fullName: Platform.Ranges.Range<T>.Equality(Platform.Ranges.Range<T>, Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).Equality(Platform.Ranges.Range(Of T), Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.Equality(Range<T>, Range<T>)
+  nameWithType.vb: Range(Of T).Equality(Range(Of T), Range(Of T))
+- uid: Platform.Ranges.Range`1.op_Equality*
+  name: Equality
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_op_Equality_
+  commentId: Overload:Platform.Ranges.Range`1.op_Equality
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.Equality
+  fullName.vb: Platform.Ranges.Range(Of T).Equality
+  nameWithType: Range<T>.Equality
+  nameWithType.vb: Range(Of T).Equality
 - uid: Platform.Ranges.Range`1.op_Implicit(Platform.Ranges.Range{`0})~System.ValueTuple{`0,`0}
   name: Implicit(Range<T> to (T, T))
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_op_Implicit_Platform_Ranges_Range__0___System_ValueTuple__0__0_
@@ -329,6 +372,24 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Widening
   nameWithType: Range<T>.Implicit
   nameWithType.vb: Range(Of T).Widening
+- uid: Platform.Ranges.Range`1.op_Inequality(Platform.Ranges.Range{`0},Platform.Ranges.Range{`0})
+  name: Inequality(Range<T>, Range<T>)
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_op_Inequality_Platform_Ranges_Range__0__Platform_Ranges_Range__0__
+  commentId: M:Platform.Ranges.Range`1.op_Inequality(Platform.Ranges.Range{`0},Platform.Ranges.Range{`0})
+  name.vb: Inequality(Range(Of T), Range(Of T))
+  fullName: Platform.Ranges.Range<T>.Inequality(Platform.Ranges.Range<T>, Platform.Ranges.Range<T>)
+  fullName.vb: Platform.Ranges.Range(Of T).Inequality(Platform.Ranges.Range(Of T), Platform.Ranges.Range(Of T))
+  nameWithType: Range<T>.Inequality(Range<T>, Range<T>)
+  nameWithType.vb: Range(Of T).Inequality(Range(Of T), Range(Of T))
+- uid: Platform.Ranges.Range`1.op_Inequality*
+  name: Inequality
+  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_op_Inequality_
+  commentId: Overload:Platform.Ranges.Range`1.op_Inequality
+  isSpec: "True"
+  fullName: Platform.Ranges.Range<T>.Inequality
+  fullName.vb: Platform.Ranges.Range(Of T).Inequality
+  nameWithType: Range<T>.Inequality
+  nameWithType.vb: Range(Of T).Inequality
 - uid: Platform.Ranges.Range`1.ToString
   name: ToString()
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_ToString
