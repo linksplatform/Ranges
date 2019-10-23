@@ -294,24 +294,6 @@ references:
   fullName.vb: Platform.Ranges.Range(Of T).Equals
   nameWithType: Range<T>.Equals
   nameWithType.vb: Range(Of T).Equals
-- uid: Platform.Ranges.Range`1.IsInsideRange(Platform.Ranges.Range{`0})
-  name: IsInsideRange(Range<T>)
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_IsInsideRange_Platform_Ranges_Range__0__
-  commentId: M:Platform.Ranges.Range`1.IsInsideRange(Platform.Ranges.Range{`0})
-  name.vb: IsInsideRange(Range(Of T))
-  fullName: Platform.Ranges.Range<T>.IsInsideRange(Platform.Ranges.Range<T>)
-  fullName.vb: Platform.Ranges.Range(Of T).IsInsideRange(Platform.Ranges.Range(Of T))
-  nameWithType: Range<T>.IsInsideRange(Range<T>)
-  nameWithType.vb: Range(Of T).IsInsideRange(Range(Of T))
-- uid: Platform.Ranges.Range`1.IsInsideRange*
-  name: IsInsideRange
-  href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_IsInsideRange_
-  commentId: Overload:Platform.Ranges.Range`1.IsInsideRange
-  isSpec: "True"
-  fullName: Platform.Ranges.Range<T>.IsInsideRange
-  fullName.vb: Platform.Ranges.Range(Of T).IsInsideRange
-  nameWithType: Range<T>.IsInsideRange
-  nameWithType.vb: Range(Of T).IsInsideRange
 - uid: Platform.Ranges.Range`1.Maximum
   name: Maximum
   href: api/Platform.Ranges.Range-1.html#Platform_Ranges_Range_1_Maximum
