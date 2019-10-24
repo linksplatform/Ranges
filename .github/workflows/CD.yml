@@ -10,7 +10,7 @@ env:
   TOKEN: ${{ secrets.TOKEN }}
   NUGETTOKEN: ${{ secrets.NUGETTOKEN }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  SCRIPTS_BASE_URL: https://raw.githubusercontent.com/linksplatform/Scripts/master/SingleProjectRepository 
+  SCRIPTS_BASE_URL: https://raw.githubusercontent.com/linksplatform/Scripts/master/SingleProjectRepository
 
 jobs:
   buildAndDeploy:
