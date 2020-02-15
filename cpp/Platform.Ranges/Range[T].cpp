@@ -36,7 +36,7 @@
 
         public: bool Equals(void *obj) override { return obj is Range<T> range ? this->Equals(range) : false; }
 
-        public: override int GetHashCode() { return (Minimum, Maximum).GetHashCode(); }
+        public: override std::int32_t GetHashCode() { return (Minimum, Maximum).GetHashCode(); }
 
         public: static bool operator ==(Range<T> left, Range<T> right) { return left.Equals(right); }
 
