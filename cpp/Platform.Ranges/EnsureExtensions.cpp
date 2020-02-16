@@ -6,7 +6,7 @@
 
         public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, const char* maximumArgumentName, std::function<const char*()> messageBuilder)
         {
-            if (Comparer<TArgument>.Default.Compare(maximumArgument, minimumArgument) < 0)
+            if (maximumArgument < minimumArgument)
             {
                 throw new ArgumentException(messageBuilder(), maximumArgumentName);
             }
