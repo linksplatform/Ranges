@@ -17,7 +17,7 @@
 
         public: Range(T minimum, T maximum)
         {
-            Ensure.Always.MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, this->nameof(maximum));
+            Platform::Ranges::EnsureExtensions::MaximumArgumentIsGreaterOrEqualToMinimum(Ensure::Always, minimum, maximum, this->nameof(maximum));
             Minimum = minimum;
             Maximum = maximum;
         }
