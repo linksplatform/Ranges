@@ -8,7 +8,7 @@
         {
             if (maximumArgument < minimumArgument)
             {
-                throw new ArgumentException(messageBuilder(), maximumArgumentName);
+                throw std::invalid_argument(((std::string)"Invalid ").append(maximumArgumentName).append(" argument: ").append(messageBuilder()).append("."));
             }
         }
 
@@ -26,7 +26,7 @@
         {
             if (!range.Contains(argumentValue))
             {
-                throw new ArgumentOutOfRangeException(argumentName, argumentValue, messageBuilder());
+                throw std::invalid_argument(((std::string)"Value [").append(std::to_string(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(messageBuilder()).append("."));
             }
         }
 
