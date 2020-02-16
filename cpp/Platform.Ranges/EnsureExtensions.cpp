@@ -14,7 +14,7 @@
 
         public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, const char* maximumArgumentName, const char* message)
         {
-            const char* messageBuilder() { return message; }
+            auto messageBuilder = [&]() -> const char* { return message; };
             MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, maximumArgumentName, messageBuilder);
         }
 
@@ -32,13 +32,13 @@
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, const char* argumentName, const char* message)
         {
-            const char* messageBuilder() { return message; }
+            auto messageBuilder = [&]() -> const char* { return message; };
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, const char* argumentName)
         {
-            const char* messageBuilder() { return ((std::string)((std::string)"Argument value [").append(argumentValue).append("] is out of range ").data()).append(range).append(".").data(); }
+            auto messageBuilder = [&]() -> const char* { return ((std::string)((std::string)"Argument value [").append(argumentValue).append(";] is out of range ").data()).append(range).append(".").data(); }
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 
