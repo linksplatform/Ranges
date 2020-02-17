@@ -17,7 +17,7 @@
 
         public: Range(T minimum, T maximum)
         {
-            Platform::Ranges::EnsureExtensions::MaximumArgumentIsGreaterOrEqualToMinimum(Ensure::Always, minimum, maximum, this->nameof(maximum));
+            Platform::Ranges::EnsureExtensions::MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::Ensure::Always, minimum, maximum, this->nameof(maximum));
             Minimum = minimum;
             Maximum = maximum;
         }
