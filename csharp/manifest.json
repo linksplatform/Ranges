@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.EnsureExtensions.html",
-          "hash": "z7q+wuEzK5/Dr10VFH2qZg=="
+          "hash": "EWvABXBLm2f+I8Vklk3Chg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.Range-1.html",
-          "hash": "Hs2mhj6FXHeoxNcvzwzSfg=="
+          "hash": "lxEjTGOSCWyKBYYCMqFMtQ=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.Range.html",
-          "hash": "jNjihoqHFubuFgrleOh6gA=="
+          "hash": "EiajBh7glIK5PZ6GakzrbA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Ranges.RangeExtensions.html",
-          "hash": "mijlxzVxG7Q7jv1ZBdWQQA=="
+          "hash": "RT3M3V8jDVWUMnAemCSFQA=="
         }
       },
       "is_incremental": false,
@@ -123,11 +123,10 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
@@ -136,10 +135,11 @@
           "total_file_count": 1,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
