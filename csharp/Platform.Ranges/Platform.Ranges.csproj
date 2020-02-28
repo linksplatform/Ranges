@@ -40,12 +40,8 @@ Platform.Exceptions dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNotes
     <PackageReference Include="Platform.Exceptions" Version="0.3.0" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(OS)' == 'Windows_NT' AND $(TargetFramework) == 'netstandard2.1'">
-    <CSharpFiles Include="**\*.cs" />
-  </ItemGroup>
-
-  <Target Name="CSharpFilesTransform" BeforeTargets="BeforeBuild" Condition="'$(OS)' == 'Windows_NT' AND $(TargetFramework) == 'netstandard2.1'">
-    <Exec WorkingDirectory="$(ProjectDir)" IgnoreExitCode="true" Command="..\..\CSharpToCppTranslator\bin\$(Configuration)\netcoreapp3.0\CSharpToCppTranslator.exe &quot;%(CSharpFiles.Identity)&quot; $(SolutionDir)cpp\Platform.Ranges\" />
+  <Target Name="CSharpToCppTranslation" AfterTargets="Build" Condition="'$(OS)' == 'Windows_NT' AND $(TargetFramework) == 'netstandard2.1'">
+    <Exec Command="..\..\CSharpToCppTranslator\bin\$(Configuration)\netcoreapp3.0\CSharpToCppTranslator.exe $(ProjectDir) $(SolutionDir)cpp\Platform.Ranges\"></Exec>
   </Target>
 
 </Project>
