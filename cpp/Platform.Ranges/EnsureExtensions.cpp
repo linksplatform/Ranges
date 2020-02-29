@@ -38,7 +38,7 @@
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, const char* argumentName)
         {
-            auto messageBuilder = [&]() -> const char* { return ((std::string)((std::string)"Argument value [").append(argumentValue).append(";] is out of range ").data()).append(range).append(".").data(); }
+            auto messageBuilder = [&]() -> const char* { return ((std::string)"Argument value [").append(argumentValue).append(";] is out of range ").append(range).append(".").data(); }
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 
