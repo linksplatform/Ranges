@@ -2,7 +2,6 @@
 {
     struct Range<T>
     {
-
         public: T Minimum = 0;
 
         public: T Maximum = 0;
@@ -33,6 +32,5 @@
         public: static implicit operator Range<T>(std::tuple<T, T> tuple) { return new Range<T>(tuple.Item1, tuple.Item2); }
 
         public: override std::int32_t GetHashCode() { return {Minimum, Maximum}.GetHashCode(); }
-
     };
 }
