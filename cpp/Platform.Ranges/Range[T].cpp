@@ -2,8 +2,6 @@
 {
     struct Range<T> : IEquatable<Range<T>>
     {
-        private: static readonly Comparer<T> _comparer = Comparer<T>.Default;
-        private: static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         public: T Minimum = 0;
 
@@ -24,11 +22,11 @@
 
         public: override const char* ToString() { return ((std::string)((std::string)"[").append(Minimum).append(", ").data()).append(Maximum).append("]").data(); }
 
-        public: bool Contains(T value) { return _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0; }
+        public: bool Contains(T value) { return Minimum <= value && Maximum >= value; }
 
         public: bool Contains(Range<T> range) { return this->Contains(range.Minimum) && this->Contains(range.Maximum); }
 
-        public: bool Equals(Range<T> other) { return _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum); }
+        public: bool Equals(Range<T> other) { return Minimum == other.Minimum && Maximum == other.Maximum; }
 
         public: static implicit operator std::tuple<T, T>(Range<T> range) { return {range.Minimum, range.Maximum}; }
 
