@@ -18,9 +18,9 @@
             MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, maximumArgumentName, messageBuilder);
         }
 
-        public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, const char* maximumArgumentName) { MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, nameof(maximumArgument), DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage); }
+        public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument, const char* maximumArgumentName) { MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, "maximumArgument", DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage); }
 
-        public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument) { MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, nameof(maximumArgument)); }
+        public: template <typename TArgument> static void MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument minimumArgument, TArgument maximumArgument) { MaximumArgumentIsGreaterOrEqualToMinimum(root, minimumArgument, maximumArgument, "maximumArgument"); }
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, const char* argumentName, std::function<const char*()> messageBuilder)
         {
