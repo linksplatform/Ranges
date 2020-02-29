@@ -19,7 +19,9 @@
             Maximum = maximum;
         }
 
-        public: override const char* ToString() { return ((std::string)((std::string)"[").append(Minimum).append(", ").data()).append(Maximum).append("]").data(); }
+        public: operator std::string() const { return ((std::string)((std::string)"[").append(Minimum).append(", ").data()).append(Maximum).append("]").data(); }
+
+        public: friend std::ostream & operator << (std::ostream &out, const Range<T> &obj) { return out << (std::string)obj; }
 
         public: bool Contains(T value) { return Minimum <= value && Maximum >= value; }
 
