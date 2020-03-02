@@ -8,7 +8,7 @@
         {
             if (maximumArgument < minimumArgument)
             {
-                throw std::invalid_argument(((std::string)"Invalid ").append(maximumArgumentName).append(" argument: ").append(messageBuilder()).append("."));
+                throw std::invalid_argument(std::string("Invalid ").append(maximumArgumentName).append(" argument: ").append(messageBuilder()).append(1, '.'));
             }
         }
 
@@ -26,7 +26,7 @@
         {
             if (!range.Contains(argumentValue))
             {
-                throw std::invalid_argument(((std::string)"Value [").append(std::to_string(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(messageBuilder()).append("."));
+                throw std::invalid_argument(std::string("Value [").append(Platform::Converters::To<std::string>(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(messageBuilder()).append(1, '.'));
             }
         }
 
@@ -38,7 +38,7 @@
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, const char* argumentName)
         {
-            auto messageBuilder = [&]() -> const char* { return ((std::string)"Argument value [").append(argumentValue).append("] is out of range ").append(range).append(".").data(); };
+            auto messageBuilder = [&]() -> const char* { return std::string("Argument value [").append(Platform::Converters::To<std::string>(argumentValue)).append("] is out of range ").append(Platform::Converters::To<std::string>(range)).append(1, '.').data(); };
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 

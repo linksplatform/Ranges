@@ -19,7 +19,7 @@
             Maximum = maximum;
         }
 
-        public: operator std::string() const { return ((std::string)"[").append(Minimum).append(", ").append(Maximum).append("]").data(); }
+        public: operator std::string() const { return std::string("[").append(Platform::Converters::To<std::string>(Minimum)).append(", ").append(Platform::Converters::To<std::string>(Maximum)).append(1, ']').data(); }
 
         public: friend std::ostream & operator << (std::ostream &out, const Range<T> &obj) { return out << (std::string)obj; }
 
