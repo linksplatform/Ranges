@@ -29,7 +29,7 @@
 
         public: bool operator ==(const Range<T> &other) const { return Minimum == other.Minimum && Maximum == other.Maximum; }
 
-        public: operator std::tuple<T, T>(Range<T> range) { return {this->Minimum, this->Maximum}; }
+        public: operator std::tuple<T, T>(Range<T> range) const { return {this->Minimum, this->Maximum}; }
 
         public: static implicit operator Range<T>(std::tuple<T, T> tuple) { return new Range<T>(tuple.Item1, tuple.Item2); }
 
