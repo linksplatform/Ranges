@@ -1,6 +1,6 @@
 ﻿namespace Platform::Ranges
 {
-    struct Range<T>
+    template <typename T> struct Range : IEquatable<Range<T>>
     {
         public: T Minimum = 0;
 
@@ -19,9 +19,7 @@
             Maximum = maximum;
         }
 
-        public: operator std::string() const { return std::string("[").append(Platform::Converters::To<std::string>(Minimum)).append(", ").append(Platform::Converters::To<std::string>(Maximum)).append(1, ']').data(); }
-
-        public: friend std::ostream & operator <<(std::ostream &out, const Range<T> &obj) { return out << (std::string)obj; }
+        public: override const char* ToString() { return std::string("[").append(Platform::Converters::To<std::string>(Minimum)).append(", ").append(Platform::Converters::To<std::string>(Maximum)).append(1, ']').data(); }
 
         public: bool Contains(T value) { return Minimum <= value && Maximum >= value; }
 
@@ -29,7 +27,7 @@
 
         public: bool operator ==(const Range<T> &other) const { return Minimum == other.Minimum && Maximum == other.Maximum; }
 
-        public: operator std::tuple<T, T>() const { return {this->Minimum, this->Maximum}; }
+        public: static implicit operator std::tuple<T, T>(Range<T> range) { return {range.Minimum, range.Maximum}; }
 
         public: static implicit operator Range<T>(std::tuple<T, T> tuple) { return new Range<T>(tuple.Item1, tuple.Item2); }
 
