@@ -21,7 +21,5 @@
         public: static double Difference(Range<double> range) { return range.Maximum - range.Minimum; }
 
         public: static float Difference(Range<float> range) { return range.Maximum - range.Minimum; }
-
-        public: static decimal Difference(Range<decimal> range) { return range.Maximum - range.Minimum; }
     };
 }

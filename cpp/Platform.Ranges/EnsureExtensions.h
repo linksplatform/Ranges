@@ -42,9 +42,9 @@
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 
-        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, const char* argumentName) { ArgumentInRange(root, argumentValue, new Range<TArgument>(minimum, maximum), argumentName); }
+        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, const char* argumentName) { ArgumentInRange(root, argumentValue, Range<TArgument>(minimum, maximum), argumentName); }
 
-        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum) { ArgumentInRange(root, argumentValue, new Range<TArgument>(minimum, maximum), nullptr); }
+        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum) { ArgumentInRange(root, argumentValue, Range<TArgument>(minimum, maximum), nullptr); }
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range) { ArgumentInRange(root, argumentValue, range, nullptr); }
 
@@ -62,9 +62,9 @@
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argument, Range<TArgument> range, const char* argumentName) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argument, range, argumentName); }
 
-        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argumentValue, new Range<TArgument>(minimum, maximum), nullptr); }
+        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argumentValue, Range<TArgument>(minimum, maximum), nullptr); }
 
-        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, const char* argumentName) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argumentValue, new Range<TArgument>(minimum, maximum), argumentName); }
+        public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argumentValue, TArgument minimum, TArgument maximum, const char* argumentName) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argumentValue, Range<TArgument>(minimum, maximum), argumentName); }
 
         public: template <typename TArgument> static void ArgumentInRange(Platform::Exceptions::ExtensionRoots::EnsureOnDebugExtensionRoot root, TArgument argument, Range<TArgument> range) { Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, argument, range, nullptr); }
     };
