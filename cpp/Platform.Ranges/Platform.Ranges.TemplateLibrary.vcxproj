@@ -155,6 +155,7 @@
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\..\packages\Platform.Delegates.TemplateLibrary.0.0.3\build\native\Platform.Delegates.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Delegates.TemplateLibrary.0.0.3\build\native\Platform.Delegates.TemplateLibrary.targets')" />
     <Import Project="..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.10\build\native\Platform.Exceptions.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.10\build\native\Platform.Exceptions.TemplateLibrary.targets')" />
+    <Import Project="..\..\packages\Platform.Converters.TemplateLibrary.0.0.2\build\native\Platform.Converters.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Converters.TemplateLibrary.0.0.2\build\native\Platform.Converters.TemplateLibrary.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -162,5 +163,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\Platform.Delegates.TemplateLibrary.0.0.3\build\native\Platform.Delegates.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Delegates.TemplateLibrary.0.0.3\build\native\Platform.Delegates.TemplateLibrary.targets'))" />
     <Error Condition="!Exists('..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.10\build\native\Platform.Exceptions.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.10\build\native\Platform.Exceptions.TemplateLibrary.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Platform.Converters.TemplateLibrary.0.0.2\build\native\Platform.Converters.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Converters.TemplateLibrary.0.0.2\build\native\Platform.Converters.TemplateLibrary.targets'))" />
   </Target>
 </Project>

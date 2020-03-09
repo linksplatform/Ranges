@@ -8,7 +8,7 @@
             Assert::AreEqual(1, range1.Minimum);
             Assert::AreEqual(3, range1.Maximum);
             Assert::ExpectException<ArgumentException>([&]()-> auto { return new Range<std::int32_t>(2, 1); });
-            Range<std::int32_t, 5> range2;
+            auto range2 = new Range<std::int32_t>(5);
             Assert::AreEqual(5, range2.Minimum);
             Assert::AreEqual(5, range2.Maximum);
         }
