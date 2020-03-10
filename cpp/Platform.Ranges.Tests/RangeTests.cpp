@@ -26,13 +26,13 @@
         public: TEST_METHOD(DifferenceTest)
         {
             auto range = Range<std::int32_t>(1, 3);
-            Assert::AreEqual(2, range.Difference());
+            Assert::AreEqual(2, Platform::Ranges::RangeExtensions::Difference(range));
         }
 
         public: TEST_METHOD(ToStringTest)
         {
             auto range = Range<std::int32_t>(1, 3);
-            Assert::AreEqual("[1, 3]", range.ToString());
+            Assert::AreEqual("[1, 3]", Platform::Converters::To<std::string>(range).data());
         }
 
         public: TEST_METHOD(EqualityTest)
