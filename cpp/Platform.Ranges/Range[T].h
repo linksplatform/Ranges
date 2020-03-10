@@ -20,7 +20,7 @@
             Maximum = maximum;
         }
 
-        public: operator std::string() const { return std::string("[").append(Platform::Converters::To<std::string>(Minimum)).append(", ").append(Platform::Converters::To<std::string>(Maximum)).append(1, ']').data(); }
+        public: operator std::string() const { return std::string("[").append(Platform::Converters::To<std::string>(Minimum)).append(", ").append(Platform::Converters::To<std::string>(Maximum)).append(1, ']'); }
 
         public: friend std::ostream & operator <<(std::ostream &out, const Range<T> &obj) { return out << (std::string)obj; }
 
@@ -33,7 +33,5 @@
         public: operator std::tuple<T, T>() const { return {this->Minimum, this->Maximum}; }
 
         public: Range(std::tuple<T, T> tuple) : Range(std::get<1-1>(tuple), std::get<2-1>(tuple)) { }
-
-        public: override std::int32_t GetHashCode() { return {Minimum, Maximum}.GetHashCode(); }
     };
 }
