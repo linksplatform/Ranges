@@ -35,3 +35,15 @@
         public: Range(std::tuple<T, T> tuple) : Range(std::get<1-1>(tuple), std::get<2-1>(tuple)) { }
     };
 }
+
+namespace std
+{
+    template <typename T>
+    struct hash<Platform::Ranges::Range<T>>
+    {
+        std::size_t operator()(const Platform::Ranges::Range<T> &obj) const
+        {
+            return Platform::Hashing::Hash(obj.Minimum, obj.Maximum);
+        }
+    };
+}

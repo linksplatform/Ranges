@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Crc32C.1.2.1\build\native\Crc32C.props" Condition="Exists('..\..\packages\Crc32C.1.2.1\build\native\Crc32C.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -77,19 +78,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\Platform.Ranges;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\Platform.Ranges;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\Platform.Ranges;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\Platform.Ranges;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -98,8 +99,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Platform.Ranges;$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -116,8 +117,8 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Platform.Ranges;$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -132,8 +133,8 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Platform.Ranges;$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -150,8 +151,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Platform.Ranges;$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -183,6 +184,7 @@
     <Import Project="..\..\packages\Platform.Converters.TemplateLibrary.0.0.3\build\native\Platform.Converters.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Converters.TemplateLibrary.0.0.3\build\native\Platform.Converters.TemplateLibrary.targets')" />
     <Import Project="..\..\packages\Platform.Delegates.TemplateLibrary.0.0.4\build\native\Platform.Delegates.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Delegates.TemplateLibrary.0.0.4\build\native\Platform.Delegates.TemplateLibrary.targets')" />
     <Import Project="..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.12\build\native\Platform.Exceptions.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.12\build\native\Platform.Exceptions.TemplateLibrary.targets')" />
+    <Import Project="..\..\packages\Platform.Hashing.TemplateLibrary.0.0.3\build\native\Platform.Hashing.TemplateLibrary.targets" Condition="Exists('..\..\packages\Platform.Hashing.TemplateLibrary.0.0.3\build\native\Platform.Hashing.TemplateLibrary.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -191,5 +193,7 @@
     <Error Condition="!Exists('..\..\packages\Platform.Converters.TemplateLibrary.0.0.3\build\native\Platform.Converters.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Converters.TemplateLibrary.0.0.3\build\native\Platform.Converters.TemplateLibrary.targets'))" />
     <Error Condition="!Exists('..\..\packages\Platform.Delegates.TemplateLibrary.0.0.4\build\native\Platform.Delegates.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Delegates.TemplateLibrary.0.0.4\build\native\Platform.Delegates.TemplateLibrary.targets'))" />
     <Error Condition="!Exists('..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.12\build\native\Platform.Exceptions.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Exceptions.TemplateLibrary.0.0.12\build\native\Platform.Exceptions.TemplateLibrary.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Crc32C.1.2.1\build\native\Crc32C.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Crc32C.1.2.1\build\native\Crc32C.props'))" />
+    <Error Condition="!Exists('..\..\packages\Platform.Hashing.TemplateLibrary.0.0.3\build\native\Platform.Hashing.TemplateLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Platform.Hashing.TemplateLibrary.0.0.3\build\native\Platform.Hashing.TemplateLibrary.targets'))" />
   </Target>
 </Project>
