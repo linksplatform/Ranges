@@ -6,7 +6,7 @@
 # [Ranges](https://github.com/linksplatform/Ranges)
 LinksPlatform's Platform.Ranges Class Library
 
-This library contains `Range` *struct* with `Minumum` and `Maximum` *fields*. It is possible to create only a valid `Range`, overwise an exception is thrown.
+This library contains `Range` *struct* with `Minimum` and `Maximum` *fields*. It is possible to create only a valid `Range`, overwise an exception is thrown.
 
 Namespace: [Platform.Ranges](https://linksplatform.github.io/Ranges/api/Platform.Ranges.html)
 
@@ -31,7 +31,7 @@ NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 `Range` *class* with `Floor` and `Ceiling` *fields*.
 
 ### [mnelsonwhite/Range.NET](https://github.com/mnelsonwhite/Range.NET)
-`Range` *class* with `Minumum` and `Maximum` *properties*.
+`Range` *class* with `Minimum` and `Maximum` *properties*.
 
 ### [sdcb/Sdcb.System.Range](https://github.com/sdcb/Sdcb.System.Range)
 `Range` *struct* with `Start` and `End` *properties*.
