@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Platform.Ranges.TemplateLibrary</id>
+    <title>LinksPlatform's Platform.Ranges Template Library</title>
+    <summary>LinksPlatform's Platform.Ranges is a Template Library what contains abstract class templates.</summary>
+    <description>LinksPlatform's Platform.Ranges is a Template Library what contains set of C++ abstract class templates. Use Platform.Ranges.h file to include the library.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <version>0.0.1</version>
+    <authors>Konstantin Diachenko</authors>
+    <owners>Konstantin Diachenko</owners>
+    <copyright>Konstantin Diachenko</copyright>
+    <projectUrl>https://linksplatform.github.io/Ranges</projectUrl>
+    <repository type="git" url="https://github.com/linksplatform/Ranges" />
+    <icon>images/icon.png</icon>
+    <tags>C++ Native Ranges</tags>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <group targetFramework="native">
+        <dependency id="Platform.Converters.TemplateLibrary" version="0.0.2" />
+        <dependency id="Platform.Exceptions.TemplateLibrary" version="0.0.12" />
+        <dependency id="Platform.Hashing.TemplateLibrary" version="0.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="icon.png" target="images/icon.png" />
+    <file src="Platform.Ranges.TemplateLibrary.targets" target="build\native\Platform.Ranges.TemplateLibrary.targets" />
+    <file src="Platform.Ranges.h" target="lib\native\include\Platform.Ranges.h" />
+    <file src="EnsureExtensions.h" target="lib\native\include\EnsureExtensions.h" />
+    <file src="Range.h" target="lib\native\include\Range.h" />
+    <file src="Range[T].h" target="lib\native\include\Range[T].h" />
+    <file src="RangeExtensions.h" target="lib\native\include\RangeExtensions.h" />
+  </files>
+</package>
