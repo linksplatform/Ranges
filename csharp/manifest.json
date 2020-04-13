@@ -18,79 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "opzAmdHtsphsV4sVFyMr6w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Ranges.EnsureExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Ranges.EnsureExtensions.html",
-          "hash": "RZtD30e2xKmHsUvKJvKIRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Ranges.Range-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Ranges.Range-1.html",
-          "hash": "9cy3DC5U/NER0W68S5xKBw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Ranges.Range.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Ranges.Range.html",
-          "hash": "7QaEJYKdAHJYI/Fzof+x5Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Ranges.RangeExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Ranges.RangeExtensions.html",
-          "hash": "Pr3kfOiURQMclJBcEBuB4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Ranges.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Ranges.html",
-          "hash": "6iymj+NxOv0/lT4/NBf1nw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "obj/api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "FYYaWat1WEex3qcFUGkrSQ=="
+          "hash": "hy8rm9LlRXKbfgsd6Ual6w=="
         }
       },
       "is_incremental": false,
@@ -105,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "sUdOXOx0g/Y8mTLlzVWPMQ=="
+          "hash": "3j0G6VVRU+Zo4XL9qERKBw=="
         }
       },
       "is_incremental": false,
@@ -127,12 +55,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
