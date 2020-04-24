@@ -32,7 +32,7 @@
 
         public: operator std::tuple<T, T>() const { return {this->Minimum, this->Maximum}; }
 
-        public: Range(std::tuple<T, T> tuple) : Range(std::get<1-1>(tuple), std::get<2-1>(tuple)) { }
+        public: Range(std::tuple<T, T> tuple) : Range(std::get<0>(tuple), std::get<1>(tuple)) { }
     };
 }
 
