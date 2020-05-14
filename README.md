@@ -8,16 +8,16 @@ LinksPlatform's Platform.Ranges Class Library
 
 This library contains `Range` *struct* with `Minimum` and `Maximum` *fields*. It is possible to create only a valid `Range`, overwise an exception is thrown.
 
-Namespace: [Platform.Ranges](https://linksplatform.github.io/Ranges/api/Platform.Ranges.html)
+Namespace: [Platform.Ranges](https://linksplatform.github.io/Ranges/csharp/api/Platform.Ranges.html)
 
 Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers](https://github.com/Konard/LinksPlatform/tree/0c85f236b75e6e3110790008b1a379c03c954501/Platform/Platform.Helpers)
 
 NuGet package: [Platform.Ranges](https://www.nuget.org/packages/Platform.Ranges)
 
 ## [Documentation](https://linksplatform.github.io/Ranges)
-*   Struct [Range\<T\>](https://linksplatform.github.io/Ranges/api/Platform.Ranges.Range-1.html).
+*   Struct [Range\<T\>](https://linksplatform.github.io/Ranges/csharp/api/Platform.Ranges.Range-1.html).
 
-[PDF file](https://linksplatform.github.io/Ranges/Platform.Ranges.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/Ranges/csharp/Platform.Ranges.pdf) with code for e-readers.
 
 ## Depend on
 *   [Platform.Exceptions](https://github.com/linksplatform/Exceptions)
