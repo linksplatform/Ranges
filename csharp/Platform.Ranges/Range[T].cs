@@ -6,12 +6,12 @@ using Platform.Exceptions;
 namespace Platform.Ranges
 {
     /// <summary>
-    /// <para>Represents a range between minumum and maximum values.</para>
+    /// <para>Represents a range between minimum and maximum values.</para>
     /// <para>Представляет диапазон между минимальным и максимальным значениями.</para>
     /// </summary>
     /// <remarks>
-    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOveflow</a>.</para>
-    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOveflow</a>.</para>
+    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOverflow</a>.</para>
+    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOverflow</a>.</para>
     /// </remarks>
     public struct Range<T> : IEquatable<Range<T>>
     {

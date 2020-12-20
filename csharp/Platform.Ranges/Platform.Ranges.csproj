@@ -4,9 +4,9 @@
     <Description>LinksPlatform's Platform.Ranges Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
-    <VersionPrefix>0.2.0</VersionPrefix>
+    <VersionPrefix>0.3.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5</TargetFrameworks>
     <AssemblyName>Platform.Ranges</AssemblyName>
     <PackageId>Platform.Ranges</PackageId>
     <PackageTags>LinksPlatform;Ranges;Range;RangeExtensions;EnsureExtensions</PackageTags>
@@ -24,8 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
-Platform.Exceptions dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for .NET 5.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -40,8 +39,12 @@ Platform.Exceptions dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNotes
     <PackageReference Include="Platform.Exceptions" Version="0.4.0" />
   </ItemGroup>
 
-  <Target Name="CSharpToCppTranslation" AfterTargets="PostBuildEvent" Condition="'$(OS)' == 'Windows_NT' AND $(TargetFramework) == 'netstandard2.1'">
-    <Exec Command="..\..\CSharpToCppTranslator\bin\$(Configuration)\netcoreapp3.0\CSharpToCppTranslator.exe $(ProjectDir) $(SolutionDir)cpp\$(ProjectName)\"></Exec>
+  <Target Name="CSharpToCppTranslation" AfterTargets="PostBuildEvent" Condition="'$(OS)' == 'Windows_NT' AND $(TargetFramework) == 'net5'">
+    <Exec Command="..\..\CSharpToCppTranslator\bin\$(Configuration)\net5\CSharpToCppTranslator.exe $(ProjectDir) $(SolutionDir)cpp\$(ProjectName)\"></Exec>
+  </Target>
+
+  <Target Name="CSharpToCppTranslation" AfterTargets="PostBuildEvent" Condition="'$(OS)' == 'Unix' AND $(TargetFramework) == 'net5'">
+    <Exec Command="../../CSharpToCppTranslator/bin/$(Configuration)/net5/CSharpToCppTranslator $(ProjectDir) $(SolutionDir)cpp/$(ProjectName)/"></Exec>
   </Target>
 
 </Project>
