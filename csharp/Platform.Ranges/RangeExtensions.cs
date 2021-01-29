@@ -3,8 +3,8 @@
 namespace Platform.Ranges
 {
     /// <summary>
-    /// <para>Provides a set of extension methods for <see cref="Range{T}"/> structs.</para>
-    /// <para>Предоставляет набор методов расширения для структур <see cref="Range{T}"/>.</para>
+    /// <para>Represents a set of extension methods for <see cref="Range{T}"/> structs.</para>
+    /// <para>Представляет набор методов расширения для структур <see cref="Range{T}"/>.</para>
     /// </summary>
     public static class RangeExtensions
     {
