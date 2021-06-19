@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef Platform_Ranges
-#define Platform_Ranges
+#ifndef PLATFORM_RANGES
+#define PLATFORM_RANGES
 
 #include <cstdint>
 #include <limits>
@@ -14,4 +14,4 @@
 #include "EnsureExtensions.h"
 #include "RangeExtensions.h"
 
-#endif
+#endif // PLATFORM_RANGES
