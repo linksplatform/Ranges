@@ -21,4 +21,6 @@
     constexpr auto Single = Range(LIMIT_AS_RANGE(std::float_t));
 
     constexpr auto Double = Range(LIMIT_AS_RANGE(std::double_t));
+
+    #undef LIMIT_AS_RANGE
 }
