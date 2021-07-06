@@ -1,0 +1,8 @@
+[requires]
+gtest/cci.20210126
+platform.exceptions/0.1.0
+platform.converters/0.1.0
+platform.delegates/0.1.3
+
+[generators]
+cmake

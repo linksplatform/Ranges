@@ -1,9 +1,12 @@
 ﻿namespace Platform::Ranges::Tests
 {
-    TEST_CLASS(EnsureExtensionsTests)
+    TEST(EnsureExtensionsTests, MaximumArgumentIsGreaterOrEqualToMinimumExceptionTest)
     {
-        public: TEST_METHOD(MaximumArgumentIsGreaterOrEqualToMinimumExceptionTest) { Assert::ExpectException<std::invalid_argument>([&]()-> auto { return Platform::Ranges::EnsureExtensions::MaximumArgumentIsGreaterOrEqualToMinimum(Platform::Exceptions::Ensure::Always, 2, 1); }); }
-
-        public: TEST_METHOD(ArgumentInRangeExceptionTest) { Assert::ExpectException<std::invalid_argument>([&]()-> auto { return Platform::Ranges::EnsureExtensions::ArgumentInRange(Platform::Exceptions::Ensure::Always, 5, {6, 7}); }); }
+        EXPECT_THROW(Always::MaximumArgumentIsGreaterOrEqualToMinimum(2, 1), std::logic_error);
     };
+
+    TEST(EnsureExtensionsTests, ArgumentInRangeExceptionTest)
+    {
+        EXPECT_THROW(Always::ArgumentInRange(5, {6, 7}), std::logic_error);
+    }
 }

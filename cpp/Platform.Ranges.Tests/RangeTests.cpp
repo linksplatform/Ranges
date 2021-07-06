@@ -1,49 +1,46 @@
 ﻿namespace Platform::Ranges::Tests
 {
-    TEST_CLASS(RangeTests)
+    TEST(RangesTests, ConstructorsTest)
     {
-        public: TEST_METHOD(ConstructorsTest)
-        {
-            auto range1 = Range<std::int32_t>(1, 3);
-            Assert::AreEqual(1, range1.Minimum);
-            Assert::AreEqual(3, range1.Maximum);
-            Assert::ExpectException<std::invalid_argument>([&]()-> auto { return Range<std::int32_t>(2, 1); });
-            auto range2 = Range<std::int32_t>(5);
-            Assert::AreEqual(5, range2.Minimum);
-            Assert::AreEqual(5, range2.Maximum);
-        }
+        auto range1 = Range(1, 3);
+        ASSERT_EQ(1, range1.Minimum);
+        ASSERT_EQ(3, range1.Maximum);
+        EXPECT_THROW(Range(2, 1), std::invalid_argument);
+        auto range2 = Range(5);
+        ASSERT_EQ(5, range2.Minimum);
+        ASSERT_EQ(5, range2.Maximum);
+    }
 
-        public: TEST_METHOD(ContainsTest)
-        {
-            auto range = Range<std::int32_t>(1, 3);
-            Assert::IsTrue(range.Contains(1));
-            Assert::IsTrue(range.Contains(2));
-            Assert::IsTrue(range.Contains(3));
-            Assert::IsTrue(range.Contains({2, 3}));
-            Assert::IsFalse(range.Contains({3, 4}));
-        }
+    TEST(RangesTests, ContainsTest)
+    {
+        auto range = Range(1, 3);
+        ASSERT_TRUE(range.Contains(1));
+        ASSERT_TRUE(range.Contains(2));
+        ASSERT_TRUE(range.Contains(3));
+        ASSERT_TRUE(range.Contains({2, 3}));
+        ASSERT_FALSE(range.Contains({3, 4}));
+    }
 
-        public: TEST_METHOD(DifferenceTest)
-        {
-            auto range = Range<std::int32_t>(1, 3);
-            Assert::AreEqual(2, Platform::Ranges::RangeExtensions::Difference(range));
-        }
+    TEST(RangesTests, DifferenceTest)
+    {
+        auto range = Range(1, 3);
+        //ASSERT_EQ(2, Platform::Ranges::RangeExtensions::Difference(range));
+    }
 
-        public: TEST_METHOD(ToStringTest)
-        {
-            auto range = Range<std::int32_t>(1, 3);
-            Assert::AreEqual("[1, 3]", Platform::Converters::To<std::string>(range).data());
-        }
+    TEST(RangesTests, ToStringTest)
+    {
+        auto range = Range(1, 3);
+        //ASSERT_EQ("[1, 3]", Platform::Converters::To<std::string>(range).data());
+    }
 
-        public: TEST_METHOD(EqualityTest)
-        {
-            auto range1 = Range<std::int32_t>(1, 3);
-            auto range1Duplicate = Range<std::int32_t>(1, 3);
-            auto range2 = Range<std::int32_t>(2, 5);
-            Assert::IsTrue(range1 == range1Duplicate);
-            Assert::AreEqual(range1, range1Duplicate);
-            Assert::IsTrue(range1 != range2);
-            Assert::AreNotEqual(range1, range2);
-        }
-    };
+    TEST(RangesTests, EqualityTest)
+    {
+        auto range1 = Range(1, 3);
+        auto range1Duplicate = Range(1, 3);
+        auto range2 = Range(2, 5);
+        ASSERT_TRUE(range1 == range1Duplicate);
+        ASSERT_EQ(range1, range1Duplicate);
+        ASSERT_TRUE(range1 != range2);
+        ASSERT_NE(range1, range2);
+    }
 }
