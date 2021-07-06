@@ -6,7 +6,7 @@
     <summary>LinksPlatform's Platform.Ranges is a Template Library what contains non-abstract class templates.</summary>
     <description>LinksPlatform's Platform.Ranges is a Template Library what contains set of C++ non-abstract class templates. Use Platform.Ranges.h file to include the library.</description>
     <releaseNotes>Changed C++ standard from C++03 to C++20</releaseNotes>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <authors>Konstantin Diachenko</authors>
     <owners>Konstantin Diachenko</owners>
     <copyright>Konstantin Diachenko</copyright>
@@ -18,9 +18,9 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <dependencies>
       <group targetFramework="native">
-        <dependency id="Platform.Converters.TemplateLibrary" version="0.0.2" />
-        <dependency id="Platform.Exceptions.TemplateLibrary" version="0.0.15" />
-        <dependency id="Platform.Hashing.TemplateLibrary" version="0.0.3" />
+        <dependency id="Platform.Converters.TemplateLibrary" version="0.1.0" />
+        <dependency id="Platform.Exceptions.TemplateLibrary" version="0.1.0" />
+        <dependency id="Platform.Hashing.TemplateLibrary" version="0.1.0" />
       </group>
     </dependencies>
   </metadata>

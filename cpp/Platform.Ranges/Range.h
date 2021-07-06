@@ -1,26 +1,24 @@
 ﻿namespace Platform::Ranges
 {
-    template <typename ...> struct Range;
-    template<> class Range<>
-    {
-        public: inline static Range<std::int8_t> SByte = Range<std::int8_t>(std::numeric_limits<std::int8_t>::lowest(), std::numeric_limits<std::int8_t>::max());
+    #define LIMIT_AS_RANGE(type) std::numeric_limits<type>::lowest(), std::numeric_limits<type>::max()
 
-        public: inline static Range<std::int16_t> Int16 = Range<std::int16_t>(std::numeric_limits<std::int16_t>::lowest(), std::numeric_limits<std::int16_t>::max());
+    constexpr auto SByte =  Range(LIMIT_AS_RANGE(std::int8_t));
 
-        public: inline static Range<std::int32_t> Int32 = Range<std::int32_t>(std::numeric_limits<std::int32_t>::lowest(), std::numeric_limits<std::int32_t>::max());
+    constexpr auto Int16 =  Range(LIMIT_AS_RANGE(std::int16_t));
 
-        public: inline static Range<std::int64_t> Int64 = Range<std::int64_t>(std::numeric_limits<std::int64_t>::lowest(), std::numeric_limits<std::int64_t>::max());
+    constexpr auto Int32 =  Range(LIMIT_AS_RANGE(std::int32_t));
 
-        public: inline static Range<std::uint8_t> Byte = Range<std::uint8_t>(std::numeric_limits<std::uint8_t>::lowest(), std::numeric_limits<std::uint8_t>::max());
+    constexpr auto Int64 =  Range(LIMIT_AS_RANGE(std::int64_t));
 
-        public: inline static Range<std::uint16_t> UInt16 = Range<std::uint16_t>(std::numeric_limits<std::uint16_t>::lowest(), std::numeric_limits<std::uint16_t>::max());
+    constexpr auto Byte =   Range(LIMIT_AS_RANGE(std::uint8_t));
 
-        public: inline static Range<std::uint32_t> UInt32 = Range<std::uint32_t>(std::numeric_limits<std::uint32_t>::lowest(), std::numeric_limits<std::uint32_t>::max());
+    constexpr auto UInt16 = Range(LIMIT_AS_RANGE(std::uint16_t));
 
-        public: inline static Range<std::uint64_t> UInt64 = Range<std::uint64_t>(std::numeric_limits<std::uint64_t>::lowest(), std::numeric_limits<std::uint64_t>::max());
+    constexpr auto UInt32 = Range(LIMIT_AS_RANGE(std::uint32_t));
 
-        public: inline static Range<float> Single = Range<float>(std::numeric_limits<float>::lowest(), std::numeric_limits<float>::max());
+    constexpr auto UInt64 = Range(LIMIT_AS_RANGE(std::uint64_t));
 
-        public: inline static Range<double> Double = Range<double>(std::numeric_limits<double>::lowest(), std::numeric_limits<double>::max());
-    };
+    constexpr auto Single = Range(LIMIT_AS_RANGE(std::float_t));
+
+    constexpr auto Double = Range(LIMIT_AS_RANGE(std::double_t));
 }
