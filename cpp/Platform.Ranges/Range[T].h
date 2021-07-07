@@ -33,7 +33,7 @@
         public: constexpr Range(T minimum, T maximum)
             : Minimum(std::move(minimum)), Maximum(std::move(maximum))
         {
-            if (minimum > maximum) // for constexpr
+            if (minimum > maximum) // for constexpr support
             {
                 Always::MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, "maximum");
             }
@@ -51,7 +51,7 @@
 
         public: constexpr explicit operator std::tuple<T, T>() const noexcept { return { Minimum, Maximum }; }
 
-        public: constexpr explicit Range(std::tuple<T, T> tuple) : Range(std::get<0>(tuple), std::get<1>(tuple)) noexcept { }
+        public: constexpr explicit Range(std::tuple<T, T> tuple) noexcept : Range(std::get<0>(tuple), std::get<1>(tuple))  { }
 
         // TODO: @Voider extension
         template<typename TOther> requires std::convertible_to<T, TOther>

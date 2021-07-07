@@ -24,13 +24,13 @@
     TEST(RangesTests, DifferenceTest)
     {
         auto range = Range(1, 3);
-        //ASSERT_EQ(2, Platform::Ranges::RangeExtensions::Difference(range));
+        ASSERT_EQ(2, Platform::Ranges::Difference(range));
     }
 
     TEST(RangesTests, ToStringTest)
     {
         auto range = Range(1, 3);
-        //ASSERT_EQ("[1, 3]", Platform::Converters::To<std::string>(range).data());
+        ASSERT_EQ("[1, 3]", Platform::Converters::To<std::string>(range));
     }
 
     TEST(RangesTests, EqualityTest)

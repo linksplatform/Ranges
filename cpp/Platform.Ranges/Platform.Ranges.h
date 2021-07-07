@@ -8,7 +8,7 @@
 #include <limits>
 #include <Platform.Exceptions.h>
 #include <Platform.Converters.h>
-//#include <Platform.Hashing.h>
+#include <Platform.Hashing.h>
 
 #include "Range[T].h"
 #include "Range.h"
