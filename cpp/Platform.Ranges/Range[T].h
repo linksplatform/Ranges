@@ -50,7 +50,7 @@
         using common_type_t = typename common_type<T, U>::type;
     }
 
-    namespace Always
+    namespace Ensure::Always
     {
         template<typename TArgument>
         void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName);
@@ -73,7 +73,7 @@
         {
             if (Minimum > Maximum) // for constexpr support
             {
-                Always::MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, "maximum");
+                Ensure::Always::MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, "maximum");
             }
         }
 
