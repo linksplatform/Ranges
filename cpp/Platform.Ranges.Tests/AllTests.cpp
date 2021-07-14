@@ -10,3 +10,4 @@
 
 #include "EnsureExtensionsTests.cpp"
 #include "RangeTests.cpp"
+#include "ExtensionsTests.cpp"
