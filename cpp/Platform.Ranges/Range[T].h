@@ -9,10 +9,16 @@
         };
 
         template<typename From, typename To>
+        From __implicit_helper(const To& to)
+        {
+            return to;
+        }
+
+        template<typename From, typename To>
         concept implicit_convertible_to = std::convertible_to<From, To> &&
             requires(From from, To to)
             {
-                to = from;
+                __implicit_helper<From>(to);
             };
 
 
