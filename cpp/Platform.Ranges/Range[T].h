@@ -20,40 +20,6 @@
             {
                 __implicit_helper<From>(to);
             };
-
-
-        enum class __common_type_result { _, T, U };
-
-        template<typename T, typename U>
-        consteval __common_type_result __common_type_selecter()
-        {
-            if (implicit_convertible_to<U, T>)
-                return __common_type_result::T;
-
-            if (implicit_convertible_to<T, U>)
-                return __common_type_result::U;
-        }
-
-        template<typename T, typename U, __common_type_result>
-        struct __common_type;
-
-        template<typename T, typename U>
-        struct __common_type<T, U, __common_type_result::T>
-        {
-            using type = T;
-        };
-
-        template<typename T, typename U>
-        struct __common_type<T, U, __common_type_result::U>
-        {
-            using type = U;
-        };
-
-        template<typename T, typename U>
-        struct common_type : __common_type<T, U, __common_type_selecter<T, U>()> {};
-
-        template<typename T, typename U>
-        using common_type_t = typename common_type<T, U>::type;
     }
 
     namespace Ensure::Always
@@ -69,7 +35,7 @@
 
         public: const T Maximum;
 
-        public: explicit Range(T minimumAndMaximum) noexcept
+        public: constexpr explicit Range(T minimumAndMaximum) noexcept
             : Minimum(std::move(minimumAndMaximum)), Maximum(Minimum)
         {
         }
@@ -114,16 +80,13 @@
     template<typename T>
     Range(T) -> Range<T>;
 
-    template<typename T, typename U> requires std::is_arithmetic_v<T> && std::is_arithmetic_v<U>
-    Range(T, U) -> Range<std::common_type_t<T, U>>;
-
     template<typename T, typename U>
-    Range(T, U) -> Range<Internal::common_type_t<T, U>>;
+    Range(T, U) -> Range<std::common_type_t<T, U>>;
 }
 
 namespace std
 {
-    template <typename T>
+    template<typename T>
     struct hash<Platform::Ranges::Range<T>>
     {
         std::size_t operator()(const Platform::Ranges::Range<T>& obj) const
