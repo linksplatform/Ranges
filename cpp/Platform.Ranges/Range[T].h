@@ -83,11 +83,8 @@
         }
     };
 
-    template<typename T>
-    Range(T) -> Range<T>;
-
-    template<typename T, typename U>
-    Range(T, U) -> Range<std::common_type_t<T, U>>;
+    template<typename T, typename... U>
+    Range(T, U...) -> Range<std::common_type_t<T, U...>>;
 }
 
 namespace std
