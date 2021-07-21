@@ -2,24 +2,30 @@
 {
     namespace Internal
     {
+        template<typename T>
+        struct protector
+        {
+            static constexpr bool stop = false;
+        };
+
+        template<typename To>
+        void implicit_helper(To to) noexcept
+        {
+            static_assert(protector<To>::stop,
+                "implicit_helper() must not be used!");
+        }
+
+        template<typename From, typename To>
+        concept implicit_convertible_to = requires(From from)
+        {
+            implicit_helper<To>(from);
+        };
+
         template<typename Self>
         concept formattable = requires(Self self)
         {
             { Converters::To<std::string>(self) };
         };
-
-        template<typename From, typename To>
-        From __implicit_helper(const To& to)
-        {
-            return to;
-        }
-
-        template<typename From, typename To>
-        concept implicit_convertible_to = std::convertible_to<From, To> &&
-            requires(From from, To to)
-            {
-                __implicit_helper<From>(to);
-            };
     }
 
     namespace Ensure::Always
