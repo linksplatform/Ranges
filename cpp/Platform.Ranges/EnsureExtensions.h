@@ -1,6 +1,4 @@
-﻿#include <utility>
-
-namespace Platform::Ranges::Always
+﻿namespace Platform::Ranges::Ensure::Always
 {
     const std::string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
 
@@ -64,7 +62,7 @@ namespace Platform::Ranges::Always
     void ArgumentInRange(TArgument&& argumentValue, Range<RTArgument> range) { ArgumentInRange(argumentValue, range, {}); }
 }
 
-namespace Platform::Ranges::OnDebug
+namespace Platform::Ranges::Ensure::OnDebug
 {
     void MaximumArgumentIsGreaterOrEqualToMinimum(auto&&... args)
     {
