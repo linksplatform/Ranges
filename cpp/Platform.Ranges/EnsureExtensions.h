@@ -13,9 +13,9 @@
     }
 
     template <typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, const std::string& message)
+    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, std::string message)
     {
-        auto messageBuilder = [&message]() -> std::string { return message; };
+        auto messageBuilder = [&message]() { return message; };
         MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, maximumArgumentName, messageBuilder);
     }
 
@@ -65,16 +65,16 @@
 namespace Platform::Ranges::Ensure::OnDebug
 {
     void MaximumArgumentIsGreaterOrEqualToMinimum(auto&&... args)
-    {
-    #ifndef NDEBUG
-        Always::MaximumArgumentIsGreaterOrEqualToMinimum(std::forward<decltype(args)>(args)...);
+    #ifdef NDEBUG
+        noexcept {}
+    #else
+        { Always::MaximumArgumentIsGreaterOrEqualToMinimum(std::forward<decltype(args)>(args)...); }
     #endif
-    }
 
     void ArgumentInRange(auto&&... args)
-    {
-    #ifndef NDEBUG
-        Always::ArgumentInRange(std::forward<decltype(args)>(args)...);
+    #ifdef NDEBUG
+        noexcept {}
+    #else
+        { Always::ArgumentInRange(std::forward<decltype(args)>(args)...); }
     #endif
-    }
 }
