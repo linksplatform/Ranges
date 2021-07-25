@@ -69,7 +69,7 @@
 
         public: constexpr explicit Range(std::tuple<T, T> tuple) noexcept : Range(std::get<0>(tuple), std::get<1>(tuple))  { }
 
-        public: template<std::convertible_to<T> TOther> constexpr explicit(not Internal::implicit_convertible_to<T, TOther>) operator Range<TOther>() const noexcept(noexcept(static_cast<TOther>(Minimum))) { return Range<TOther>(static_cast<TOther>(Minimum), static_cast<TOther>(Maximum)); }
+        public: template<std::convertible_to<T> TOther> constexpr explicit(not Internal::implicit_convertible_to<T, TOther>) operator Range<TOther>() const noexcept(noexcept(static_cast<TOther>(Minimum))) { return {static_cast<TOther>(Minimum), static_cast<TOther>(Maximum)}; }
     };
 
     template<typename T, typename... U>
