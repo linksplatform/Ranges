@@ -1,6 +1,4 @@
-﻿#include <utility>
-
-namespace Platform::Ranges::Always
+﻿namespace Platform::Ranges::Ensure::Always
 {
     const std::string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
 
@@ -15,9 +13,9 @@ namespace Platform::Ranges::Always
     }
 
     template <typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, const std::string& message)
+    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, std::string message)
     {
-        auto messageBuilder = [&message]() -> std::string { return message; };
+        auto messageBuilder = [&message]() { return message; };
         MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, maximumArgumentName, messageBuilder);
     }
 
@@ -30,8 +28,8 @@ namespace Platform::Ranges::Always
     template <typename TArgument>
     void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument) { MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, "maximumArgument"); }
 
-    template <typename TArgument, typename RTArgument = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, Range<RTArgument> range, const std::string& argumentName, auto&& messageBuilder)
+    template <typename TArgument, typename T = std::decay_t<TArgument>>
+    void ArgumentInRange(TArgument&& argumentValue, Range<T> range, const std::string& argumentName, auto&& messageBuilder)
         requires requires { { messageBuilder() } -> std::same_as<std::string>; }
     {
         if (!range.Contains(argumentValue))
@@ -40,43 +38,37 @@ namespace Platform::Ranges::Always
         }
     }
 
+    template <typename TArgument, typename T = std::decay_t<TArgument>>
+    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, const std::string& argumentName, const std::string& message)
+    {
+        auto messageBuilder = [&message](){ return message; };
+        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
+    }
+
+    template <typename TArgument, typename T = std::decay_t<TArgument>>
+    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, const std::string& argumentName = {})
+    {
+        auto messageBuilder = [&argumentValue, &range]() { return std::string("Argument value [").append(Converters::To<std::string>(argumentValue)).append("] is out of range ").append(Converters::To<std::string>(range)).append(1, '.'); };
+        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
+    }
+
     template <typename TArgument>
-    void ArgumentInRange(TArgument&& argumentValue, const Range<TArgument>& range, const std::string& argumentName, const std::string& message)
-    {
-        auto messageBuilder = [&]() -> std::string { return message; };
-        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
-    }
-
-    template <typename TArgument, typename RTArgument = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, Range<RTArgument> range, const std::string& argumentName)
-    {
-        auto messageBuilder = [&]() -> std::string { return std::string("Argument value [").append(Converters::To<std::string>(argumentValue)).append("] is out of range ").append(Converters::To<std::string>(range)).append(1, '.'); };
-        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
-    }
-
-    template <typename TArgument, typename RTArgument = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, TArgument&& minimum, TArgument&& maximum, const std::string& argumentName) { ArgumentInRange(argumentValue, Range<RTArgument>(minimum, maximum), argumentName); }
-
-    template <typename TArgument, typename RTArgument = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, TArgument&& minimum, TArgument&& maximum) { ArgumentInRange(argumentValue, Range<RTArgument>(minimum, maximum), {}); }
-
-    template <typename TArgument, typename RTArgument = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, Range<RTArgument> range) { ArgumentInRange(argumentValue, range, {}); }
+    void ArgumentInRange(TArgument&& argumentValue, TArgument&& minimum, TArgument&& maximum, const std::string& argumentName = {}) { ArgumentInRange(argumentValue, Range{minimum, maximum}, argumentName); }
 }
 
-namespace Platform::Ranges::OnDebug
+namespace Platform::Ranges::Ensure::OnDebug
 {
     void MaximumArgumentIsGreaterOrEqualToMinimum(auto&&... args)
-    {
-    #ifndef NDEBUG
-        Always::MaximumArgumentIsGreaterOrEqualToMinimum(std::forward<decltype(args)>(args)...);
+    #ifdef NDEBUG
+        noexcept {}
+    #else
+        { Always::MaximumArgumentIsGreaterOrEqualToMinimum(std::forward<decltype(args)>(args)...); }
     #endif
-    }
 
     void ArgumentInRange(auto&&... args)
-    {
-    #ifndef NDEBUG
-        Always::ArgumentInRange(std::forward<decltype(args)>(args)...);
+    #ifdef NDEBUG
+        noexcept {}
+    #else
+        { Always::ArgumentInRange(std::forward<decltype(args)>(args)...); }
     #endif
-    }
 }
