@@ -63,18 +63,14 @@
 
         public: [[nodiscard]] constexpr bool Contains(const Range<T>& range) const noexcept { return Contains(range.Minimum) && Contains(range.Maximum); }
 
-        public: constexpr explicit operator std::tuple<T, T>() const noexcept { return { Minimum, Maximum }; }
+        public: constexpr bool operator==(const Range<T>& other) const noexcept { return Minimum == other.Minimum && Maximum == other.Maximum; }
+
+        public: constexpr operator std::tuple<T, T>() const noexcept { return { Minimum, Maximum }; }
 
         public: constexpr explicit Range(std::tuple<T, T> tuple) noexcept : Range(std::get<0>(tuple), std::get<1>(tuple))  { }
 
 
-    public: // TODO: @Voider extensions
-        template<typename TOther> requires std::equality_comparable_with<T, TOther>
-        constexpr bool operator==(const Range<TOther>& other) const noexcept
-        {
-            return Minimum == other.Minimum && Maximum == other.Maximum;
-        }
-
+    public:
         template<typename TOther> requires std::convertible_to<T, TOther>
         constexpr explicit(not Internal::implicit_convertible_to<T, TOther>)
         operator Range<TOther>() const noexcept
