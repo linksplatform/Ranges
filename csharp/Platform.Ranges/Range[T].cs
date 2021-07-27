@@ -19,13 +19,13 @@ namespace Platform.Ranges
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
-        /// <para>Returns minimum value of the range.</para>
+        /// <para>Gets minimum value of the range.</para>
         /// <para>Возвращает минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
-        /// <para>Returns maximum value of the range.</para>
+        /// <para>Gets maximum value of the range.</para>
         /// <para>Возвращает максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
