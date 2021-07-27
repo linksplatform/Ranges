@@ -58,7 +58,10 @@ namespace Platform.Ranges
         /// <para>A maximum value of the range.</para>
         /// <para>Максимальное значение диапазона.</para>
         /// </param> 
-        /// <exception cref="ArgumentException"><para>The <paramref name="maximum"/> is less than the <paramref name="minumum"/>.</para><para><paramref name="maximum"/> меньше <paramref name="minumum"/>.</para></exception> 
+        /// <exception cref="ArgumentException">
+        /// <para>The <paramref name="maximum"/> is less than the <paramref name="minumum"/>.</para>
+        /// <para><paramref name="maximum"/> меньше <paramref name="minumum"/>.</para>
+        /// </exception> 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimum, T maximum)
         {
