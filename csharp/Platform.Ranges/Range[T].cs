@@ -49,7 +49,6 @@ namespace Platform.Ranges
         /// <para>Initializes a new <see cref="Range{T}"/> instance.</para> 
         /// <para>Инициализирует новый экземпляр <see cref="Range{T}"/>.</para> 
         /// </summary> 
-        /// </summary> 
         /// <param name="minimum">
         /// <para>A minimum value of the range.</para>
         /// <para>Минимальное значение диапазона.</para>
