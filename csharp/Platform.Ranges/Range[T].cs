@@ -31,7 +31,7 @@ namespace Platform.Ranges
         public readonly T Maximum;
 
         /// <summary>
-        /// <para>Initializes a <see cref="Range"/> instance.</para>
+        /// <para>Initializes a new <see cref="Range"/> instance.</para>
         /// <para>Инициализирует экземпляр <see cref="Range"/>.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
@@ -46,7 +46,7 @@ namespace Platform.Ranges
         }
 
         /// <summary> 
-        /// <para>Initializes a <see cref="Range"/> instance.</para> 
+        /// <para>Initializes a new <see cref="Range"/> instance.</para> 
         /// <para>Инициализирует экземпляр <see cref="Range"/>.</para> 
         /// </summary> 
         /// </summary> 
