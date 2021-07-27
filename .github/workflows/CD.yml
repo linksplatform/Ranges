@@ -18,8 +18,25 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: true
-    - name: Test
+    - name: Test С#
       run: dotnet test -c Release -f net5
+    - name: Test C++ and scan-build
+      run: |
+        export CC=clang
+        export CXX=clang++
+        export REPOSITORY_NAME=$(basename ${{ github.repository }})
+        cd cpp
+        mkdir $REPOSITORY_NAME && cd $REPOSITORY_NAME
+        conan install .. -if=. -pr=linksplatform --build=missing
+        cmake .. -DLINKS_PLATFORM_TESTS=TRUE
+        scan-build make -j 2
+        make -j 2
+        cd bin
+        binaries=./*
+        for bin in $binaries
+        do
+           ./$bin
+        done
     - name: Generate PDF with CSharp code
       if: github.event_name == 'push'
       run: |
