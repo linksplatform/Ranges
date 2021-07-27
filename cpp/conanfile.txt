@@ -7,3 +7,6 @@ platform.hashing/0.1.0
 
 [generators]
 cmake
+
+[options]
+gtest:build_gmock=False

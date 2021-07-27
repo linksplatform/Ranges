@@ -63,7 +63,7 @@
 
         public: [[nodiscard]] constexpr bool Contains(const Range& range) const noexcept { return Contains(range.Minimum) && Contains(range.Maximum); }
 
-        public: constexpr bool operator==(const Range<T>& other) const noexcept { return Minimum == other.Minimum && Maximum == other.Maximum; }
+        public: template<Internal::implicit_convertible_to<T> U> constexpr auto operator==(const Range<U>& other) const noexcept { return Minimum == other.Minimum && Maximum == other.Maximum; }
 
         public: constexpr operator std::tuple<T, T>() const noexcept { return { Minimum, Maximum }; }
 
