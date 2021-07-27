@@ -55,7 +55,7 @@
             }
         }
 
-        public: explicit operator std::string() const requires Internal::formattable<T> { return std::string("[").append(Converters::To<std::string>(Minimum)).append(", ").append(Converters::To<std::string>(Maximum)).append(1, ']'); }
+        public: explicit operator std::string() const requires Internal::formattable<T> { return std::string("[").append(Converters::To<std::string>(Minimum)).append("..").append(Converters::To<std::string>(Maximum)).append(1, ']'); }
 
         public: friend std::ostream& operator<<(std::ostream& out, const Range<T>& obj) { return out << (std::string)obj; }
 
