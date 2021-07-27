@@ -74,7 +74,10 @@ namespace Platform.Ranges
         /// <para>Presents the <see cref="Range"/> in readable format.</para>
         /// <para>Представляет диапазон в удобном для чтения формате.</para>
         /// </summary>
-        /// <returns><para>String representation of the <see cref="Range"/>.</para><para>Строковое представление диапазона.</para></returns>
+        /// <returns>
+        /// <para>String representation of the <see cref="Range"/>.</para>
+        /// <para>Строковое представление диапазона.</para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override string ToString() => $"[{Minimum}..{Maximum}]";
 
@@ -82,8 +85,14 @@ namespace Platform.Ranges
         /// <para>Determines if the provided value is inside the range.</para>
         /// <para>Определяет, находится ли указанное значение внутри диапазона.</para>
         /// </summary>
-        /// <param name="value"><para>A value to find in the range.</para><para>Значение, которое нужно найти в диапазоне.</para></param>
-        /// <returns><para>A <see cref="Boolean"/> value that determines whether the <paramref name="value"/> is inside this <see cref="Range"/>.</para><para>Значение типа <see cref="Boolean"/>, определяющее находится ли <paramref name="value"/> в этом <see cref="Range"/>.</para></returns>
+        /// <param name="value">
+        /// <para>A value to find in the range.</para>
+        /// <para>Значение, которое нужно найти в диапазоне.</para>
+        /// </param>
+        /// <returns>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="value"/> is inside this <see cref="Range"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее находится ли <paramref name="value"/> в этом <see cref="Range"/>.</para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
@@ -91,7 +100,10 @@ namespace Platform.Ranges
         /// <para>Determines if the <paramref name="range"/> is inside this <see cref="Range"/>.</para>
         /// <para>Определяет, находится ли <paramref name="range"/> в этом <see cref="Range"/>.</para>
         /// </summary>
-        /// <param name="range"><para>A range to find in the range.</para><para>Диапазон, который нужно найти в диапазоне..</para></param>
+        /// <param name="range">
+        /// <para>A range to find in the range.</para>
+        /// <para>Диапазон, который нужно найти в диапазоне..</para>
+        /// </param>
         /// <returns><para>A <see cref="Boolean"/> value that determines whether the <paramref name="range"/> is in this <see cref="Range"/>.</para><para>Значение типа <see cref="Boolean"/>, определяющее, находится ли <paramref name="range"/> в этом <see cref="Range"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
