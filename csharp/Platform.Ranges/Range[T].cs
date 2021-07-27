@@ -75,7 +75,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <returns>
         /// <para>String representation of the <see cref="Range{T}"/>.</para>
-        /// <para>Строковое представление диапазона.</para>
+        /// <para>Строковое представление <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override string ToString() => $"[{Minimum}..{Maximum}]";
