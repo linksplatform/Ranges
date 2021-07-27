@@ -19,13 +19,13 @@ namespace Platform.Ranges
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
-        /// <para>Gets minimum value of the range.</para>
+        /// <para>Gets the minimum value of the range.</para>
         /// <para>Возвращает минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
-        /// <para>Gets maximum value of the range.</para>
+        /// <para>Gets the maximum value of the range.</para>
         /// <para>Возвращает максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
@@ -51,11 +51,11 @@ namespace Platform.Ranges
         /// </summary> 
         /// </summary> 
         /// <param name="minimum">
-        /// <para>The minimum value of the range.</para>
+        /// <para>A minimum value of the range.</para>
         /// <para>Минимальное значение диапазона.</para>
         /// </param> 
         /// <param name="maximum">
-        /// <para>The maximum value of the range.</para>
+        /// <para>A maximum value of the range.</para>
         /// <para>Максимальное значение диапазона.</para>
         /// </param> 
         /// <exception cref="ArgumentException"><para>The <paramref name="maximum"/> is less than the <paramref name="minumum"/>.</para><para><paramref name="maximum"/> меньше <paramref name="minumum"/>.</para></exception> 
