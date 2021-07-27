@@ -114,7 +114,10 @@ namespace Platform.Ranges
         /// <para>Determines whether the current <see cref="Range{T}"/> and the <paramref name="other"/> are equal.</para>
         /// <para>Определяет, равны ли текущий <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </summary>
-        /// <param name="other"><para>A <see cref="Range{T}"/> to compare with the current <see cref="Range{T}"/>.</para><para><see cref="Range{T}"/> для сравнения с текущим <see cref="Range{T}"/>.</para></param>
+        /// <param name="other">
+        /// <para>A <see cref="Range{T}"/> to compare with the current <see cref="Range{T}"/>.</para>
+        /// <para><see cref="Range{T}"/> для сравнения с текущим <see cref="Range{T}"/>.</para>
+        /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> and the <paramref name="other"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="other"/> и текущий <see cref="Range{T}"/>.</para>
@@ -148,7 +151,10 @@ namespace Platform.Ranges
         /// <para>Determines whether the current <see cref="Range{T}"/> and the <paramref name="obj"/> are equal.</para>
         /// <para>Определяет, равны ли текущий <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </summary>
-        /// <param name="obj"><para>An object to compare with the current <see cref="Range{T}"/>.</para><para>Объект для сравнения с текущим <see cref="Range{T}"/>.</para></param>
+        /// <param name="obj">
+        /// <para>An object to compare with the current <see cref="Range{T}"/>.</para>
+        /// <para>Объект для сравнения с текущим <see cref="Range{T}"/>.</para>
+        /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> and the <paramref name="obj"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
@@ -171,8 +177,14 @@ namespace Platform.Ranges
         /// <para>Determines if the <paramref name="left"/> and the <paramref name="right"/> are equal.</para>
         /// <para>Определяет, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
-        /// <param name="left"><para>The current <see cref="Range{T}"/> to compare with the <paramref name="right"/>.</para><para>Текущий <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para></param>
-        /// <param name="right"><para>A range to compare with the <paramref name="left"/>.</para><para><see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para></param>
+        /// <param name="left">
+        /// <para>The current <see cref="Range{T}"/> to compare with the <paramref name="right"/>.</para>
+        /// <para>Текущий <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
+        /// </param>
+        /// <param name="right">
+        /// <para>A range to compare with the <paramref name="left"/>.</para>
+        /// <para><see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
+        /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and the <paramref name="right"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> <paramref name="right"/>.</para>
