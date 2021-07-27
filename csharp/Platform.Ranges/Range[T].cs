@@ -35,8 +35,8 @@ namespace Platform.Ranges
         /// <para>Инициализирует экземпляр <see cref="Range"/>.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
-        /// <para>Single value for both Minimum and Maximum fields.</para>
-        /// <para>Одно значение для обоих полей Minimum и Maximum.</para>
+        /// <para>Single value for both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
+        /// <para>Одно значение для обоих полей <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
