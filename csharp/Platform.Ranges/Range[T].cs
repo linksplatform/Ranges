@@ -110,16 +110,16 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Determines whether this <see cref="Range"/> is equal to another <see cref="Range"/>.</para>
-        /// <para>Определяет, равен ли текущий диапазон другому диапазону.</para>
+        /// <para>Определяет, равен ли этот <see cref="Range"/> другому <see cref="Range"/>.</para>
         /// </summary>
-        /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is equal to the other range; otherwise, false.</para><para>True, если текущий диапазон равен другому диапазону; иначе false.</para></returns>
+        /// <param name="other"><para>A <see cref="Range"/> to compare with this <see cref="Range"/>.</para><para><see cref="Range"/> для сравнения с этим <see cref="Range"/>.</para></param>
+        /// <returns><para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range"/> is equal to the <paramref name="other"/>.</para><para>Значение типа <see cref="Boolean"/>, определяющее, равен ли <paramref name="other"/> этому <see cref="Range"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
 
         /// <summary>
-        /// <para>Creates a new <see cref="ValueTuple{T,T}"/> struct initialized with <see cref="Range{T}.Minimum"/> as <see cref="ValueTuple{T,T}.Item1"/> and <see cref="Range{T}.Maximum"/> as <see cref="ValueTuple{T,T}.Item2"/>.</para>
-        /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с помощью <see cref="Range{T}.Minimum"/> как <see cref="ValueTuple{T,T}.Item1"/> и <see cref="Range{T}.Maximum"/> как <see cref="ValueTuple{T,T}.Item2"/>.</para>
+        /// <para>Creates a new <see cref="ValueTuple{T,T}"/> struct initialized with <see cref="Minimum"/> as <see cref="ValueTuple{T,T}.Item1"/> and <see cref="Maximum"/> as <see cref="ValueTuple{T,T}.Item2"/>.</para>
+        /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с помощью <see cref="Minimum"/> как <see cref="ValueTuple{T,T}.Item1"/> и <see cref="Maximum"/> как <see cref="ValueTuple{T,T}.Item2"/>.</para>
         /// </summary>
         /// <param name="range"><para>The range of <typeparamref name="T"/>.</para><para>Диапазон значений <typeparamref name="T"/>.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
