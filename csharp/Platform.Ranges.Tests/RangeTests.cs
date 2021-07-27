@@ -39,7 +39,7 @@ namespace Platform.Ranges.Tests
         public static void ToStringTest()
         {
             var range = new Range<int>(1, 3);
-            Assert.Equal("[1, 3]", range.ToString());
+            Assert.Equal("[1..3]", range.ToString());
         }
 
         [Fact]
