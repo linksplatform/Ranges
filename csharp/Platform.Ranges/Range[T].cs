@@ -134,11 +134,11 @@ namespace Platform.Ranges
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
 
         /// <summary>
-        /// <para>Determines whether the current range is equal to another object.</para>
-        /// <para>Определяет, равен ли текущий диапазон другому объекту.</para>
+        /// <para>Determines whether the current <see cref="Range"/> is equal to another object.</para>
+        /// <para>Определяет, равен ли текущий <see cref="Range"/> другому объекту.</para>
         /// </summary>
-        /// <param name="obj"><para>An object to compare with this range.</para><para>Объект для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is equal to the other object; otherwise, false.</para><para>True, если текущий диапазон равен другому объекту; иначе false.</para></returns>
+        /// <param name="obj"><para>An object to compare with this <see cref="Range"/>.</para><para>Объект для сравнения с этим <see cref="Range"/>.</para></param>
+        /// <returns><para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range"/> is equal to the <paramref name="obj"/>.</para><para>Значение типа <see cref="Boolean"/> определяющее, равен ли <paramref name="obj"/> текущему <see cref="Range"/> .</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
 
