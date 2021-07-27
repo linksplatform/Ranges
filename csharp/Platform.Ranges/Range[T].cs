@@ -31,10 +31,13 @@ namespace Platform.Ranges
         public readonly T Maximum;
 
         /// <summary>
-        /// <para>Initializes a new instance of the Range class.</para>
-        /// <para>Инициализирует новый экземпляр класса Range.</para>
+        /// <para>Initializes a <see cref="Range"/> instance.</para>
+        /// <para>Инициализирует экземпляр <see cref="Range"/>.</para>
         /// </summary>
-        /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
+        /// <param name="minimumAndMaximum">
+        /// <para>Single value for both Minimum and Maximum fields.</para>
+        /// <para>Одно значение для обоих полей Minimum и Maximum.</para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
         {
@@ -42,13 +45,20 @@ namespace Platform.Ranges
             Maximum = minimumAndMaximum;
         }
 
-        /// <summary>
-        /// <para>Initializes a new instance of the Range class.</para>
-        /// <para>Инициализирует новый экземпляр класса Range.</para>
-        /// </summary>
-        /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
-        /// <param name="maximum"><para>The maximum value of the range.</para><para>Максимальное значение диапазона.</para></param>
-        /// <exception cref="ArgumentException"><para>Thrown when the maximum is less than the minimum.</para><para>Выбрасывается, когда максимум меньше минимума.</para></exception>
+        /// <summary> 
+        /// <para>Initializes a <see cref="Range"/> instance.</para> 
+        /// <para>Инициализирует экземпляр <see cref="Range"/>.</para> 
+        /// </summary> 
+        /// </summary> 
+        /// <param name="minimum">
+        /// <para>The minimum value of the range.</para>
+        /// <para>Минимальное значение диапазона.</para>
+        /// </param> 
+        /// <param name="maximum">
+        /// <para>The maximum value of the range.</para>
+        /// <para>Максимальное значение диапазона.</para>
+        /// </param> 
+        /// <exception cref="ArgumentException"><para>The <paramref name="maximum"/> is less than the <paramref name="minumum"/>.</para><para><paramref name="maximum"/> меньше <paramref name="minumum"/>.</para></exception> 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimum, T maximum)
         {
