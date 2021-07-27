@@ -30,7 +30,7 @@
     TEST(RangesTests, ToStringTest)
     {
         auto range = Range(1, 3);
-        ASSERT_EQ("[1, 3]", Platform::Converters::To<std::string>(range));
+        ASSERT_EQ("[1..3]", Platform::Converters::To<std::string>(range));
     }
 
     TEST(RangesTests, EqualityTest)
