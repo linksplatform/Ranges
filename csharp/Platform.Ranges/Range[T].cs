@@ -63,7 +63,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <returns><para>String representation of the Range.</para><para>Строковое представление диапазона.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public override string ToString() => $"[{Minimum}, {Maximum}]";
+        public override string ToString() => $"[{Minimum}..{Maximum}]";
 
         /// <summary>
         /// <para>Determines if the provided value is inside the range.</para>
