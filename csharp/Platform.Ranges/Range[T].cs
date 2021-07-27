@@ -161,12 +161,12 @@ namespace Platform.Ranges
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
 
         /// <summary>
-        /// <para>Determines if the specified range is not equal to the current range.</para>
-        /// <para>Определяет, не равен ли указанный диапазон текущему диапазону.</para>
+        /// <para>Determines if the <paramref name="left"/> and the <paramref name="right"/> are not equal.</para>
+        /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
-        /// <param name="left"><para>The current range.</para><para>Текущий диапазон.</para></param>
-        /// <param name="right"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
-        /// <returns><para>True if the current range is not equal to the other range; otherwise, false.</para><para>True, если текущий диапазон не равен другому диапазону; иначе false.</para></returns>
+        /// <param name="left"><para>The current <see cref="Range{T}"/>.</para><para>Текущий <see cref="Range{T}"/>.</para></param>
+        /// <param name="right"><para>A <see cref="Range{T}"/> to compare with this <see cref="Range{T}"/>.</para><para><see cref="Range{T}"/> для сравнения с этим <see cref="Range{T}"/>.</para></param>
+        /// <returns><para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and the <paramref name="right"/> are not equal.</para><para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> <paramref name="right"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(Range<T> left, Range<T> right) => !(left == right);
     }
