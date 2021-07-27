@@ -182,12 +182,12 @@ namespace Platform.Ranges
         /// <para>Текущий <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
         /// </param>
         /// <param name="right">
-        /// <para>A range to compare with the <paramref name="left"/>.</para>
+        /// <para>A <see cref="Range{T}"/> to compare with the <paramref name="left"/>.</para>
         /// <para><see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and the <paramref name="right"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> <paramref name="right"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
