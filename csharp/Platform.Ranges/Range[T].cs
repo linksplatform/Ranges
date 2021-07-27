@@ -32,7 +32,7 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Initializes a new <see cref="Range{T}"/> instance.</para>
-        /// <para>Инициализирует экземпляр <see cref="Range{T}"/>.</para>
+        /// <para>Инициализирует новый экземпляр <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
         /// <para>Single value for both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
@@ -47,7 +47,7 @@ namespace Platform.Ranges
 
         /// <summary> 
         /// <para>Initializes a new <see cref="Range{T}"/> instance.</para> 
-        /// <para>Инициализирует экземпляр <see cref="Range{T}"/>.</para> 
+        /// <para>Инициализирует новый экземпляр <see cref="Range{T}"/>.</para> 
         /// </summary> 
         /// </summary> 
         /// <param name="minimum">
