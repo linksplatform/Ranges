@@ -72,7 +72,7 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Presents the <see cref="Range"/> in readable format.</para>
-        /// <para>Представляет диапазон в удобном для чтения формате.</para>
+        /// <para>Представляет <see cref="Range"/> в удобном для чтения формате.</para>
         /// </summary>
         /// <returns>
         /// <para>String representation of the <see cref="Range"/>.</para>
@@ -82,12 +82,12 @@ namespace Platform.Ranges
         public override string ToString() => $"[{Minimum}..{Maximum}]";
 
         /// <summary>
-        /// <para>Determines if the provided value is inside the range.</para>
-        /// <para>Определяет, находится ли указанное значение внутри диапазона.</para>
+        /// <para>Determines if the provided value is inside the <see cref="Range"/>.</para>
+        /// <para>Определяет, находится ли указанное значение внутри <see cref="Range"/>.</para>
         /// </summary>
         /// <param name="value">
-        /// <para>A value to find in the range.</para>
-        /// <para>Значение, которое нужно найти в диапазоне.</para>
+        /// <para>A value to find in the <see cref="Range"/>.</para>
+        /// <para>Значение, которое нужно найти в <see cref="Range"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="value"/> is inside this <see cref="Range"/>.</para>
@@ -109,7 +109,7 @@ namespace Platform.Ranges
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
-        /// <para>Determines whether the current range is equal to another range.</para>
+        /// <para>Determines whether this <see cref="Range"/> is equal to another <see cref="Range"/>.</para>
         /// <para>Определяет, равен ли текущий диапазон другому диапазону.</para>
         /// </summary>
         /// <param name="other"><para>A range to compare with this range.</para><para>Диапазон для сравнения с этим диапазоном.</para></param>
