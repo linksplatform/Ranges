@@ -61,7 +61,7 @@
 
         public: [[nodiscard]] constexpr bool Contains(T value) const noexcept { return Minimum <= value && Maximum >= value; }
 
-        public: [[nodiscard]] constexpr bool Contains(const Range<T>& range) const noexcept { return Contains(range.Minimum) && Contains(range.Maximum); }
+        public: [[nodiscard]] constexpr bool Contains(const Range& range) const noexcept { return Contains(range.Minimum) && Contains(range.Maximum); }
 
         public: constexpr bool operator==(const Range<T>& other) const noexcept { return Minimum == other.Minimum && Maximum == other.Maximum; }
 
