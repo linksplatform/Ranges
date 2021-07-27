@@ -44,7 +44,7 @@ jobs:
         conan create platform.delegates/all platform.delegates/0.1.3@ -pr=linksplatform
         conan create platform.hashing/all platform.hashing/0.1.0@ -pr=linksplatform
         conan create platform.equality/all platform.equality/0.0.1@ -pr=linksplatform
-        conan create platform.equality/all platform.converters/0.1.0@ -pr=linksplatform
+        conan create platform.converters/all platform.converters/0.1.0@ -pr=linksplatform
     - name: Test C++ and scan-build
       run: |
         export CC=clang
