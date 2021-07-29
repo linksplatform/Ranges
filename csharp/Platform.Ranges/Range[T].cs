@@ -25,7 +25,7 @@ namespace Platform.Ranges
         public readonly T Minimum;
 
         /// <summary>
-        /// <para>Gets the maximum value of the current object.</para>
+        /// <para>Gets the current object maximum value.</para>
         /// <para>Возвращает максимальное значение текущего объекта.</para>
         /// </summary>
         public readonly T Maximum;
@@ -35,8 +35,8 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
-        /// <para>A single value for both the <see cref="Minimum"/> and the <see cref="Maximum"/>.</para>
-        /// <para>Одно значение для обоих полей <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>A single value for the <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
+        /// <para>Одно значение для <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
@@ -111,7 +111,7 @@ namespace Platform.Ranges
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
-        /// <para>Determines whether the current object and the <paramref name="other"/> are equal.</para>
+        /// <para>Determines whether the current object and <paramref name="other"/> are equal.</para>
         /// <para>Определяет, равны ли текущий объект и <paramref name="other"/>.</para>
         /// </summary>
         /// <param name="other">
@@ -119,7 +119,7 @@ namespace Platform.Ranges
         /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с текущим объектом.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current object and the <paramref name="other"/> are equal.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current object and <paramref name="other"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущий объект и <paramref name="other"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -141,14 +141,14 @@ namespace Platform.Ranges
         /// <para>Инициализирует новую структуру <see cref="Range{T}"/>, с инициализированными <see cref="Minimum"/> и <see cref="Maximum"/>, полученными из <paramref name="tuple"/> в соответствующем порядке.</para>
         /// </summary>
         /// <param name="tuple">
-        /// <para>The tuple of the <see cref="Minimum"/> and the <see cref="Maximum"/> values.</para>
+        /// <para>The tuple of the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
         /// <para>Кортеж значений <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
 
         /// <summary>
-        /// <para>Determines whether the current object and the <paramref name="obj"/> are equal.</para>
+        /// <para>Determines whether the current object and <paramref name="obj"/> are equal.</para>
         /// <para>Определяет, равны ли текущий объект и <paramref name="obj"/>.</para>
         /// </summary>
         /// <param name="obj">
@@ -156,7 +156,7 @@ namespace Platform.Ranges
         /// <para>Объект для сравнения с текущим объектом.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current object and the <paramref name="obj"/> are equal.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current object and <paramref name="obj"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий объект и <paramref name="obj"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -174,7 +174,7 @@ namespace Platform.Ranges
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
 
         /// <summary>
-        /// <para>Determines if the <paramref name="left"/> and the <paramref name="right"/> are equal.</para>
+        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
         /// <para>Определяет, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
@@ -186,14 +186,14 @@ namespace Platform.Ranges
         /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and the <paramref name="right"/> are equal.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
 
         /// <summary>
-        /// <para>Determines if the <paramref name="left"/> and the <paramref name="right"/> are not equal.</para>
+        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
         /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
@@ -205,7 +205,7 @@ namespace Platform.Ranges
         /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с этим <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and the <paramref name="right"/> are not equal.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
