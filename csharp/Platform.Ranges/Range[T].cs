@@ -126,23 +126,23 @@ namespace Platform.Ranges
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
 
         /// <summary>
-        /// <para>Creates a new <see cref="ValueTuple{T,T}"/> struct initialized with the <see cref="ValueTuple{T,T}.Item1"/> as the <see cref="Minimum"/> and the <see cref="ValueTuple{T,T}.Item2"/> as the <see cref="Maximum"/>.</para>
-        /// <para>Создает новую структуру <see cref="ValueTuple{T,T}"/>, инициализированную с <see cref="ValueTuple{T,T}.Item1"/> как <see cref="Minimum"/> и <see cref="ValueTuple{T,T}.Item2"/> как <see cref="Maximum"/>.</para>
+        /// <para>Initializes a new <see cref="ValueTuple{T,T}"/> struct with the with the <see cref="Minimum"/> and <see cref="Maximum"/> values of the <paramref name="range"/>.</para>
+        /// <para>Инициализирует новую структуру <see cref="ValueTuple{T,T}"/>, с значениями <see cref="Minimum"/> и <see cref="Maximum"/> объекта <paramref name="range"/>.</para>
         /// </summary>
         /// <param name="range">
-        /// <para>A <see cref="Range{T}"/> instance.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/>.</para>
+        /// <para>A <see cref="Range{T}"/> instance to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
+        /// <para>Экземпляр <see cref="Range{T}"/> для инициализации кортежа с значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
 
         /// <summary>
-        /// <para>Initializes a new <see cref="Range{T}"/> struct with the initialized <see cref="Minimum"/> and the <see cref="Maximum"/> by using <paramref name="tuple"/> in the according order.</para>
-        /// <para>Инициализирует новую структуру <see cref="Range{T}"/>, с инициализированными <see cref="Minimum"/> и <see cref="Maximum"/> с помощью <paramref name="tuple"/> в соответствующем порядке.</para>
+        /// <para>Initializes a new <see cref="Range{T}"/> struct with the initialized <see cref="Minimum"/> and <see cref="Maximum"/> values from the <paramref name="tuple"/> in the according order.</para>
+        /// <para>Инициализирует новую структуру <see cref="Range{T}"/>, с инициализированными <see cref="Minimum"/> и <see cref="Maximum"/>, полученными из <paramref name="tuple"/> в соответствующем порядке.</para>
         /// </summary>
         /// <param name="tuple">
-        /// <para>The tuple of values for the <see cref="Minimum"/> and the <see cref="Maximum"/>.</para>
-        /// <para>Кортеж значений для <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>The tuple of the <see cref="Minimum"/> and the <see cref="Maximum"/> values.</para>
+        /// <para>Кортеж значений <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
