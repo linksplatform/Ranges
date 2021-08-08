@@ -112,7 +112,7 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Determines whether the <see cref="Range{T}"/> and <paramref name="other"/> are equal.</para>
-        /// <para>Определяет, равны ли текущий объект и <paramref name="other"/>.</para>
+        /// <para>Определяет, равны ли <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </summary>
         /// <param name="other">
         /// <para>A <see cref="Range{T}"/> instance to compare with the current <see cref="Range{T}"/>.</para>
@@ -120,7 +120,7 @@ namespace Platform.Ranges
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <see cref="Range{T}"/> and <paramref name="other"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущий объект и <paramref name="other"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
@@ -157,7 +157,7 @@ namespace Platform.Ranges
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <see cref="Range{T}"/> and <paramref name="obj"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий объект и <paramref name="obj"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
