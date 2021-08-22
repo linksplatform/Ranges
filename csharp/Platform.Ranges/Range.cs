@@ -1,4 +1,4 @@
-﻿namespace Platform.Ranges
+namespace Platform.Ranges
 {
     /// <summary>
     /// <para>Contains static fields with <see cref="Range{T}"/> constants.</para>

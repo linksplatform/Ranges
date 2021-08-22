@@ -3,8 +3,20 @@ using Xunit;
 
 namespace Platform.Ranges.Tests
 {
+    /// <summary>
+    /// <para>
+    /// Represents the range tests.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class RangeTests
     {
+        /// <summary>
+        /// <para>
+        /// Tests that constructors test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ConstructorsTest()
         {
@@ -17,6 +29,12 @@ namespace Platform.Ranges.Tests
             Assert.Equal(5, range2.Maximum);
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that contains test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ContainsTest()
         {
@@ -28,6 +46,12 @@ namespace Platform.Ranges.Tests
             Assert.False(range.Contains((3, 4)));
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that difference test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void DifferenceTest()
         {
@@ -35,6 +59,12 @@ namespace Platform.Ranges.Tests
             Assert.Equal(2, range.Difference());
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that to string test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ToStringTest()
         {
@@ -42,6 +72,12 @@ namespace Platform.Ranges.Tests
             Assert.Equal("[1..3]", range.ToString());
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that equality test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void EqualityTest()
         {
