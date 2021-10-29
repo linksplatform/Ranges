@@ -15,7 +15,19 @@ namespace Platform.Ranges
     /// </remarks>
     public struct Range<T> : IEquatable<Range<T>>
     {
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly Comparer<T> _comparer = Comparer<T>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
@@ -30,7 +42,8 @@ namespace Platform.Ranges
         /// </summary>
         public readonly T Maximum;
 
-        private.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the Range class.</para>
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
         /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
@@ -41,7 +54,8 @@ namespace Platform.Ranges
             Maximum = minimumAndMaximum;
         }
 
-        private.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the Range class.</para>
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
         /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
