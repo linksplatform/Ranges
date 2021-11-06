@@ -13,6 +13,7 @@ target_include_directories(${PROJECT_NAME}.Library INTERFACE ${PROJECT_NAME})
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE CONAN_PKG::platform.converters)
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE CONAN_PKG::platform.exceptions)
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE CONAN_PKG::platform.hashing)
+target_compile_options(${PROJECT_NAME}.Library INTERFACE ${LINKS_PLATFORM_EXTRA_FLAGS})
 
 add_executable(${PROJECT_NAME}.Tests ${PROJECT_NAME}.Tests/AllTests.cpp)
 target_link_libraries(${PROJECT_NAME}.Tests PRIVATE ${PROJECT_NAME}.Library)
