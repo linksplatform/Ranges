@@ -27,6 +27,6 @@
   "README.html": {
     "href": "README.html",
     "title": "Ranges | LinksPlatform's Platform.Ranges Library",
-    "keywords": "Ranges LinksPlatform's Platform.Ranges Class Library This library contains Range struct with Minimum and Maximum fields . It is possible to create only a valid Range , overwise an exception is thrown. Namespace: Platform.Ranges Forked from: Konard/LinksPlatform/Platform/Platform.Helpers NuGet package: Platform.Ranges Documentation Struct Range<T> . PDF file with code for e-readers. Depend on Platform.Exceptions Dependent libraries Platform.Random Platform.Collections Similar libraries alansav/range Range class with Floor and Ceiling fields . mnelsonwhite/Range.NET Range class with Minimum and Maximum properties . sdcb/Sdcb.System.Range Range struct with Start and End properties ."
+    "keywords": "C++ C# Ranges LinksPlatform's Platform.Ranges Class Library This library contains Range struct with Minimum and Maximum fields . It is possible to create only a valid Range , overwise an exception is thrown. Namespace: Platform.Ranges Forked from: Konard/LinksPlatform/Platform/Platform.Helpers NuGet package: Platform.Ranges Documentation Struct Range<T> . PDF file with code for e-readers. Depend on Platform.Exceptions Dependent libraries Platform.Random Platform.Collections Similar libraries alansav/range Range class with Floor and Ceiling fields . mnelsonwhite/Range.NET Range class with Minimum and Maximum properties . sdcb/Sdcb.System.Range Range struct with Start and End properties ."
   }
 }
