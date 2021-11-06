@@ -39,7 +39,7 @@ jobs:
         cd recipes
         export CC=clang
         export CXX=clang++
-        conan create platform.interfaces/all platform.interfaces/0.1.3@ -pr=linksplatform
+        conan create platform.interfaces/all platform.interfaces/0.1.2@ -pr=linksplatform
         conan create platform.exceptions/all platform.exceptions/0.1.1@ -pr=linksplatform
         conan create platform.delegates/all platform.delegates/0.1.3@ -pr=linksplatform
         conan create platform.hashing/all platform.hashing/0.1.0@ -pr=linksplatform
