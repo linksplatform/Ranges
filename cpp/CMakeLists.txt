@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(LINKS_PLATFORM_TESTS OFF CACHE BOOL "Whether to compile tests")
+set(LINKS_PLATFORM_EXTRA_FLAGS "" CACHE STRING "Extra compiler flags")
 
 project(Platform.Ranges)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
