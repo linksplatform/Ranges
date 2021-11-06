@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.15)
+
+set(LINKS_PLATFORM_TESTS OFF CACHE BOOL "Whether to compile tests")
+
 project(Platform.Ranges)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
+
+list(APPEND LINKS_PLATFORM_EXTRA_FLAGS ${CONAN_USER_PLATFORM.HASHING_suggested_flags})
 
 add_library(${PROJECT_NAME}.Library INTERFACE)
 target_include_directories(${PROJECT_NAME}.Library INTERFACE ${PROJECT_NAME})
