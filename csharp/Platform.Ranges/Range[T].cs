@@ -20,13 +20,13 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Represents a minimum value of the range.</para>
-        /// <para>Представляет минимально допустимое значение диапазона.</para>
+        /// <para>Представляет минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
         /// <para>Represents a maximum value of the range.</para>
-        /// <para>Представляет максимально допустимое значение диапазона.</para>
+        /// <para>Представляет максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
 
@@ -70,8 +70,8 @@ namespace Platform.Ranges
         }
 
         /// <summary>
-        /// <para>Returns a string representation of the current <see cref="Range{T}"/> object.</para>
-        /// <para>Возвращает строковое представление текущего объекта <see cref="Range{T}"/>.</para>
+        /// <para>Returns a string representation of the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Возвращает строковое представление текущей структуры <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <returns>
         /// <para>A string representation of the current <see cref="Range{T}"/> object.</para>
@@ -81,46 +81,46 @@ namespace Platform.Ranges
         public override string ToString() => $"[{Minimum}..{Maximum}]";
 
         /// <summary>
-        /// <para>Determines whether the current range contains the <paramref name="value"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
         /// <para>Определяет, содержится ли <paramref name="value"/> в текущем диапазоне.</para>
         /// </summary>
         /// <param name="value">
-        /// <para>A value to test for inclusion in the current range.</para>
+        /// <para>A value to test for inclusion in the current <see cref="Range{T}"/>.</para>
         /// <para>Значение для проверки его присутствия в текущем диапазоне.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current range contains the <paramref name="value"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в текущем диапазоне.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
-        /// <para>Determines whether the current instance contains the <paramref name="range"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
         /// <para>Определяет, содержится ли <paramref name="range"/> в текущем экземпляре.</para>
         /// </summary>
         /// <param name="range">
-        /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current instance.</para>
+        /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current <see cref="Range{T}"/> instance.</para>
         /// <para>Экземпляр <see cref="Range{T}"/>, для проверки присутствия в текущем экземпляре.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current instance contains the <paramref name="range"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="range"/> в текущем экземпляре.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
-        /// <para>Determines whether the current instance and <paramref name="other"/> are equal.</para>
-        /// <para>Определяет, равны ли текущий экземпляр и <paramref name="other"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> instance and <paramref name="other"/> are equal.</para>
+        /// <para>Определяет, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </summary>
         /// <param name="other">
-        /// <para>A <see cref="Range{T}"/> instance to compare with the current instance.</para>
+        /// <para>A <see cref="Range{T}"/> instance to compare with the current <see cref="Range{T}"/> instance.</para>
         /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с текущим экземпляром.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current instance and <paramref name="other"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущий экземпляр и <paramref name="other"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance and <paramref name="other"/> are equal.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
@@ -148,16 +148,16 @@ namespace Platform.Ranges
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
 
         /// <summary>
-        /// <para>Determines whether the current instance and <paramref name="obj"/> are equal.</para>
-        /// <para>Определяет, равны ли текущий экземпляр и <paramref name="obj"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> instance and <paramref name="obj"/> are equal.</para>
+        /// <para>Определяет, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </summary>
         /// <param name="obj">
         /// <para>An object to compare with the <see cref="Range{T}"/>.</para>
         /// <para>Объект для сравнения с <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current instance and <paramref name="obj"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий экземпляр и <paramref name="obj"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance and <paramref name="obj"/> are equal.</para>
+        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
