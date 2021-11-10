@@ -36,7 +36,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="minimumAndMaximum">
         /// <para>A single value for both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
-        /// <para>Одно значение для минимального и максимального значения диапазона.</para>
+        /// <para>Одно значение для <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
@@ -50,12 +50,12 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="minimum">
-        /// <para>A minimum value of the range.</para>
-        /// <para>Минимальное значение диапазона.</para>
+        /// <para>A minimum value of the <see cref="Range{T}"/>.</para>
+        /// <para>Минимальное значение <see cref="Range{T}"/>.</para>
         /// </param>
         /// <param name="maximum">
-        /// <para>A maximum value of the range.</para>
-        /// <para>Максимальное значение диапазона.</para>
+        /// <para>A maximum value of the <see cref="Range{T}"/>.</para>
+        /// <para>Максимальное значение <see cref="Range{T}"/>.</para>
         /// </param>
         /// <exception cref="ArgumentException">
         /// <para>The <paramref name="maximum"/> is less than the <paramref name="minimum"/>.</para>
@@ -70,8 +70,8 @@ namespace Platform.Ranges
         }
 
         /// <summary>
-        /// <para>Returns a string representation of the current <see cref="Range{T}"/> struct.</para>
-        /// <para>Возвращает строковое представление текущей структуры <see cref="Range{T}"/>.</para>
+        /// <para>Returns a string representation of the current <see cref="Range{T}"/> instance.</para>
+        /// <para>Возвращает строковое представление текущего экземпляра <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <returns>
         /// <para>A string representation of the current <see cref="Range{T}"/> object.</para>
@@ -85,19 +85,19 @@ namespace Platform.Ranges
         /// <para>Определяет, содержится ли <paramref name="value"/> в текущем <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="value">
-        /// <para>A value to test for inclusion in the current <see cref="Range{T}"/>.</para>
-        /// <para>Значение для проверки его присутствия в текущем <see cref="Range{T}"/>.</para>
+        /// <para>A value to test for inclusion in the <see cref="Range{T}"/>.</para>
+        /// <para>Значение для проверки его присутствия в <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в текущем <see cref="Range{T}"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
-        /// <para>Determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
-        /// <para>Определяет, содержится ли <paramref name="range"/> в текущем <see cref="Range{T}"/>.</para>
+        /// <para>Determines whether the <see cref="Range{T}"/> contains the <paramref name="range"/>.</para>
+        /// <para>Определяет, содержится ли <paramref name="range"/> в <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current <see cref="Range{T}"/> instance.</para>
