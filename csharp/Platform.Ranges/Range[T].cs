@@ -36,7 +36,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="minimumAndMaximum">
         /// <para>A single value for the minimum and maximum value of the range.</para>
-        /// <para>Одно значение для минимального и максимального допустимого значения диапазона.</para>
+        /// <para>Одно значение для минимального и максимального значения диапазона.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
@@ -51,11 +51,11 @@ namespace Platform.Ranges
         /// </summary> 
         /// <param name="minimum">
         /// <para>A minimum value of the range.</para>
-        /// <para>Минимально допустимое значение диапазона.</para>
+        /// <para>Минимальное значение диапазона.</para>
         /// </param> 
         /// <param name="maximum">
         /// <para>A maximum value of the range.</para>
-        /// <para>Максимально допустимое значение диапазона.</para>
+        /// <para>Максимальное значение диапазона.</para>
         /// </param> 
         /// <exception cref="ArgumentException">
         /// <para>The <paramref name="maximum"/> is less than the <paramref name="minimum"/>.</para>
