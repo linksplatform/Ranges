@@ -45,22 +45,22 @@ namespace Platform.Ranges
             Maximum = minimumAndMaximum;
         }
 
-        /// <summary> 
-        /// <para>Initializes a new instance of the <see cref="Range{T}"/> structure.</para> 
-        /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/>.</para> 
-        /// </summary> 
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="Range{T}"/> structure.</para>
+        /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/>.</para>
+        /// </summary>
         /// <param name="minimum">
         /// <para>A minimum value of the range.</para>
         /// <para>Минимальное значение диапазона.</para>
-        /// </param> 
+        /// </param>
         /// <param name="maximum">
         /// <para>A maximum value of the range.</para>
         /// <para>Максимальное значение диапазона.</para>
-        /// </param> 
+        /// </param>
         /// <exception cref="ArgumentException">
         /// <para>The <paramref name="maximum"/> is less than the <paramref name="minimum"/>.</para>
         /// <para><paramref name="maximum"/> меньше <paramref name="minimum"/>.</para>
-        /// </exception> 
+        /// </exception>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimum, T maximum)
         {
