@@ -35,7 +35,7 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
-        /// <para>A single value for the minimum and maximum value of the range.</para>
+        /// <para>A single value for both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
         /// <para>Одно значение для минимального и максимального значения диапазона.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -82,30 +82,30 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
-        /// <para>Определяет, содержится ли <paramref name="value"/> в текущем диапазоне.</para>
+        /// <para>Определяет, содержится ли <paramref name="value"/> в текущем <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="value">
         /// <para>A value to test for inclusion in the current <see cref="Range{T}"/>.</para>
-        /// <para>Значение для проверки его присутствия в текущем диапазоне.</para>
+        /// <para>Значение для проверки его присутствия в текущем <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в текущем диапазоне.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в текущем <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
         /// <para>Determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
-        /// <para>Определяет, содержится ли <paramref name="range"/> в текущем экземпляре.</para>
+        /// <para>Определяет, содержится ли <paramref name="range"/> в текущем <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current <see cref="Range{T}"/> instance.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/>, для проверки присутствия в текущем экземпляре.</para>
+        /// <para>Экземпляр <see cref="Range{T}"/>, для проверки присутствия в текущем <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="range"/> в текущем экземпляре.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="range"/> в текущем <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
@@ -202,7 +202,7 @@ namespace Platform.Ranges
         /// </param>
         /// <param name="right">
         /// <para>A <see cref="Range{T}"/> instance to compare with the <paramref name="left"/>.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с этим <paramref name="left"/>.</para>
+        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
