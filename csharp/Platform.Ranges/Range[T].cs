@@ -15,7 +15,19 @@ namespace Platform.Ranges
     /// </remarks>
     public struct Range<T> : IEquatable<Range<T>>
     {
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly Comparer<T> _comparer = Comparer<T>.Default;
+        /// <summary>
+        /// <para>
+        /// The default.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
