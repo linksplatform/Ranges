@@ -15,12 +15,6 @@ namespace Platform.Ranges
     /// </summary>
     public static class EnsureExtensions
     {
-        /// <summary>
-        /// <para>
-        /// The default maximum should be greater or equal to minimum message.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private const string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
 
         #region Always
