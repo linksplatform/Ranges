@@ -24,13 +24,4 @@
       </group>
     </dependencies>
   </metadata>
-  <files>
-    <file src="icon.png" target="images/icon.png" />
-    <file src="Platform.Ranges.TemplateLibrary.targets" target="build\native\Platform.Ranges.TemplateLibrary.targets" />
-    <file src="Platform.Ranges.h" target="lib\native\include\Platform.Ranges.h" />
-    <file src="EnsureExtensions.h" target="lib\native\include\EnsureExtensions.h" />
-    <file src="Range.h" target="lib\native\include\Range.h" />
-    <file src="Range[T].h" target="lib\native\include\Range[T].h" />
-    <file src="RangeExtensions.h" target="lib\native\include\RangeExtensions.h" />
-  </files>
 </package>
