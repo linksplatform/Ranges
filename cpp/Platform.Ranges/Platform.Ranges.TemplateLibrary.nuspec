@@ -19,7 +19,7 @@
     <dependencies>
       <group targetFramework="native">
         <dependency id="Platform.Converters.TemplateLibrary" version="0.1.0" />
-        <dependency id="Platform.Exceptions.TemplateLibrary" version="0.1.0" />t
+        <dependency id="Platform.Exceptions.TemplateLibrary" version="0.1.0" />
         <dependency id="Platform.Hashing.TemplateLibrary" version="0.1.0" />
       </group>
     </dependencies>
