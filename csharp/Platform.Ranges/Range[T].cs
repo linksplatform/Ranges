@@ -19,13 +19,13 @@ namespace Platform.Ranges
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
-        /// <para>Represents a minimum value of the range.</para>
+        /// <para>Returns minimum value constraint of the range.</para>
         /// <para>Представляет минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
-        /// <para>Represents a maximum value of the range.</para>
+        /// <para>Returns maximum value constraint of the range.</para>
         /// <para>Представляет максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
@@ -70,57 +70,57 @@ namespace Platform.Ranges
         }
 
         /// <summary>
-        /// <para>Returns a string representation of the current <see cref="Range{T}"/> instance.</para>
-        /// <para>Возвращает строковое представление текущего экземпляра <see cref="Range{T}"/>.</para>
+        /// <para>Returns a string representation of the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Возвращает строковое представление текущей структуры <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <returns>
-        /// <para>A string representation of the current <see cref="Range{T}"/> object.</para>
-        /// <para>Строковое представление текущего объекта <see cref="Range{T}"/>.</para>
+        /// <para>A string representation of the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Строковое представление текущей структуры <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override string ToString() => $"[{Minimum}..{Maximum}]";
 
         /// <summary>
-        /// <para>Determines whether the current <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
-        /// <para>Определяет, содержится ли <paramref name="value"/> в текущем <see cref="Range{T}"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> struct contains the <paramref name="value"/>.</para>
+        /// <para>Определяет, содержится ли <paramref name="value"/> в текущей структуре <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="value">
-        /// <para>A value to test for inclusion in the <see cref="Range{T}"/>.</para>
-        /// <para>Значение для проверки его присутствия в <see cref="Range{T}"/>.</para>
+        /// <para>A value to test for inclusion in the <see cref="Range{T}"/> struct.</para>
+        /// <para>Значение для проверки его присутствия в структуре <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the <see cref="Range{T}"/> contains the <paramref name="value"/>.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в <see cref="Range{T}"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <see cref="Range{T}"/> struct contains the <paramref name="value"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="value"/> в структуре <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(T value) => _comparer.Compare(Minimum, value) <= 0 && _comparer.Compare(Maximum, value) >= 0;
 
         /// <summary>
-        /// <para>Determines whether the <see cref="Range{T}"/> contains the <paramref name="range"/>.</para>
-        /// <para>Определяет, содержится ли <paramref name="range"/> в <see cref="Range{T}"/>.</para>
+        /// <para>Determines whether the <see cref="Range{T}"/> struct contains the <paramref name="range"/>.</para>
+        /// <para>Определяет, содержится ли <paramref name="range"/> в структуре <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <param name="range">
-        /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current <see cref="Range{T}"/> instance.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/>, для проверки включённости в текущем <see cref="Range{T}"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct to test for inclusion in the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Структура <see cref="Range{T}"/>, для проверки включённости в текущей структуре <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="range"/> в текущем <see cref="Range{T}"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> struct contains the <paramref name="range"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, содержится ли <paramref name="range"/> в текущей структуре <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Contains(Range<T> range) => Contains(range.Minimum) && Contains(range.Maximum);
 
         /// <summary>
-        /// <para>Determines whether the current <see cref="Range{T}"/> instance and <paramref name="other"/> are equal.</para>
-        /// <para>Определяет, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="other"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> struct and <paramref name="other"/> are equal.</para>
+        /// <para>Определяет, равны ли текущая структура <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </summary>
         /// <param name="other">
-        /// <para>A <see cref="Range{T}"/> instance to compare with the current <see cref="Range{T}"/> instance.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с текущим экземпляром.</para>
+        /// <para>A <see cref="Range{T}"/> struct to compare with the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Структура <see cref="Range{T}"/> для сравнения с текущей структурой.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance and <paramref name="other"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="other"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> struct and <paramref name="other"/> are equal.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли текущая структура <see cref="Range{T}"/> и <paramref name="other"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
@@ -130,8 +130,8 @@ namespace Platform.Ranges
         /// <para>Инициализирует новую структуру <see cref="ValueTuple{T,T}"/>, с значениями <see cref="Minimum"/> и <see cref="Maximum"/> из <paramref name="range"/>.</para>
         /// </summary>
         /// <param name="range">
-        /// <para>A <see cref="Range{T}"/> instance to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для инициализации кортежа с значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
+        /// <para>Структура <see cref="Range{T}"/> для инициализации кортежа с значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
@@ -148,16 +148,16 @@ namespace Platform.Ranges
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
 
         /// <summary>
-        /// <para>Determines whether the current <see cref="Range{T}"/> instance and <paramref name="obj"/> are equal.</para>
-        /// <para>Определяет, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
+        /// <para>Determines whether the current <see cref="Range{T}"/> struct and <paramref name="obj"/> are equal.</para>
+        /// <para>Определяет, равны ли текущая структура <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </summary>
         /// <param name="obj">
         /// <para>An object to compare with the <see cref="Range{T}"/>.</para>
         /// <para>Объект для сравнения с <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance and <paramref name="obj"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущий экземпляр <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> struct and <paramref name="obj"/> are equal.</para>
+        /// <para>Значение типа <see cref="Boolean"/> определяющее, равны ли текущая структура <see cref="Range{T}"/> и <paramref name="obj"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
@@ -178,12 +178,12 @@ namespace Platform.Ranges
         /// <para>Определяет, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
-        /// <para>A <see cref="Range{T}"/> instance to compare with the <paramref name="right"/>.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct to compare with the <paramref name="right"/>.</para>
+        /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
         /// </param>
         /// <param name="right">
-        /// <para>A <see cref="Range{T}"/> instance instance to compare with the <paramref name="left"/>.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct instance to compare with the <paramref name="left"/>.</para>
+        /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
@@ -197,12 +197,12 @@ namespace Platform.Ranges
         /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
-        /// <para>A <see cref="Range{T}"/> instance to compare with the <paramref name="right"/>.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct to compare with the <paramref name="right"/>.</para>
+        /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="right"/>.</para>
         /// </param>
         /// <param name="right">
-        /// <para>A <see cref="Range{T}"/> instance to compare with the <paramref name="left"/>.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
+        /// <para>A <see cref="Range{T}"/> struct to compare with the <paramref name="left"/>.</para>
+        /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
