@@ -131,7 +131,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> instance to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/> для инициализации кортежа с значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>Экземпляр <see cref="Range{T}"/> для инициализации кортежа со значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
