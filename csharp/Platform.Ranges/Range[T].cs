@@ -193,7 +193,7 @@ namespace Platform.Ranges
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
 
         /// <summary>
-        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
+        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> ranges are not equal.</para>
         /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
