@@ -187,7 +187,7 @@ namespace Platform.Ranges
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
