@@ -35,7 +35,7 @@ namespace Platform.Ranges
         /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/> с указанными минимальным и максимальным значениями.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
-        /// <para>A single value for both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
+        /// <para>A single value for the both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
         /// <para>Одно значение для <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
