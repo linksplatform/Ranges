@@ -19,13 +19,13 @@ namespace Platform.Ranges
         private static readonly EqualityComparer<T> _equalityComparer = EqualityComparer<T>.Default;
 
         /// <summary>
-        /// <para>Returns minimum value constraint of the range.</para>
+        /// <para>Provides a minimum value of the range.</para>
         /// <para>Представляет минимальное значение диапазона.</para>
         /// </summary>
         public readonly T Minimum;
 
         /// <summary>
-        /// <para>Returns maximum value constraint of the range.</para>
+        /// <para>Provides a maximum value of the range.</para>
         /// <para>Представляет максимальное значение диапазона.</para>
         /// </summary>
         public readonly T Maximum;
@@ -131,7 +131,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> struct to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
-        /// <para>Структура <see cref="Range{T}"/> для инициализации кортежа с значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>Структура <see cref="Range{T}"/> для инициализации кортежа со значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
@@ -187,14 +187,14 @@ namespace Platform.Ranges
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator ==(Range<T> left, Range<T> right) => left.Equals(right);
 
         /// <summary>
-        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
-        /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> ranges are not equal.</para>
+        /// <para>Определяет, не равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
         /// <para>A <see cref="Range{T}"/> struct to compare with the <paramref name="right"/>.</para>
