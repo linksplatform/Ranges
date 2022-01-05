@@ -126,7 +126,7 @@ namespace Platform.Ranges
         public bool Equals(Range<T> other) => _equalityComparer.Equals(Minimum, other.Minimum) && _equalityComparer.Equals(Maximum, other.Maximum);
 
         /// <summary>
-        /// <para>Initializes a new <see cref="ValueTuple{T,T}"/> struct with the with the <see cref="Minimum"/> and <see cref="Maximum"/> values of the <paramref name="range"/>.</para>
+        /// <para>Initializes a new <see cref="ValueTuple{T,T}"/> struct with the <see cref="Minimum"/> and <see cref="Maximum"/> values of the <paramref name="range"/>.</para>
         /// <para>Инициализирует новую структуру <see cref="ValueTuple{T,T}"/>, с значениями <see cref="Minimum"/> и <see cref="Maximum"/> объекта <paramref name="range"/>.</para>
         /// </summary>
         /// <param name="range">
