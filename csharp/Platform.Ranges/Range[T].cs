@@ -101,7 +101,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> instance to test for inclusion in the current <see cref="Range{T}"/> instance.</para>
-        /// <para>Экземпляр <see cref="Range{T}"/>, для проверки присутствия в текущем <see cref="Range{T}"/>.</para>
+        /// <para>Экземпляр <see cref="Range{T}"/>, для проверки включённости в текущем <see cref="Range{T}"/>.</para>
         /// </param>
         /// <returns>
         /// <para>A <see cref="Boolean"/> value that determines whether the current <see cref="Range{T}"/> instance contains the <paramref name="range"/>.</para>
