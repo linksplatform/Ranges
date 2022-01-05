@@ -205,8 +205,8 @@ namespace Platform.Ranges
         /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are not equal.</para>
-        /// <para>Значение типа <see cref="Boolean"/>, определяющее, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> ranges are not equal.</para>
+        /// <para>Значение типа <see cref="Boolean"/>, определяющее, не равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool operator !=(Range<T> left, Range<T> right) => !(left == right);
