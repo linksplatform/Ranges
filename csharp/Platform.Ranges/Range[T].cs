@@ -194,7 +194,7 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> ranges are not equal.</para>
-        /// <para>Определяет, не равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>Определяет, не равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
         /// <para>A <see cref="Range{T}"/> instance to compare with the <paramref name="right"/>.</para>
