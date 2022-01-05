@@ -127,7 +127,7 @@ namespace Platform.Ranges
 
         /// <summary>
         /// <para>Initializes a new <see cref="ValueTuple{T,T}"/> struct with the <see cref="Minimum"/> and <see cref="Maximum"/> values of the <paramref name="range"/>.</para>
-        /// <para>Инициализирует новую структуру <see cref="ValueTuple{T,T}"/>, с значениями <see cref="Minimum"/> и <see cref="Maximum"/> объекта <paramref name="range"/>.</para>
+        /// <para>Инициализирует новую структуру <see cref="ValueTuple{T,T}"/>, с значениями <see cref="Minimum"/> и <see cref="Maximum"/> из <paramref name="range"/>.</para>
         /// </summary>
         /// <param name="range">
         /// <para>A <see cref="Range{T}"/> instance to initialize a tuple with the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
