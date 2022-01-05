@@ -163,12 +163,12 @@ namespace Platform.Ranges
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
 
         /// <summary>
-        /// <para>Calculates a hash code for the current range.</para>
-        /// <para>Вычисляет хеш код для текущего диапазона.</para>
+        /// <para>Calculates a hash code for the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Вычисляет хеш код для структуры <see cref="Range{T}"/>.</para>
         /// </summary>
         /// <returns>
-        /// <para>A hash code for the current range.</para>
-        /// <para>Хеш код для текущего диапазона.</para>
+        /// <para>A hash code for the current <see cref="Range{T}"/> struct.</para>
+        /// <para>Хеш код для текущей структуры <see cref="Range{T}"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
