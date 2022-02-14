@@ -70,7 +70,7 @@ jobs:
       with:
         submodules: true
     - name: Test С#
-      run: dotnet test -c Release -f net5
+      run: dotnet test -c Release -f net6
       
   deploy:
     needs: [testCpp, testCSharp]
