@@ -31,8 +31,8 @@ namespace Platform.Ranges
         public readonly T Maximum;
 
         /// <summary>
-        /// <para>Initializes a new instance of the <see cref="Range{T}"/> structure with the specified minimum and maximum values.</para>
-        /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/> с указанными минимальным и максимальным значениями.</para>
+        /// <para>Initializes a new instance of the <see cref="Range{T}"/> structure with a single specified value as minimum and maximum values.</para>
+        /// <para>Инициализирует новый экземпляр структуры <see cref="Range{T}"/> с одним указанным значением в качестве минимального и максимального значений.</para>
         /// </summary>
         /// <param name="minimumAndMaximum">
         /// <para>A single value for the both <see cref="Minimum"/> and <see cref="Maximum"/>.</para>
