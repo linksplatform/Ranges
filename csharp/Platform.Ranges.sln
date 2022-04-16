@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Ranges", "csharp\Platform.Ranges\Platform.Ranges.csproj", "{C3D45A2E-55D8-4C13-B6B1-928F1264A511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Ranges", "Platform.Ranges\Platform.Ranges.csproj", "{C3D45A2E-55D8-4C13-B6B1-928F1264A511}"
 	ProjectSection(ProjectDependencies) = postProject
 		{60379207-EC18-4166-93F3-00B6EC426513} = {60379207-EC18-4166-93F3-00B6EC426513}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Ranges.Tests", "csharp\Platform.Ranges.Tests\Platform.Ranges.Tests.csproj", "{028B1B19-9295-484B-806C-118B1710CC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Ranges.Tests", "Platform.Ranges.Tests\Platform.Ranges.Tests.csproj", "{028B1B19-9295-484B-806C-118B1710CC90}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpToCppTranslator", "CSharpToCppTranslator\CSharpToCppTranslator.csproj", "{60379207-EC18-4166-93F3-00B6EC426513}"
 EndProject
