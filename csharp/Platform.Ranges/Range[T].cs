@@ -142,7 +142,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <param name="tuple">
         /// <para>A tuple of the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
-        /// <para>Кортеж значений <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
+        /// <para>Кортеж со значениями <see cref="Minimum"/> и <see cref="Maximum"/>.</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static implicit operator Range<T>(ValueTuple<T, T> tuple) => new Range<T>(tuple.Item1, tuple.Item2);
