@@ -137,8 +137,8 @@ namespace Platform.Ranges
         public static implicit operator ValueTuple<T, T>(Range<T> range) => (range.Minimum, range.Maximum);
 
         /// <summary>
-        /// <para>Initializes a new <see cref="Range{T}"/> struct with the <see cref="Minimum"/> and <see cref="Maximum"/> values from the <paramref name="tuple"/> in the according order.</para>
-        /// <para>Инициализирует новую структуру <see cref="Range{T}"/>, с <see cref="Minimum"/> и <see cref="Maximum"/>, полученными из <paramref name="tuple"/> в соответствующем порядке.</para>
+        /// <para>Initializes a new <see cref="Range{T}"/> struct using items of the <paramref name="tuple"/>: the first item as the <see cref="Minimum"/> and the second item as the <see cref="Maximum"/>.</para>
+        /// <para>Инициализирует новую структуру <see cref="Range{T}"/>, используя элементы <paramref name="tuple"/>: первый для <see cref="Minimum"/> и второй для <see cref="Maximum"/>.</para>
         /// </summary>
         /// <param name="tuple">
         /// <para>A tuple of the <see cref="Minimum"/> and <see cref="Maximum"/> values.</para>
@@ -174,8 +174,8 @@ namespace Platform.Ranges
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
 
         /// <summary>
-        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
-        /// <para>Определяет, равны ли <paramref name="left"/> и <paramref name="right"/>.</para>
+        /// <para>Determines if the <paramref name="left"/> and <paramref name="right"/> ranges are equal.</para>
+        /// <para>Определяет, равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </summary>
         /// <param name="left">
         /// <para>A <see cref="Range{T}"/> struct to compare with the <paramref name="right"/>.</para>
@@ -186,7 +186,7 @@ namespace Platform.Ranges
         /// <para>Структура <see cref="Range{T}"/> для сравнения с <paramref name="left"/>.</para>
         /// </param>
         /// <returns>
-        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> are equal.</para>
+        /// <para>A <see cref="Boolean"/> value that determines whether the <paramref name="left"/> and <paramref name="right"/> ranges are equal.</para>
         /// <para>Значение типа <see cref="Boolean"/>, определяющее, равны ли диапазоны <paramref name="left"/> и <paramref name="right"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
