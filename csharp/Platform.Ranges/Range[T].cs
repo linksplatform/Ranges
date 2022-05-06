@@ -10,8 +10,8 @@ namespace Platform.Ranges
     /// <para>Представляет диапазон между минимальным и максимальным значениями.</para>
     /// </summary>
     /// <remarks>
-    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOverflow</a>.</para>
-    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOverflow</a>.</para>
+    /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range"> the question at StackOverflow</a>.</para>
+    /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range"> вопросе в StackOverflow</a>.</para>
     /// </remarks>
     public struct Range<T> : IEquatable<Range<T>>
     {
