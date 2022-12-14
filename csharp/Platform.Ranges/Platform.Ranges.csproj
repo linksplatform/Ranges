@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Ranges Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Ranges</AssemblyTitle>
-    <VersionPrefix>0.3.0</VersionPrefix>
+    <VersionPrefix>0.5.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Ranges</AssemblyName>
@@ -23,7 +23,8 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Added support for .NET 5.</PackageReleaseNotes>
+    <PackageReleaseNotes>Update Platform.Exceptions dependency from 0.4.0 to 0.5.0.
+Change target frameworks to net7.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -36,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Exceptions" Version="0.4.0" />
+    <PackageReference Include="Platform.Exceptions" Version="0.5.0" />
   </ItemGroup>
 
 
