@@ -1,12 +1,10 @@
 [requires]
 gtest/cci.20210126
-platform.exceptions/0.3.0
-platform.converters/0.1.0
-platform.delegates/0.2.7
-platform.hashing/0.3.0
+platform.exceptions/0.3.2
+platform.converters/0.2.0
+platform.delegates/0.3.7
+platform.hashing/0.5.0
 
 [generators]
-cmake
-
-[options]
-gtest:build_gmock=False
+CMakeDeps
+CMakeToolchain
