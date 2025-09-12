@@ -25,11 +25,16 @@ find_package(Platform.Exceptions REQUIRED)
 find_package(Platform.Hashing REQUIRED CONFIG)
 find_package(GTest REQUIRED)
 
+# Add local GSL headers
+add_library(GSL INTERFACE)
+target_include_directories(GSL INTERFACE gsl_repo/include)
+
 add_library(${PROJECT_NAME}.Library INTERFACE)
 target_include_directories(${PROJECT_NAME}.Library INTERFACE ${PROJECT_NAME})
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE Platform.Converters::Platform.Converters)
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE Platform.Exceptions::Platform.Exceptions)
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE Platform.Hashing::Platform.Hashing)
+target_link_libraries(${PROJECT_NAME}.Library INTERFACE GSL)
 #target_compile_options(${PROJECT_NAME}.Library INTERFACE ${LINKS_PLATFORM_EXTRA_FLAGS})
 
 

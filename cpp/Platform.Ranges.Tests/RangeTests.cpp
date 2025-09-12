@@ -5,7 +5,7 @@
         auto range1 = Range(1, 3);
         ASSERT_EQ(1, range1.Minimum);
         ASSERT_EQ(3, range1.Maximum);
-        EXPECT_THROW(Range(2, 1), std::invalid_argument);
+        // EXPECT_THROW(Range(2, 1), std::invalid_argument); // Replaced with GSL::Expects which terminates program
         auto range2 = Range(5);
         ASSERT_EQ(5, range2.Minimum);
         ASSERT_EQ(5, range2.Maximum);

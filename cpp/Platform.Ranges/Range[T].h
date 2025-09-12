@@ -1,4 +1,6 @@
-﻿namespace Platform::Ranges
+﻿#include <gsl/gsl>
+
+namespace Platform::Ranges
 {
     namespace Internal
     {
@@ -28,11 +30,6 @@
         };
     }
 
-    namespace Ensure::Always
-    {
-        template<typename TArgument>
-        void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName);
-    }
 
     template <typename ...> struct Range;
     template <std::three_way_comparable T> struct Range<T>
@@ -51,7 +48,7 @@
         {
             if (Minimum > Maximum) // for constexpr support
             {
-                Ensure::Always::MaximumArgumentIsGreaterOrEqualToMinimum(minimum, maximum, "maximum");
+                Expects(maximum >= minimum);
             }
         }
 
