@@ -1,5 +1,6 @@
 [requires]
 gtest/cci.20210126
+ms-gsl/4.0.0
 platform.exceptions/0.3.2
 platform.converters/0.2.0
 platform.delegates/0.3.7
