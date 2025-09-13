@@ -72,8 +72,8 @@
         public: template<typename TOther> requires std::convertible_to<T, TOther> constexpr explicit(not Internal::implicit_convertible_to<T, TOther>) operator Range<TOther>() const noexcept(noexcept(static_cast<TOther>(Minimum))) { return {static_cast<TOther>(Minimum), static_cast<TOther>(Maximum)}; }
     };
 
-    template<typename T, typename... U>
-    Range(T, U...) -> Range<std::common_type_t<T, U...>>;
+    template<typename... T>
+    Range(T...) -> Range<std::common_type_t<T...>>;
 }
 
 namespace std
