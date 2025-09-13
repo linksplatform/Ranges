@@ -1,4 +1,6 @@
-﻿namespace Platform::Ranges
+#pragma once
+
+namespace Platform::Ranges
 {
     namespace Internal
     {

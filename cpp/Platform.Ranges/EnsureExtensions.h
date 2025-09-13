@@ -1,4 +1,6 @@
-﻿namespace Platform::Ranges::Ensure::Always
+#pragma once
+
+namespace Platform::Ranges::Ensure::Always
 {
     const std::string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
 

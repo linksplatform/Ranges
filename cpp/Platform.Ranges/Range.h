@@ -1,4 +1,6 @@
-﻿namespace Platform::Ranges
+#pragma once
+
+namespace Platform::Ranges
 {
     #define LIMIT_AS_RANGE(type) std::numeric_limits<type>::lowest(), std::numeric_limits<type>::max()
 

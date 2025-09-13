@@ -1,4 +1,6 @@
-﻿namespace Platform::Ranges
+#pragma once
+
+namespace Platform::Ranges
 {
     template<typename T> requires requires(T a, T b) { a - b; }
     auto Difference(Range<T> range)
