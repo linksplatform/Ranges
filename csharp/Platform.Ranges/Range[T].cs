@@ -34,7 +34,7 @@ namespace Platform.Ranges
         /// <para>Initializes a new instance of the Range class.</para>
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
-        /// <param name="minimumAndMaximum"><para>Single value for both Minimum and Maximum fields.</para><para>Одно значение для полей Minimum и Maximum.</para></param>
+        /// <param name="minimumAndMaximum"><para>Represents single value for both Minimum and Maximum fields.</para><para>Представляет одно значение для полей Minimum и Maximum.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimumAndMaximum)
         {
@@ -46,9 +46,9 @@ namespace Platform.Ranges
         /// <para>Initializes a new instance of the Range class.</para>
         /// <para>Инициализирует новый экземпляр класса Range.</para>
         /// </summary>
-        /// <param name="minimum"><para>The minimum value of the range.</para><para>Минимальное значение диапазона.</para></param>
-        /// <param name="maximum"><para>The maximum value of the range.</para><para>Максимальное значение диапазона.</para></param>
-        /// <exception cref="ArgumentException"><para>Thrown when the maximum is less than the minimum.</para><para>Выбрасывается, когда максимум меньше минимума.</para></exception>
+        /// <param name="minimum"><para>Represents the minimum value of the range.</para><para>Представляет минимальное значение диапазона.</para></param>
+        /// <param name="maximum"><para>Represents the maximum value of the range.</para><para>Представляет максимальное значение диапазона.</para></param>
+        /// <exception cref="ArgumentException"><para>The maximum is less than the minimum.</para><para>Максимум меньше минимума.</para></exception>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Range(T minimum, T maximum)
         {
