@@ -31,7 +31,7 @@
     namespace Ensure::Always
     {
         template<typename TArgument>
-        void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName);
+        void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, std::string_view maximumArgumentName);
     }
 
     template <typename ...> struct Range;

@@ -1,59 +1,52 @@
 ﻿namespace Platform::Ranges::Ensure::Always
 {
-    const std::string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
+    constexpr std::string_view DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
 
     template<typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, auto&& messageBuilder)
-        requires requires { { messageBuilder() } -> std::same_as<std::string>; }
+    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, std::string_view maximumArgumentName, std::string_view message)
     {
         if (maximumArgument < minimumArgument)
         {
-            throw std::invalid_argument(std::string("Invalid ").append(maximumArgumentName).append(" argument: ").append(messageBuilder()).append(1, '.'));
+            throw std::invalid_argument(std::string("Invalid ").append(maximumArgumentName).append(" argument: ").append(message).append(1, '.'));
         }
     }
 
     template <typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName, std::string message)
+    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, std::string_view maximumArgumentName)
     {
-        auto messageBuilder = [&message]() { return message; };
-        MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, maximumArgumentName, messageBuilder);
+        MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, maximumArgumentName, DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage);
     }
 
     template <typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument, const std::string& maximumArgumentName)
-    {
-        MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, "maximumArgument", DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage);
+    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument) noexcept(false)
+    { 
+        MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, "maximumArgument"); 
     }
-
-    template <typename TArgument>
-    void MaximumArgumentIsGreaterOrEqualToMinimum(TArgument&& minimumArgument, TArgument&& maximumArgument) { MaximumArgumentIsGreaterOrEqualToMinimum(minimumArgument, maximumArgument, "maximumArgument"); }
 
     template <typename TArgument, typename T = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, Range<T> range, const std::string& argumentName, auto&& messageBuilder)
-        requires requires { { messageBuilder() } -> std::same_as<std::string>; }
+    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, std::string_view argumentName, std::string_view message)
     {
         if (!range.Contains(argumentValue))
         {
-            throw std::invalid_argument(std::string("Value [").append(Converters::To<std::string>(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(messageBuilder()).append(1, '.'));
+            throw std::invalid_argument(std::string("Value [").append(Converters::To<std::string>(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(message).append(1, '.'));
         }
     }
 
     template <typename TArgument, typename T = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, const std::string& argumentName, const std::string& message)
+    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, std::string_view argumentName = {})
     {
-        auto messageBuilder = [&message](){ return message; };
-        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
-    }
-
-    template <typename TArgument, typename T = std::decay_t<TArgument>>
-    void ArgumentInRange(TArgument&& argumentValue, const Range<T>& range, const std::string& argumentName = {})
-    {
-        auto messageBuilder = [&argumentValue, &range]() { return std::string("Argument value [").append(Converters::To<std::string>(argumentValue)).append("] is out of range ").append(Converters::To<std::string>(range)).append(1, '.'); };
-        ArgumentInRange(argumentValue, range, argumentName, messageBuilder);
+        if (!range.Contains(argumentValue))
+        {
+            std::string message = std::string("Argument value [").append(Converters::To<std::string>(argumentValue)).append("] is out of range ").append(Converters::To<std::string>(range)).append(1, '.');
+            throw std::invalid_argument(std::string("Value [").append(Converters::To<std::string>(argumentValue)).append("] of argument [").append(argumentName).append("] is out of range: ").append(message).append(1, '.'));
+        }
     }
 
     template <typename TArgument>
-    void ArgumentInRange(TArgument&& argumentValue, TArgument&& minimum, TArgument&& maximum, const std::string& argumentName = {}) { ArgumentInRange(argumentValue, Range{minimum, maximum}, argumentName); }
+    void ArgumentInRange(TArgument&& argumentValue, TArgument&& minimum, TArgument&& maximum, std::string_view argumentName = {}) 
+    { 
+        ArgumentInRange(argumentValue, Range{minimum, maximum}, argumentName); 
+    }
 }
 
 namespace Platform::Ranges::Ensure::OnDebug
