@@ -53,5 +53,21 @@ namespace Platform.Ranges.Tests
             Assert.True(range1 != range2);
             Assert.NotEqual(range1, range2);
         }
+
+        [Fact]
+        public static void PositiveRangesTest()
+        {
+            Assert.Equal(1, Range.PositiveSByte.Minimum);
+            Assert.Equal(sbyte.MaxValue, Range.PositiveSByte.Maximum);
+            
+            Assert.Equal(1, Range.PositiveInt16.Minimum);
+            Assert.Equal(short.MaxValue, Range.PositiveInt16.Maximum);
+            
+            Assert.Equal(1, Range.PositiveInt32.Minimum);
+            Assert.Equal(int.MaxValue, Range.PositiveInt32.Maximum);
+            
+            Assert.Equal(1L, Range.PositiveInt64.Minimum);
+            Assert.Equal(long.MaxValue, Range.PositiveInt64.Maximum);
+        }
     }
 }

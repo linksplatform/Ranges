@@ -71,5 +71,29 @@ namespace Platform.Ranges
         /// <para>Возвращает весь диапазон значений <see cref="decimal"/>.</para>
         /// </summary>
         public static readonly Range<decimal> Decimal = new Range<decimal>(decimal.MinValue, decimal.MaxValue);
+
+        /// <summary>
+        /// <para>Gets the positive <see cref="sbyte"/> values range (from 1 to <see cref="sbyte.MaxValue"/>).</para>
+        /// <para>Возвращает положительный диапазон значений <see cref="sbyte"/> (от 1 до <see cref="sbyte.MaxValue"/>).</para>
+        /// </summary>
+        public static readonly Range<sbyte> PositiveSByte = new Range<sbyte>(1, sbyte.MaxValue);
+
+        /// <summary>
+        /// <para>Gets the positive <see cref="short"/> values range (from 1 to <see cref="short.MaxValue"/>).</para>
+        /// <para>Возвращает положительный диапазон значений <see cref="short"/> (от 1 до <see cref="short.MaxValue"/>).</para>
+        /// </summary>
+        public static readonly Range<short> PositiveInt16 = new Range<short>(1, short.MaxValue);
+
+        /// <summary>
+        /// <para>Gets the positive <see cref="int"/> values range (from 1 to <see cref="int.MaxValue"/>).</para>
+        /// <para>Возвращает положительный диапазон значений <see cref="int"/> (от 1 до <see cref="int.MaxValue"/>).</para>
+        /// </summary>
+        public static readonly Range<int> PositiveInt32 = new Range<int>(1, int.MaxValue);
+
+        /// <summary>
+        /// <para>Gets the positive <see cref="long"/> values range (from 1 to <see cref="long.MaxValue"/>).</para>
+        /// <para>Возвращает положительный диапазон значений <see cref="long"/> (от 1 до <see cref="long.MaxValue"/>).</para>
+        /// </summary>
+        public static readonly Range<long> PositiveInt64 = new Range<long>(1L, long.MaxValue);
     }
 }
