@@ -118,9 +118,10 @@ namespace Platform.Ranges
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
 
         /// <summary>
-        /// Calculates the hash code for the current <see cref="Range{T}"/> instance.
+        /// <para>Calculates the hash code for the current <see cref="Range{T}"/> instance.</para>
+        /// <para>Вычисляет хэш-код для текущего экземпляра <see cref="Range{T}"/>.</para>
         /// </summary>
-        /// <returns>The hash code for the current <see cref="Range{T}"/> instance.</returns>
+        /// <returns><para>The hash code for the current <see cref="Range{T}"/> instance.</para><para>Хэш-код для текущего экземпляра <see cref="Range{T}"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
 
