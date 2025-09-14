@@ -225,7 +225,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <typeparam name="TArgument"><para>Type of argument.</para><para>Тип аргумента.</para></typeparam>
         /// <param name="root"><para>The extension root to which this method is bound.</para><para>Корень-расширения, к которому привязан этот метод.</para></param>
-        /// <param name="argument"></param>
+        /// <param name="argument"><para>The argument's value.</para><para>Значение аргумента.</para></param>
         /// <param name="range"><para>The range restriction.</para><para>Ограничение в виде диапазона.</para></param>
         /// <param name="argumentName"><para>The argument's name.</para><para>Имя аргумента.</para></param>
         /// <param name="messageBuilder"><para>The thrown exception's message building <see cref="Func{String}"/>.</para><para>Собирающая сообщение для выбрасываемого исключения <see cref="Func{String}"/>.</para></param>
@@ -238,7 +238,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <typeparam name="TArgument"><para>Type of argument.</para><para>Тип аргумента.</para></typeparam>
         /// <param name="root"><para>The extension root to which this method is bound.</para><para>Корень-расширения, к которому привязан этот метод.</para></param>
-        /// <param name="argument"></param>
+        /// <param name="argument"><para>The argument's value.</para><para>Значение аргумента.</para></param>
         /// <param name="range"><para>The range restriction.</para><para>Ограничение в виде диапазона.</para></param>
         /// <param name="argumentName"><para>The argument's name.</para><para>Имя аргумента.</para></param>
         /// <param name="message"><para>The message of the thrown exception.</para><para>Сообщение выбрасываемого исключения.</para></param>
@@ -251,7 +251,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <typeparam name="TArgument"><para>Type of argument.</para><para>Тип аргумента.</para></typeparam>
         /// <param name="root"><para>The extension root to which this method is bound.</para><para>Корень-расширения, к которому привязан этот метод.</para></param>
-        /// <param name="argument"></param>
+        /// <param name="argument"><para>The argument's value.</para><para>Значение аргумента.</para></param>
         /// <param name="range"><para>The range restriction.</para><para>Ограничение в виде диапазона.</para></param>
         /// <param name="argumentName"><para>The argument's name.</para><para>Имя аргумента.</para></param>
         [Conditional("DEBUG")]
@@ -288,7 +288,7 @@ namespace Platform.Ranges
         /// </summary>
         /// <typeparam name="TArgument"><para>Type of argument.</para><para>Тип аргумента.</para></typeparam>
         /// <param name="root"><para>The extension root to which this method is bound.</para><para>Корень-расширения, к которому привязан этот метод.</para></param>
-        /// <param name="argument"></param>
+        /// <param name="argument"><para>The argument's value.</para><para>Значение аргумента.</para></param>
         /// <param name="range"><para>The range restriction.</para><para>Ограничение в виде диапазона.</para></param>
         [Conditional("DEBUG")]
         public static void ArgumentInRange<TArgument>(this EnsureOnDebugExtensionRoot root, TArgument argument, Range<TArgument> range) => Ensure.Always.ArgumentInRange(argument, range, null);

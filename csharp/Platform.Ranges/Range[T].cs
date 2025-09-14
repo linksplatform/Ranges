@@ -9,6 +9,7 @@ namespace Platform.Ranges
     /// <para>Represents a range between minimum and maximum values.</para>
     /// <para>Представляет диапазон между минимальным и максимальным значениями.</para>
     /// </summary>
+    /// <typeparam name="T"><para>The type of the values that define the range bounds.</para><para>Тип значений, определяющих границы диапазона.</para></typeparam>
     /// <remarks>
     /// <para>Based on <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">the question at StackOverflow</a>.</para>
     /// <para>Основано на <a href="http://stackoverflow.com/questions/5343006/is-there-a-c-sharp-type-for-representing-an-integer-range">вопросе в StackOverflow</a>.</para>
@@ -118,9 +119,10 @@ namespace Platform.Ranges
         public override bool Equals(object obj) => obj is Range<T> range ? Equals(range) : false;
 
         /// <summary>
-        /// Calculates the hash code for the current <see cref="Range{T}"/> instance.
+        /// <para>Calculates the hash code for the current <see cref="Range{T}"/> instance.</para>
+        /// <para>Вычисляет хэш-код для текущего экземпляра <see cref="Range{T}"/>.</para>
         /// </summary>
-        /// <returns>The hash code for the current <see cref="Range{T}"/> instance.</returns>
+        /// <returns><para>The hash code for the current <see cref="Range{T}"/> instance.</para><para>Хэш-код для текущего экземпляра <see cref="Range{T}"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public override int GetHashCode() => (Minimum, Maximum).GetHashCode();
 
