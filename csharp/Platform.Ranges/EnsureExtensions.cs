@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Platform.Exceptions;
 using Platform.Exceptions.ExtensionRoots;
+using Platform.Ranges.Resources;
 
 #pragma warning disable IDE0060 // Remove unused parameter
 
@@ -15,7 +16,7 @@ namespace Platform.Ranges
     /// </summary>
     public static class EnsureExtensions
     {
-        private const string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage = "Maximum should be greater or equal to minimum.";
+        private static string DefaultMaximumShouldBeGreaterOrEqualToMinimumMessage => ExceptionMessages.MaximumShouldBeGreaterOrEqualToMinimum;
 
         #region Always
 
@@ -126,7 +127,7 @@ namespace Platform.Ranges
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void ArgumentInRange<TArgument>(this EnsureAlwaysExtensionRoot root, TArgument argumentValue, Range<TArgument> range, string argumentName)
         {
-            string messageBuilder() => $"Argument value [{argumentValue}] is out of range {range}.";
+            string messageBuilder() => string.Format(ExceptionMessages.ArgumentOutOfRange, argumentValue, range);
             ArgumentInRange(root, argumentValue, range, argumentName, messageBuilder);
         }
 
