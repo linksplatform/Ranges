@@ -26,5 +26,5 @@
   <Target Name="CSharpToCppTranslation" AfterTargets="PostBuildEvent" Condition="'$(OS)' == 'Unix' AND $(TargetFramework) == 'net5'">
     <Exec Command="../../CSharpToCppTranslator/bin/$(Configuration)/net5/CSharpToCppTranslator $(ProjectDir) $(SolutionDir)cpp/$(ProjectName)/ .cs .cpp"></Exec>
   </Target>
-  
+
 </Project>
